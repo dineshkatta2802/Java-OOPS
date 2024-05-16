@@ -44,6 +44,7 @@ public static void main(String[] args) {
 
     //once the input are takes lets call the talk() method
     p1.talk();
+    
 
 }
 }

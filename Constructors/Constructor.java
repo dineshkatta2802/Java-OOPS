@@ -1,4 +1,5 @@
 package Constructors;
+
 //--->Note:
 //Default Constructor
 class person{
@@ -8,7 +9,6 @@ class person{
     person(){
         name = "Raju";
         age = 18;
-        System.out.println("hello");
     }
 
 
