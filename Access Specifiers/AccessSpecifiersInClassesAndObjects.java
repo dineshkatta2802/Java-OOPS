@@ -33,6 +33,9 @@
 //"Private": Access Specifier while declaring variable
 
 //Now consider the same code that is similar to the above code
+
+import Constructors.person;
+
 class person{
     //properties-Variables
     //--->Note:
