@@ -1,4 +1,4 @@
-package Methods;
+package Constructors;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -25,7 +25,7 @@ class E_Bill{
     int Total;
 
     //display method instance variables
-    String Email = "support@cityville\nelectric.com";
+    String Email = "support@city.com";
     String Customer_No = "1800-123-456";
 
 
