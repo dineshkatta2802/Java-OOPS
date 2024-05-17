@@ -71,12 +71,16 @@ class Students_data {
         }
     }
 
-    // Showing the entered data in tabular form
+    // Showing the entered data in tabular form with borders
     void ESD_OUT() {
-        System.out.printf("%-15s %-10s %-12s %-10s\n", "Subjects", "Marks", "TotalMarks", "Percentage");
+        String format = "| %-15s | %-10d | %-12d | %-10.2f |%n";
+        System.out.format("+-----------------+------------+--------------+------------+%n");
+        System.out.format("| Subjects        | Marks      | Total Marks  | Percentage |%n");
+        System.out.format("+-----------------+------------+--------------+------------+%n");
         for (int i = 0; i < NOS; i++) {
-            System.out.printf("%-15s %-10d %-12d %-10.2f\n", Subject[i], Marks[i], STM[i], POES[i]);
+            System.out.format(format, Subject[i], Marks[i], STM[i], POES[i]);
         }
+        System.out.format("+-----------------+------------+--------------+------------+%n");
     }
 
     // Calculating and displaying overall percentage and grade
