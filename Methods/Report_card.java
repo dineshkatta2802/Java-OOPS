@@ -1,4 +1,4 @@
-package Constructors;
+package Methods;
 import java.io.IOException;
 import java.util.Scanner;
 
