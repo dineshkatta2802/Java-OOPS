@@ -1,5 +1,6 @@
 package Constructors;
-
+//----->Note:
+//A constructor always have the Permanent data that cannot be changed
 //--->Note:
 //Default Constructor
 class person{
