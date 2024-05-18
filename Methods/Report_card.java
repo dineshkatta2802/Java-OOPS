@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 class Students_data {
     Scanner x = new Scanner(System.in);
+    //These instance variables for Default Constructor and Methods and Parameterised Constructor
     String Student_name;
     String Father_name;
     String Mother_name;
     int Reg_number;
+
+    //get_data instance variables and arrays
     int NOS;
-    String[] Subject;
+    String[] Subjects;
     int[] Marks;
     int[] STM;
     double[] POES;
@@ -18,40 +21,61 @@ class Students_data {
     int TOSTM;
     double OAP;
 
+    //Default Constructor
+    // Students_data(){
+    //     Student_name = "Dinesh";
+    //     Father_name = "Jayaraj";
+    //     Mother_name = "Kavitha";
+    //     Reg_number = 24102;
+    // }
+
+    //Parameterized Constructor
+    Students_data(String SN,String FN,String MN,int RN){
+        Student_name = SN;
+        Father_name = FN;
+        Mother_name = MN;
+        Reg_number = RN;
+    }
+
     void get_data() {
-        // Entering the Students Credentials
-        System.out.print("Enter Student Name: ");
-        Student_name = x.nextLine();
+//-----------------------------------------------------------------------------------------------------------------------
+        // Entering the Students Credentials                                //-----|
+        // System.out.print("Enter Student Name: ");                        //     |
+        // Student_name = x.nextLine();                                     //     |
+        // System.out.print("Enter the Father's Name: ");                   //     |
+        // System.out.print("Enter the Mother's Name: ");                   //     |--->This part of code only has methods 
+        // Father_name = x.nextLine();                                      //     |
+        // System.out.print("Enter the Mother's Name: ");                   //     |
+        // Mother_name = x.nextLine();                                      //     |
+        // System.out.print("Enter the Student Registration Number: ");     //     |
+        // Reg_number = x.nextInt();                                        //-----|
+//----------------------------------------------------------------------------------------------------------------------
+        System.out.println("Students name:"+Student_name);      //-----|
+        System.out.println("Father's name:"+Father_name);       //     |--->This part of the code is used to display
+        System.out.println("Mother's name:"+Mother_name);       //     |--->the SN,FN,MN,RN in Terminal
+        System.out.println("Registration Number:"+Reg_number);  //-----|
 
-        System.out.print("Enter the Father's Name: ");
-        Father_name = x.nextLine();
-
-        System.out.print("Enter the Mother's Name: ");
-        Mother_name = x.nextLine();
-
-        System.out.print("Enter the Student Registration Number: ");
-        Reg_number = x.nextInt();
 
         System.out.print("Enter the number of Subjects: ");
         NOS = x.nextInt();
 
         x.nextLine(); // Consume newline
 
-        Subject = new String[NOS];
+        Subjects = new String[NOS];
         Marks = new int[NOS];
         STM = new int[NOS];
         SP = new double[NOS];
         POES = new double[NOS];
 
-        System.out.println("Enter each Subject name:");
+        System.out.println("Enter each Subjects name:");
         for (int i = 0; i < NOS; i++) {
             System.out.print((i + 1) + ": ");
-            Subject[i] = x.nextLine();
+            Subjects[i] = x.nextLine();
         }
 
-        System.out.println("Enter the Marks obtained in Each Subject:");
+        System.out.println("Enter the Marks obtained in Each Subjects:");
         for (int i = 0; i < NOS; i++) {
-            System.out.print((i + 1) + ". " + Subject[i] + " : ");
+            System.out.print((i + 1) + ". " + Subjects[i] + " : ");
             Marks[i] = x.nextInt();
         }
     }
@@ -59,12 +83,12 @@ class Students_data {
     // Entering total marks for each subject
     void ESD_IN() {
         for (int i = 0; i < NOS; i++) {
-            System.out.print("Enter the Total marks for " + Subject[i] + ": ");
+            System.out.print("Enter the Total marks for " + Subjects[i] + ": ");
             STM[i] = x.nextInt();
         }
     }
 
-    // Calculating the percentage of each Subject
+    // Calculating the percentage of each Subjects
     void ESP() {
         for (int i = 0; i < NOS; i++) {
             POES[i] = ((double) Marks[i] / STM[i]) * 100;
@@ -78,7 +102,7 @@ class Students_data {
         System.out.format("| Subjects        | Marks      | Total Marks  | Percentage |%n");
         System.out.format("+-----------------+------------+--------------+------------+%n");
         for (int i = 0; i < NOS; i++) {
-            System.out.format(format, Subject[i], Marks[i], STM[i], POES[i]);
+            System.out.format(format, Subjects[i], Marks[i], STM[i], POES[i]);
         }
         System.out.format("+-----------------+------------+--------------+------------+%n");
     }
@@ -114,7 +138,11 @@ class Students_data {
 
 public class Report_card {
     public static void main(String[] args) throws IOException {
-        Students_data PC1 = new Students_data();
+        //Using Only methods and Default Constructor
+        // Students_data PC1 = new Students_data();
+
+        //Parameterised Constructor
+        Students_data PC1 = new Students_data("Dinesh","Jayaraj","Kavitha",24102);
         PC1.get_data();
         PC1.ESD_IN();
         PC1.ESP(); // Calculate the percentage for each subject
