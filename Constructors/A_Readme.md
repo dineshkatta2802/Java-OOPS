@@ -10,7 +10,7 @@
 <li>Parameterised Constructor</li>
 <ol><br>
 
-> In Java, constructors can be categorized into several types based on their characteristics and usage. Here are the main types of constructors in Java:
+> In Java, constructors can be categorized into several types based on their characteristics and usage. Here are the main types of constructors in Java:<br>
 
 > <u>Default Constructor</u>: If a class does not explicitly define any constructor, Java provides a default constructor  automatically. This constructor takes no arguments and initializes member variables to default values (0 for numeric types, null for objects).
 
