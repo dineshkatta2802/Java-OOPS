@@ -8,7 +8,7 @@
   * Here the Properties are Variables and 
   * The Action are called the Methods in Java language
   */
-
+package Classesandobjects;
 import java.util.Scanner;
 
 class person {
