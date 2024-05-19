@@ -27,7 +27,7 @@ class pattern{
             System.out.println();
         }
     }
-//--->Note:
+//⁡⁣⁣⁢--->Note:⁡
 //One of the important pattern
     void Left_half_pyramid(){
         System.out.println("Lets print a Left half pyramid");

@@ -33,7 +33,7 @@ class E_Bill{
     String Name;          //----
     String Address;       //    |
     int User_Number;      //    |
-    int Aadhar_Number;    //    |--->These are the Permanent data that cannot be changed
+    int Aadhar_Number;    //    |--->⁡⁣⁣⁢These are the Permanent data that cannot be changed⁡
     int Mobile_Number;    //    |
     String District;      //    |
     int  Meter_Number;    //----

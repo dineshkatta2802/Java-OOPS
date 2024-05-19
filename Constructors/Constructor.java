@@ -1,7 +1,7 @@
 package Constructors;
-//----->Note:
+//⁡⁣⁣⁢----->Note:⁡
 //A constructor always have the Permanent data that cannot be changed
-//--->Note:
+//⁡⁣⁣⁢----->Note:⁡
 //Default Constructor
 class person{
     String name;
@@ -26,7 +26,7 @@ public class Constructor {
     }
 }
 
-//--->Note:
+//⁡⁢⁣⁡⁣⁣⁢--->Note:⁡
 //The Constructor is parameterised
 // class person{
 //     String name;
