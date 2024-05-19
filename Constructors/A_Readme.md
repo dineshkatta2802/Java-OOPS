@@ -5,7 +5,29 @@
 > These are Special types of methods.<br>
 > Constructors are used to initialize the objects by setting initial values i.e, The constructors initialize them automatically when we create an class object, there is no need for  calling constructors specially.<br>
 > The Constructors have Instance variables data which does not change frequently.<br>
-> Constructor is of 2 type<br>
-> <ol><li>Default Constructor</li>
+> Constructor are of 2 type<br>
+<ol><li>Default Constructor</li>
 <li>Parameterised Constructor</li>
-<ol>
+<ol><br>
+
+> In Java, constructors can be categorized into several types based on their characteristics and usage. Here are the main types of constructors in Java:
+
+> <u>Default Constructor</u>: If a class does not explicitly define any constructor, Java provides a default constructor  automatically. This constructor takes no arguments and initializes member variables to default values (0 for numeric types, null for objects).
+
+public class MyClass {
+    // Default constructor provided by Java
+    public MyClass() {
+        // Initialization code
+    }
+}
+
+> <u>Parameterized Constructor</u>: These constructors take parameters, allowing you to initialize instance variables with specific values during object creation.
+
+public class MyClass {
+    private int myVar;
+
+    // Parameterized constructor
+    public MyClass(int initialValue) {
+        myVar = initialValue;
+    }
+}
