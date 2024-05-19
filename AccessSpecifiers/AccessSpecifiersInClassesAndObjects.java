@@ -1,3 +1,4 @@
+package AccessSpecifiers;
 // class person{
 //     //properties-Variables
 //     //--->Note:
@@ -34,7 +35,7 @@
 
 //Now consider the same code that is similar to the above code
 
-import Constructors.person;
+
 
 class person{
     //properties-Variables
@@ -55,8 +56,8 @@ public class AccessSpecifiersInClassesAndObjects {
     public static void main(String[] args) {
         person p1 = new person();
         //Name and age has been declared and intialized after the object is created
-        p1.name = "Raju";
-        p1.age = 20;
+        // p1.Name = "Raju";
+        // p1.age = 20;
         // here the error is thrown since the name and age property i.e, variables has been 
         //declared and protected permanently
     }

@@ -1,4 +1,4 @@
-package Methods;
+package ThisKeyword;
 class sample{
     //Creating Instance Variables 
     int a ;
@@ -59,15 +59,15 @@ class sample{
 
     so whe you use some show or display method to display the variables then it shows "null"
     i.e,
-    ⁡⁣⁢⁣void show(){
+ ⁡⁢⁣⁣   void show(){
         system.out.println("a="+a+"b="+b);
     }⁡
     you get output as
-⁡⁣⁢⁣    a=0
-    b=0⁡
+⁡⁣⁢⁣   ⁡⁢⁣⁣ a=0⁡
+    ⁡⁢⁣⁣b=0⁡
 
     so inorder to avoid this problem we use "this" key word
-    ⁡⁣⁡⁣⁢⁣    class sample{
+⁡⁢⁣⁣        class sample{
         int a;
         int b;
 
@@ -89,13 +89,13 @@ class sample{
     }⁡
 
     Now here,
-    ⁡⁣⁢⁣⁡⁣⁢⁣"this.a"⁡⁡ and ⁡⁣⁢⁣⁡⁣⁢⁣"this.b"⁡⁡ refers to instance variables and here ⁡⁣⁢⁣⁡⁣⁢⁣"a"⁡⁡ and ⁡⁣⁢⁣"b"⁡ refers to parameters 
+    ⁡⁢⁣⁣"this.a"⁡ and⁡⁢⁣⁣ "this.b"⁡⁡ refers to instance variables and here⁡⁢⁣⁣ "a"⁡⁡ and ⁡⁢⁣⁣"b"⁡ refers to parameters 
     you get output as
-    ⁡⁣⁢⁣a=10
+   ⁡⁢⁣⁣ a=10
     b=20⁡
     */
 }
-public class ThisKeyword {
+public class ThisKeyword_InstanceVariable {
     public static void main(String[] args) {
         sample x = new sample(10, 20);
         x.show();
