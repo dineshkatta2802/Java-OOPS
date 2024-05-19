@@ -1,5 +1,5 @@
 // ⁡⁣⁣⁢Illustartion of Method Without Return Type and Without Parameter list⁡
-
+package Methods.Returntype_Parameterlist;
 class sample {
 //Lets create an Instance Variable 
 double num1,num2;
@@ -15,6 +15,7 @@ void sum(){
 public class WOR_WOP {
 
     public static void main(String[] args) {
-        
+        sample x = new sample(1.2, 3.2);
+        x.sum();
     }
 }
