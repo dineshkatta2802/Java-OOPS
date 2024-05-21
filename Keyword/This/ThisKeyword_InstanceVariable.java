@@ -1,4 +1,4 @@
-package Keyword.This_Keyword;
+package Keyword.This;
 class sample{
     //Creating Instance Variables 
     int a ;

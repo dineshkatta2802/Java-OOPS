@@ -1,4 +1,4 @@
-package Keyword.This_Keyword;
+package Keyword.This;
 // Java code for using this() to
 // invoke current class constructor
 class Test {
