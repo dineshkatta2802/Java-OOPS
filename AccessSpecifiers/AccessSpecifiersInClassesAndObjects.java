@@ -54,7 +54,7 @@ void talk(){
 }
 public class AccessSpecifiersInClassesAndObjects {
     public static void main(String[] args) {
-        person p1 = new person();
+        person raju = new person();
         //Name and age has been declared and intialized after the object is created
         // p1.Name = "Raju";
         // p1.age = 20;
