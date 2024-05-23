@@ -32,4 +32,3 @@ public class Type_Promotion {
             }
         }
         
-    }
