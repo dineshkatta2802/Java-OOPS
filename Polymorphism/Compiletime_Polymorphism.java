@@ -1,4 +1,4 @@
-package Ploymorphism;
+package Polymorphism;
 //⁡⁣⁣⁢--->Note:⁡
 //A  class having 2 or more methods with same name but different parameter list
 //Also known as ⁡⁣⁢⁣Compile-time Polymorphism⁡

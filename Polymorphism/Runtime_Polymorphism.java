@@ -3,7 +3,7 @@
 //Writing 2 or more methods in super and sub class such that the methods have same name and parameters.
 
 
-package Ploymorphism;
+package Polymorphism;
 // Base Class
 class Parent {
 	void show() { System.out.println("Parent's show()"); }
