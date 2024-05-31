@@ -8,7 +8,7 @@ Deriving a new class from existing class such that the new class aquire all the 
 The superclass (or parent class) is the class whose properties and methods are inherited by another class.<br>
 The subclass (or child class) is the class that inherits the properties and methods from the superclass.<br>
 <hr>
-<u>Syntax:</u>
+<u>Syntax:</u><br>
 ⁡⁣⁢⁣class Superclass {
     // fields and methods
 }
@@ -22,10 +22,28 @@ Subclasses inherit all <u>⁡⁣⁢⁣public and protected</u>⁡ members of the
 Withe the help of <u>⁡⁣⁢⁣"Super"</u>⁡ Keyword we can access the super(parent) class methods and constructors<br>
 
 <hr>
+Why do we use Inheritance?<br>
+Code Reusability<br>
+Polymorphism-Runtime Polymorphism,Method Overriding<br>
+Encapsulation and Abstraction<br>
+<hr>
+Can OOP's Exists without Inheritance?<br>
+Yes, OOP can exist without inheritance by using encapsulation, abstraction, and polymorphism through interfaces and<br>composition. These principles enable robust object-oriented design without requiring a class hierarchy.<br>
+<hr>
 There are several types of inheritance
 <ol>
 <li>Single Inheritance</li>
 <li>Multiple Inheritance</li>
 <li>Multilevel Inheritance</li>
 <li>Hirerarchial Inheritance</li>
-</ol>
+</ol><br>
+Java doesnot support Multiple Inheritance
+<hr>
+Limitations of Inheritance?<br>
+1.Tight Coupling:<br> Inheritance creates strong dependencies between classes.<br>
+2.Fragile Base Class Problem:<br> Changes in a superclass can break subclasses.<br>
+3.Limited Scope for Reuse:<br> Inheritance only supports "is-a" relationships.<br>
+4.Single Inheritance Limitation:<br> Java does not support multiple inheritance.<br>
+5 Increased Complexity:<br> Deep hierarchies make code harder to understand.<br>
+6.Liskov Substitution Principle Violations:<br> Subclasses might not behave as expected from their superclass.<br>
+
