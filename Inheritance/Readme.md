@@ -8,7 +8,7 @@ Deriving a new class from existing class such that the new class aquire all the 
 The superclass (or parent class) is the class whose properties and methods are inherited by another class.<br>
 The subclass (or child class) is the class that inherits the properties and methods from the superclass.<br>
 <hr>
-<u>Syantax:</u>
+<u>Syntax:</u>
 ⁡⁣⁢⁣class Superclass {
     // fields and methods
 }
