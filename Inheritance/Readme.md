@@ -7,6 +7,8 @@ Deriving a new class from existing class such that the new class aquire all the 
 <u>⁡⁣⁣⁢Super class and sub class:⁡</u><br>
 The superclass (or parent class) is the class whose properties and methods are inherited by another class.<br>
 The subclass (or child class) is the class that inherits the properties and methods from the superclass.<br>
+<hr>
+<u>Syantax:</u>
 ⁡⁣⁢⁣class Superclass {
     // fields and methods
 }
@@ -14,7 +16,7 @@ The subclass (or child class) is the class that inherits the properties and meth
 class Subclass extends Superclass {
     // additional fields and methods
 }⁡
-
+<hr>
 ⁡⁣⁣⁢Note:⁡<br>
 Subclasses inherit all <u>⁡⁣⁢⁣public and protected</u>⁡ members of the superclass. Private members are not directly accessible but can be accessed through public or protected getter and setter methods.<br>
 Withe the help of <u>⁡⁣⁢⁣"Super"</u>⁡ Keyword we can access the super(parent) class methods and constructors<br>
