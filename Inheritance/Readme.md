@@ -37,7 +37,10 @@ There are several types of inheritance
 <li>Multilevel Inheritance</li>
 <li>Hirerarchial Inheritance</li>
 </ol><br>
-Java doesnot support Multiple Inheritance
+Java doesnot support Multiple Inheritance<br>
+<hr>
+Why Multiple Inheritance is not supported by java?
+
 <hr>
 Limitations of Inheritance?<br>
 1.Tight Coupling:<br> Inheritance creates strong dependencies between classes.<br>
