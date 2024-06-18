@@ -5,7 +5,7 @@
  */
 
     /*⁡⁣⁣⁢--->Note:⁡
-  * Here the Properties are Variables and 
+  * Here the Properties are Variables(Instance Variables) and 
   * The Action are called the Methods in Java language
   */
 package Classesandobjects;
