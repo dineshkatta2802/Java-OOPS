@@ -1,5 +1,7 @@
 <h2>⁡⁣⁣⁢Inheritance⁡</h2>
 <br>
+Inheritance is the one of the method through which we can actually relate an object of a class
+<br>
 Deriving a new class from existing class such that the new class aquire all the features of existing classes is called Inheritance
 <br>
 <hr>
