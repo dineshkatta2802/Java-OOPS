@@ -6,9 +6,9 @@ class vehicle{
     int speed;
     //Parameterised constructor is created
     vehicle(int gear,int speed){
-    this.gear = gear;
-    this.speed = speed;
-    }
+    this.gear = gear;             //⁡⁣⁣⁢--->Note:⁡
+    this.speed = speed;           //The "this" keyword is actually helping the initialised construct
+    }                             //during the object creation to store the values in the instance variables
 
     //Method1
     void accelerating(int increment){
@@ -52,3 +52,33 @@ public class Ex1 {
         Baleno.brake(20);
     }
 }
+
+//⁡⁣⁢⁣What is actually happening inside ⁡
+//⁡⁢⁣⁣1.Baleno.accelarating(30);⁡
+//In this line the speed which is zero at 1st gear i.e,
+//In line 15
+//Speed += incrememnt;
+//Speed = Speed + increment;
+//Speed = 0 +30
+//Speed = 30 
+
+//⁡⁢⁣⁣2.Baleno.changegear(2);⁡
+//In line 39
+//gear = newgear;
+//gear = 2;
+
+//⁡⁢⁣⁣3.Baleno.accelarating(30);⁡
+//In this line the speed which is zero at 1st gear i.e,
+//In line 15
+//Speed += incrememnt;
+//Speed = Speed + increment;
+//Speed = 30 +50
+//Speed = 80 
+
+//⁡⁢⁣⁣4.Baleno.brake(20);⁡
+//In this line the speed which is zero at 1st gear i.e,
+//In line 15
+//Speed += decrememnt;
+//Speed = Speed + decrement;
+//Speed = 80 - 20
+//Speed = 60
