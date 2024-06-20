@@ -2,6 +2,11 @@ package Methods.Recursion;
 import java.util.Scanner;
 public class Fibonocci {
     public static int fibonacci(int n){
+    //⁡⁣⁣⁢Note:⁡⁡
+    //Here the Keyword "static" has been used becoz it has to be called without the help of object and 
+    //no object is create d in the main class
+    //"int" is the return type of the method
+    //"public" is the access specifier
         if(n<=1){
             return n;
         }
