@@ -1,5 +1,6 @@
 <h1>Recursion</h1>
 <br>
+<hr>
 Recursion has 2 main components<br>
 <ol>
 <li>Base Case</li>
