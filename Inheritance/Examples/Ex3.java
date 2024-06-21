@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritance.Examples;
 //⁡⁣⁣⁢Base Class⁡
 class Shape{
     String Color;
