@@ -21,11 +21,24 @@ class Laptop{
 }
 
 class HP extends Laptop{
-    
+    //Parameterised Constructor
+    HP(int version,int RAM){
+        super(version,RAM);
+    }
+
+    void changeMemorycard(int newcard){
+        RAM = newcard;
+        System.out.println("the memory card is beign changed");
+        System.out.println("The memory card is changed to:"+RAM);
+    }
 }
 public class Ex2 {
 
     public static void main(String[] args) {
-        
+        HP x = new HP(10, 500);
+        x.ExtendRAM(1000);
+        x.changeMemorycard(2);
+        x.ExtendRAM(500);
+        x.ShrinkRAM(2000);
     }
 }
