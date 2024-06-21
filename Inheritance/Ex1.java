@@ -27,7 +27,6 @@ class vehicle{
 
 //Derived Class
 class Car extends vehicle{
-    int cargear;
     //parameterised Constructor
     Car(int gear,int speed){
         //Now lets link with the super class i.e the Base class
