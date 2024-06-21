@@ -1,4 +1,5 @@
 package Inheritance;
+//⁡⁣⁣⁢Base Class⁡
 class Shape{
     String Color;
     //Parameterised Constructor
@@ -12,6 +13,7 @@ class Shape{
     }
 }
 
+//⁡⁣⁣⁢Derived Class⁡1⁡
 class Circle extends Shape{
     double radius;
     //Parameterised constructor
@@ -27,6 +29,7 @@ class Circle extends Shape{
     }
 }
 
+//⁡⁣⁣⁢⁡⁣⁣⁢Derived Class2 ⁡⁡
 class Square extends Shape{
     double length;
     Square(String Color,double length){
@@ -39,6 +42,8 @@ class Square extends Shape{
         System.out.println("The length of Square is:"+area_Square);
     }
 }
+
+//⁡⁣⁣⁢Driver Class⁡
 public class Ex3 {
     public static void main(String[] args) {
         Circle x = new Circle("Red",2.1);

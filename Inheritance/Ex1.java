@@ -1,5 +1,5 @@
 package Inheritance;
-//Base-Class
+//⁡⁣⁣⁢Base-Class⁡
 class vehicle{
     //2 instance variables are created
     int gear;
@@ -25,7 +25,7 @@ class vehicle{
     }
 }
 
-//Derived Class
+//⁡⁣⁣⁢Derived Class⁡
 class Car extends vehicle{
     //parameterised Constructor
     Car(int gear,int speed){
@@ -41,6 +41,7 @@ class Car extends vehicle{
     }
 }
 
+//⁡⁣⁣⁢Driver Class⁡
 public class Ex1 {
 
     public static void main(String[] args) {

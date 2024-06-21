@@ -1,5 +1,5 @@
 package Inheritance;
-
+//⁡⁣⁣⁢Base Class⁡
 class Laptop{
     int version;
     int RAM;
@@ -20,6 +20,7 @@ class Laptop{
     }
 }
 
+//⁡⁣⁣⁢Derived Class⁡
 class HP extends Laptop{
     //Parameterised Constructor
     HP(int version,int RAM){
@@ -32,6 +33,8 @@ class HP extends Laptop{
         System.out.println("The memory card is changed to:"+RAM);
     }
 }
+
+//⁡⁣⁣⁢Driver Class⁡
 public class Ex2 {
 
     public static void main(String[] args) {
