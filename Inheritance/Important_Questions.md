@@ -138,3 +138,101 @@ Example:<br>
   }<br>
 <br>
 By using interfaces, Java provides a way to achieve similar functionality without the complications associated with multiple inheritance of classes.<br>
+
+<h2>⁡⁣⁢⁣7.If class A inherits from class B,then what are all the things that the class A Inherits from class B?⁡</h2><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance in Java</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Inherited and Not Inherited Aspects in Java Class Inheritance</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Inherited from Parent Class</th>
+            <th>Not Inherited from Parent Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <ul>
+                    <li>Fields (Variables):
+                        <ul>
+                            <li>Non-private fields and methods (default, protected, public)</li>
+                            <li>Private fields and methods can be accessed via public/protected methods in superclass</li>
+                        </ul>
+                    </li>
+                    <li>Methods:
+                        <ul>
+                            <li>Non-private methods (includes constructors, regular methods, static methods)</li>
+                        </ul>
+                    </li>
+                    <li>Nested Classes:
+                        <ul>
+                            <li>Nested classes of the superclass are inherited</li>
+                        </ul>
+                    </li>
+                    <li>Interfaces Implemented by Superclass:
+                        <ul>
+                            <li>Interfaces implemented by the superclass</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Private Members:
+                        <ul>
+                            <li>Fields and methods declared as private in the superclass</li>
+                        </ul>
+                    </li>
+                    <li>Constructors:
+                        <ul>
+                            <li>Constructors are not inherited; each subclass defines its own</li>
+                        </ul>
+                    </li>
+                    <li>Static Members:
+                        <ul>
+                            <li>Static fields and methods are inherited, resolved at compile time</li>
+                            <li>Resolved based on reference type, not object type</li>
+                        </ul>
+                    </li>
+                    <li>Initializer Blocks:
+                        <ul>
+                            <li>Instance and static initializer blocks are not inherited</li>
+                        </ul>
+                    </li>
+                    <li>Final Members:
+                        <ul>
+                            <li>Final fields and methods can be inherited but not modified</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
