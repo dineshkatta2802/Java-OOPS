@@ -53,3 +53,43 @@ final class FinalClass {<br>
 // Cannot subclass FinalClass because it is final<br>
 // class SubClass extends FinalClass { } // This will result in a compilation error<br>
 
+<h2>How can we call a Base Method without creating an Instance(Object)?</h2><br>
+Sure! Here’s how you can call a base method in Java using both static and instance methods.<br>
+
+<u>Calling a static method:<u><br>
+You can call a static method of the base class directly using the class name without creating an instance.<br>
+<br>
+class BaseClass {<br>
+    public static void staticMethod() {<br>
+        System.out.println("BaseClass static method");<br>
+    }<br>
+}<br>
+<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        BaseClass.staticMethod();  // Calling the static method directly<br>
+    }<br>
+}<br>
+
+<h3>Calling an instance method from a subclass:</h3><br>
+To call an instance method from the base class in a subclass, you use the `super` keyword within an instance method of the subclass.<br>
+<br>
+class BaseClass {<br>
+    public void instanceMethod() {<br>
+        System.out.println("BaseClass instance method");<br>
+    }<br>
+}<br>
+<br>
+class SubClass extends BaseClass {<br>
+    public void callBaseInstanceMethod() {<br>
+        super.instanceMethod();  // Calling the instance method of the base class<br>
+    }<br>
+}<br>
+<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        SubClass sub = new SubClass();<br>
+        sub.callBaseInstanceMethod();  // Calling the method in the subclass that calls the base class method<br>
+    }<br>
+}<br>
+
