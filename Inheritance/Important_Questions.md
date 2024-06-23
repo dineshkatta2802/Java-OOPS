@@ -303,3 +303,78 @@ Object slicing happens when you copy a derived class object into a base class ob
 Object slicing isn't a concern because Java objects are referenced by their actual type, even when referenced by a superclass type. This means you can assign a `Derived` object to a `Base` reference, but you can only access members defined in `Base`.<br>
 <br>
 In essence, object slicing is a concept specific to C++ due to its handling of object copying and inheritance, whereas Java's approach with references and inheritance means this concept doesn't apply in the same way.<br>
+
+<h2>⁡⁣⁢⁣9.How to hide Base Class Methods in Java?⁡</h2><br>
+In Java, you cannot directly "hide" base class methods in the same way you might in languages like C++ using the `private` keyword for methods in the base class. However, you can achieve similar effects using method overriding and access modifiers. Here are a few approaches:<br>
+<br>
+<h3>⁡⁢⁣⁣Method Overriding⁡</h3><br>
+<br>
+In Java, if you have a method in a base class (superclass) that you want to "hide" in a subclass (derived class), you can use method overriding. Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.<br>
+<br>
+class Base {<br>
+    public void display() {<br>
+        System.out.println("Base class method");<br>
+    }<br>
+}<br>
+<br>
+class Derived extends Base {<br>
+    @Override<br>
+    public void display() {<br>
+        System.out.println("Derived class method");<br>
+    }<br>
+}<br>
+<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Base b = new Base();<br>
+        b.display(); // Output: "Base class method"<br>
+<br>
+        Derived d = new Derived();<br>
+        d.display(); // Output: "Derived class method"<br>
+<br>
+        Base bd = new Derived(); // Polymorphic assignment<br>
+        bd.display(); // Output: "Derived class method" (dynamic dispatch)<br>
+    }<br>
+}<br>
+<br>
+In this example:<br>
+The `display()` method in `Derived` overrides the `display()` method in `Base`.<br>
+When you call `display()` on an object of `Derived`, it executes the method from `Derived`, not from `Base`.<br>
+<br>
+<h3>⁡⁢⁣⁣Access Modifiers⁡</h3><br>
+<br>
+Another approach to controlling method visibility is through access modifiers (`public`, `protected`, `private`, and default access). By using `private` or `protected` access modifiers in the base class, you can restrict access to methods in subclasses:<br>
+<br>
+class Base {<br>
+    protected void display() {<br>
+        System.out.println("Base class method");<br>
+    }<br>
+}<br>
+<br>
+class Derived extends Base {<br>
+    @Override<br>
+    protected void display() {<br>
+        System.out.println("Derived class method");<br>
+    }<br>
+}<br>
+<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Base b = new Base();<br>
+        b.display(); // Compilation error: display() has protected access in Base<br>
+<br>
+        Derived d = new Derived();<br>
+        d.display(); // Output: "Derived class method"<br>
+<br>
+        Base bd = new Derived();<br>
+        bd.display(); // Output: "Derived class method"<br>
+    }<br>
+}<br>
+<br>
+In this example:<br>
+- The `display()` method in `Base` is `protected`, so it is accessible within `Base` and its subclasses like `Derived`.<br>
+- Attempting to call `b.display()` directly in `Main` results in a compilation error because `display()` is not accessible from outside `Base` or its subclasses.<br>
+<br>
+<h3>Conclusion:</h3><br>
+<br>
+While Java does not have a direct mechanism to "hide" methods from a superclass in the same way C++ can with `private` methods, you can achieve similar behavior through method overriding and access modifiers (`protected` or `private` for inner classes). Method overriding allows you to provide specialized implementations in subclasses, and access modifiers help control visibility and access levels. These mechanisms together enable you to effectively manage method visibility and behavior in Java class hierarchies.<br>
