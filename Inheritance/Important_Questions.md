@@ -53,7 +53,7 @@ final class FinalClass {<br>
 // Cannot subclass FinalClass because it is final<br>
 // class SubClass extends FinalClass { } // This will result in a compilation error<br>
 
-<h2>⁡⁣⁢⁣How can we call a Base Method without creating an Instance(Object)?⁡</h2><br>
+<h2>⁡⁣⁢⁣4.⁡⁡⁣⁢⁣How can we call a Base Method without creating an Instance(Object)?⁡</h2><br>
 Sure! Here’s how you can call a base method in Java using both static and instance methods.<br>
 
 <u>Calling a static method:<u><br>
