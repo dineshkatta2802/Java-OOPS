@@ -406,3 +406,105 @@ Friend Function and Friend Class: Java does not provide direct equivalents for f
 Inline Function: Java does not have an `inline` keyword. Methods in Java are typically invoked through regular method calls, and the JVM performs optimizations like method inlining dynamically based on runtime conditions.<br>
 <br>
 In Java, the focus is more on encapsulation, access modifiers (`public`, `protected`, `private`, default), and inheritance mechanisms to control visibility and access to class members, rather than using friend functions/classes or inline functions for code optimization purposes.<br>
+
+<h2>⁡⁣⁢⁣11.Difference between Polymorphism and Inheritance⁡</h2><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymorphism vs Inheritance</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Polymorphism vs Inheritance</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Polymorphism</th>
+            <th>Inheritance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Basic Definition</td>
+            <td>Ability of a reference variable to behave differently depending on the actual object it refers to.</td>
+            <td>Mechanism where one class acquires the properties (methods and fields) of another class.</td>
+        </tr>
+        <tr>
+            <td>Types</td>
+            <td>Compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).</td>
+            <td>Single inheritance (one class inherits from one superclass) and interface inheritance (one class implements multiple interfaces).</td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>Facilitates code reuse and allows flexibility in method implementation based on the context.</td>
+            <td>Establishes an "is-a" relationship between classes, forming a hierarchy.</td>
+        </tr>
+        <tr>
+            <td>Implementation</td>
+            <td>Implemented through method overloading and method overriding.</td>
+            <td>Implemented using the `extends` keyword for class inheritance and `implements` keyword for interface inheritance.</td>
+        </tr>
+        <tr>
+            <td>Example</td>
+            <td>
+                <pre><code>
+class Animal {
+    void makeSound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Bark");
+    }
+}
+
+Animal a = new Dog();
+a.makeSound(); // Outputs "Bark"
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+class Animal {
+    void eat() {
+        System.out.println("Eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Bark");
+    }
+}
+
+Dog d = new Dog();
+d.eat(); // Inherited from Animal
+d.bark(); // Method specific to Dog
+                </code></pre>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
