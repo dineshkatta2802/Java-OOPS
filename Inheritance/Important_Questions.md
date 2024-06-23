@@ -408,12 +408,6 @@ Inline Function: Java does not have an `inline` keyword. Methods in Java are typ
 In Java, the focus is more on encapsulation, access modifiers (`public`, `protected`, `private`, default), and inheritance mechanisms to control visibility and access to class members, rather than using friend functions/classes or inline functions for code optimization purposes.<br>
 
 <h2>⁡⁣⁢⁣11.Difference between Polymorphism and Inheritance⁡</h2><br>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polymorphism vs Inheritance</title>
     <style>
         table {
             width: 100%;
@@ -429,7 +423,6 @@ In Java, the focus is more on encapsulation, access modifiers (`public`, `protec
             background-color: #f2f2f2;
         }
     </style>
-</head>
 <body>
 
 <h2>Polymorphism vs Inheritance</h2>
@@ -502,6 +495,103 @@ d.eat(); // Inherited from Animal
 d.bark(); // Method specific to Dog
                 </code></pre>
             </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+<h2>⁡⁣⁢⁣Differnce between Generalisation,Aggregationand Composition in Java⁡</h2><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generalization vs Aggregation vs Composition</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Generalization vs Aggregation vs Composition</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Generalization</th>
+            <th>Aggregation</th>
+            <th>Composition</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Relationship Type</td>
+            <td>IS-A relationship (Inheritance)</td>
+            <td>HAS-A relationship (Weak ownership)</td>
+            <td>HAS-A relationship (Strong ownership)</td>
+        </tr>
+        <tr>
+            <td>Dependency</td>
+            <td>Strong</td>
+            <td>Weak</td>
+            <td>Strong (owning object responsible for lifecycle)</td>
+        </tr>
+        <tr>
+            <td>Examples</td>
+            <td>
+                <pre><code>
+class Animal {
+    // Common properties and methods
+}
+
+class Dog extends Animal {
+    // Specific properties and methods for Dog
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+class Department {
+    List<Employee> employees;
+    // Other department properties
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+class Car {
+    Engine engine;
+    // Other car properties
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Ownership</td>
+            <td>Child class owns the parent class</td>
+            <td>Objects have independent lifecycles</td>
+            <td>Part-whole relationship where parts cannot exist without the whole</td>
+        </tr>
+        <tr>
+            <td>Flexibility</td>
+            <td>Less flexible (strong coupling)</td>
+            <td>More flexible (loose coupling)</td>
+            <td>Less flexible (strong coupling)</td>
         </tr>
     </tbody>
 </table>
