@@ -376,5 +376,4 @@ In this example:<br>
 - Attempting to call `b.display()` directly in `Main` results in a compilation error because `display()` is not accessible from outside `Base` or its subclasses.<br>
 <br>
 <h3>Conclusion:</h3><br>
-<br>
 While Java does not have a direct mechanism to "hide" methods from a superclass in the same way C++ can with `private` methods, you can achieve similar behavior through method overriding and access modifiers (`protected` or `private` for inner classes). Method overriding allows you to provide specialized implementations in subclasses, and access modifiers help control visibility and access levels. These mechanisms together enable you to effectively manage method visibility and behavior in Java class hierarchies.<br>
