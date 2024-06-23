@@ -236,3 +236,70 @@ By using interfaces, Java provides a way to achieve similar functionality withou
 
 </body>
 </html>
+
+<h2>⁡⁣⁢⁣8.What is Object Slicing⁡</h2><br>
+Object Slicing in C++:<br>
+
+What happens:<br>
+When you assign a derived class object to a base class object, only the base class part of the object is copied. Any additional data or behavior specific to the derived class is lost.<br>
+Example:<br>
+⁡⁢⁣<h3>⁣Object Slicing in C++:</h3>⁡<br>
+<br>
+class Base {<br>
+public:<br>
+    int baseValue;<br>
+};<br>
+<br>
+class Derived : public Base {<br>
+public:<br>
+    int derivedValue;<br>
+};<br>
+<br>
+int main() {<br>
+    Derived d;<br>
+    d.baseValue = 1;<br>
+    d.derivedValue = 2;<br>
+<br>
+    Base b = d; // Object slicing occurs here<br>
+    // b.baseValue = 1 (copied from d), but b has no derivedValue<br>
+<br>
+    return 0;<br>
+}<br>
+<br>
+ <h3>⁡⁢⁣⁣Object Slicing in Java:⁡⁡</h3><br>
+<br>
+Difference: Java does not have object slicing in the same way because of how it handles objects and inheritance.<br><br>
+Example:<br>
+class Base {<br>
+    int baseValue;<br>
+}<br>
+<br>
+class Derived extends Base {<br>
+    int derivedValue;<br>
+}<br>
+<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Derived d = new Derived();<br>
+        d.baseValue = 1;<br>
+        d.derivedValue = 2;<br>
+<br>
+        Base b = d; // No object slicing in Java<br>
+        // b.baseValue = 1 (same as d.baseValue)<br>
+        // b cannot access d.derivedValue directly<br>
+<br>
+        System.out.println(b.baseValue); // Outputs 1<br>
+        // System.out.println(b.derivedValue); // Error in Java, b doesn't have derivedValue<br>
+<br>
+    }<br>
+}<br>
+<br>
+<h3>⁡⁢⁣⁣Simplified Explanation:⁡</h3><br>
+<br>
+<h3>⁡⁢⁣⁣C++:⁡</h3><br>
+Object slicing happens when you copy a derived class object into a base class object, causing the loss of derived class-specific data.<br>
+  <br>
+<h3>⁡⁢⁣⁣Java:⁡</h3><br>
+Object slicing isn't a concern because Java objects are referenced by their actual type, even when referenced by a superclass type. This means you can assign a `Derived` object to a `Base` reference, but you can only access members defined in `Base`.<br>
+<br>
+In essence, object slicing is a concept specific to C++ due to its handling of object copying and inheritance, whereas Java's approach with references and inheritance means this concept doesn't apply in the same way.<br>
