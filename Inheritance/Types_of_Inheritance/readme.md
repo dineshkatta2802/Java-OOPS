@@ -13,7 +13,7 @@ Grandparent
 
 <h2>Hierarchial Inheritance</h2><br>
       Parent<br>
-      /    \<br>
+      / &nbsp    \<br>
 Child1  Child2<br>
 
 <h2>Hierarchial Inheritance</h2><br>
