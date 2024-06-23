@@ -5,31 +5,16 @@
 
 
 <h2>Multilevel Inheritance</h2><br>
-Grandparent
-     |
-  Parent
-     |
-  Child
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220728111913/2-660x329.jpg" alt="Multilevel Inheritance" width="602" height="300">
 
 <h2>Hierarchial Inheritance</h2><br>
-      Parent<br>
-      /    \<br>
-Child1  Child2<br>
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221025185149/Hierarchical-Inheritance-in-Java.jpg" alt="Hierarchial Inheritance" width="602" height="300">
 
-<h2>Hierarchial Inheritance</h2><br>
-      Grandparent<br>
-         |<br>
-      Parent1    Parent2<br>
-         \        /<br>
-          \      /<br>
-           \    /<br>
-            Child<br>
+<h2>Hybrid Inheritance</h2><br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220728112142/4-660x330.jpg" alt="Hybrid Inheritance" width="602" height="300">
 
 <h2>Multiple Inheritance</h2><br>
-Parent1  Parent2 <br>
-    \     /<br>
-     \   /<br>
-      Child<br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220728112121/3-660x329.jpg" alt="Multiple Inheritance" width="602" height="300">
 Multiple Inheritance is a feature of an object-oriented concept, where a class can inherit properties of more than one parent class.<br>
 <h3>Note:</h3><br>
 Java doesn’t support Multiple Inheritance
