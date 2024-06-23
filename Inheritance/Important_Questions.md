@@ -56,7 +56,7 @@ final class FinalClass {<br>
 <h2>⁡⁣⁢⁣4.⁡⁡⁣⁢⁣How can we call a Base Method without creating an Instance(Object)?⁡</h2><br>
 Sure! Here’s how you can call a base method in Java using both static and instance methods.<br>
 
-<u>Calling a static method:<u><br>
+<h3>Calling a static method:</h3><br>
 You can call a static method of the base class directly using the class name without creating an instance.<br>
 <br>
 class BaseClass {<br>
