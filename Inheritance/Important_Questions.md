@@ -95,7 +95,7 @@ public class Main {<br>
 
 <h2>⁡⁣⁢⁣5.What is the diffrence between New and Override?⁡</h2><br>
 
-<h3>⁡⁢⁣⁣Method Overriding:⁡<h3><br>
+<h3>⁡⁢⁣⁣Method Overriding:⁡</h3><br>
 - Subclass provides a specific implementation of a non-static method from the superclass.<br>
 - Uses the `@Override` annotation.<br>
 - Allows the subclass method to be called via a superclass reference.<br>
