@@ -1,12 +1,12 @@
 <h2><u>Dynamic-polymorphism/Run-time Polymorphism</u></h2> <br>
-This is achieved by Method Overriding.<br>
-But Java doesn't support Operartor Overloading.<br>
+This is achieved by Method Overriding .<br>
 ex:<br>
 Method Overloading and method overriding using instance methods
 <br>
 <hr>
 <h2><u>Static-Polyorphism/Compiletime Polymorpism</u></h2><br>
-This isachieved by Method Overloadnga and Operator Overloading.<br>
+This is achieved by Method Overloading and Operator Overloading.<br>
+But Java doesn't support Operartor Overloading.<br>
 ex:<br>
 Method Overloading and method Overriding using static methods and method overloading using private and final methods
 <br>
