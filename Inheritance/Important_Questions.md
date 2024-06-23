@@ -56,7 +56,7 @@ final class FinalClass {<br>
 <h2>⁡⁣⁢⁣4.⁡⁡⁣⁢⁣How can we call a Base Method without creating an Instance(Object)?⁡</h2><br>
 Sure! Here’s how you can call a base method in Java using both static and instance methods.<br>
 
-<h3>Calling a static method:</h3><br>
+<h3>⁡⁢⁣⁣Calling a static method:⁡</h3><br>
 You can call a static method of the base class directly using the class name without creating an instance.<br>
 <br>
 class BaseClass {<br>
@@ -71,7 +71,7 @@ public class Main {<br>
     }<br>
 }<br>
 
-<h3>Calling an instance method from a subclass:</h3><br>
+<h3>⁡⁢⁣⁣Calling an instance method from a subclass:⁡</h3><br>
 To call an instance method from the base class in a subclass, you use the `super` keyword within an instance method of the subclass.<br>
 <br>
 class BaseClass {<br>
@@ -93,3 +93,19 @@ public class Main {<br>
     }<br>
 }<br>
 
+<h2>⁡⁣⁢⁣5.What is the diffrence between New and Override?⁡</h2><br>
+
+<h3>⁡⁢⁣⁣Method Overriding:⁡<h3><br>
+- Subclass provides a specific implementation of a non-static method from the superclass.<br>
+- Uses the `@Override` annotation.<br>
+- Allows the subclass method to be called via a superclass reference.<br>
+- Example:<br>
+  @Override<br>
+  public void display() { /* ... */ }<br>
+<br>
+<h3>⁡⁢⁣⁣Method Hiding:⁡</h3><br>
+- Subclass defines a static method with the same signature as a static method in the superclass.<br>
+- Does not use the `@Override` annotation.<br>
+- The superclass method is called via superclass reference, and subclass method via subclass reference.<br>
+- Example:<br>
+  public static void display() { /* ... */ };<br>
