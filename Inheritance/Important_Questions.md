@@ -109,3 +109,32 @@ public class Main {<br>
 - The superclass method is called via superclass reference, and subclass method via subclass reference.<br>
 - Example:<br>
   public static void display() { /* ... */ };<br>
+
+  <h2>⁡⁣⁢⁣6.Why does Java doesnot support Multiple Inheritance⁡</h2><br>
+  Java does not support multiple inheritance of classes to avoid the complexity and ambiguity that arise from it. Here are the key reasons simplified:<br>
+<br>
+<h3>⁡⁢⁣⁣Diamond Problem:⁡</h3><br>
+⁡⁢⁣⁣Ambiguity:⁡ <br>
+If two classes have a method with the same name, and a third class inherits from both, it’s unclear which method to use. This is known as the diamond problem.<br>
+Example: <br>
+  class A { void show() {} }<br>
+  class B extends A { void show() {} }<br>
+  class C extends A { void show() {} }<br>
+  class D extends B, C { }  // Which show() should D inherit?<br>
+<br>
+⁡⁢⁣⁣Complexity:⁡<br>
+Code Complexity: Managing multiple inheritance can make the code more complex and harder to maintain.<br>
+Example: Handling state and behavior from multiple parent classes can lead to intricate and error-prone code.<br>
+<br>
+<h3>⁡⁢⁣⁣Alternatives in Java:⁡</h3><br>
+⁡⁢⁣⁣Interface:⁡<br>
+ Java allows a class to implement multiple interfaces, providing a way to achieve multiple inheritance of type without the issues of multiple inheritance of implementation.<br>
+Example:<br>
+  interface A { void show(); }<br>
+  interface B { void display(); }<br>
+  class C implements A, B {<br>
+      public void show() { /* ... */ }<br>
+      public void display() { /* ... */ }<br>
+  }<br>
+<br>
+By using interfaces, Java provides a way to achieve similar functionality without the complications associated with multiple inheritance of classes.<br>
