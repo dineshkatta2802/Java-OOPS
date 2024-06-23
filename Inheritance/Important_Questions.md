@@ -1,4 +1,4 @@
-<h1>Some important Quetsions for Interview?</h1><br>
+<h1>Some important Quetsions for Interview on Inheritance</h1><br>
 
 <h2>⁡⁣⁢⁣1.Can OOPS exist Without Inheritance⁡</h2><br>
 Yes, object-oriented programming (OOP) can exist without inheritance. Inheritance is just one feature of OOP where a class can inherit attributes and methods from another class. OOP can still utilize other fundamental concepts like encapsulation, polymorphism, and abstraction without inheritance. However, inheritance can often provide a convenient way to model relationships between classes and reuse code.<br>
