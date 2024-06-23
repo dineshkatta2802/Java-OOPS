@@ -1,8 +1,8 @@
 <h1>Types of Inheritance</h1><br>
 <h2>Single Inheritance</h2><br>
-Parent<br>
-  |<br>
-Child<br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220728111827/1-660x329.jpg" alt="Single Inheritance" width="600" height="400">
+
+
 
 <h2>Multilevel Inheritance</h2><br>
 Grandparent
@@ -13,7 +13,7 @@ Grandparent
 
 <h2>Hierarchial Inheritance</h2><br>
       Parent<br>
-      / &nbsp    \<br>
+      /    \<br>
 Child1  Child2<br>
 
 <h2>Hierarchial Inheritance</h2><br>
