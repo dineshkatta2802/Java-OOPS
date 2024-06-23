@@ -377,3 +377,32 @@ In this example:<br>
 <br>
 <h3>Conclusion:</h3><br>
 While Java does not have a direct mechanism to "hide" methods from a superclass in the same way C++ can with `private` methods, you can achieve similar behavior through method overriding and access modifiers (`protected` or `private` for inner classes). Method overriding allows you to provide specialized implementations in subclasses, and access modifiers help control visibility and access levels. These mechanisms together enable you to effectively manage method visibility and behavior in Java class hierarchies.<br>
+
+<h2>⁡⁣⁢⁣10.What are Friend Class,Friend Functions and Inline Functions?⁡</h2>
+In Java, concepts like friend functions, friend classes, and inline functions, as defined in C++, do not have direct equivalents due to Java's different language design and features. Let's briefly explain each concept and discuss their counterparts or absence in Java:
+
+<h3>⁡⁢⁣⁣1.Friend Function:⁡</h3>
+
+In C++, a friend function is a function that is not a member of a class but has access to the private and protected members of the class if it is declared as a friend inside the class.
+
+Java Equivalent: Java does not support friend functions directly. In Java, methods can only access the members of a class if they are members of that class or if those members are accessible via inheritance or through public/protected methods.
+
+<h3>⁡⁢⁣⁣2.Friend Class:⁡</h3>
+
+Similar to friend functions, a friend class in C++ is a class that is granted access to the private and protected members of another class. This allows tight coupling between classes without exposing internals to the outside world.
+
+Java Equivalent: Java does not have a direct equivalent of friend classes. The closest you can get is using package-private (default) access, where classes in the same package can access each other's package-private members. However, this is broader than the concept of friend classes in C++, which is more selective.
+
+<h3>⁡⁢⁣⁣3.Inline Function:</⁡h3>
+
+In C++, the `inline` keyword suggests to the compiler that a function's code should be inserted (inlined) at the point where the function is called, rather than invoking the function through the usual function call mechanism.
+
+Java Equivalent: Java does not have an `inline` keyword or concept like C++. Java's compiler and runtime handle method invocation differently, focusing more on optimizing code during runtime rather than at compile-time. Java methods are typically invoked through method calls rather than being inlined, and the JVM performs its own optimizations based on runtime conditions.
+
+<h3>Summary:</h3>
+
+Friend Function and Friend Class: Java does not provide direct equivalents for friend functions or friend classes due to its encapsulation principles and access control mechanisms.
+  
+Inline Function: Java does not have an `inline` keyword. Methods in Java are typically invoked through regular method calls, and the JVM performs optimizations like method inlining dynamically based on runtime conditions.
+
+In Java, the focus is more on encapsulation, access modifiers (`public`, `protected`, `private`, default), and inheritance mechanisms to control visibility and access to class members, rather than using friend functions/classes or inline functions for code optimization purposes.
