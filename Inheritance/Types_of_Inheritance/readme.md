@@ -1,6 +1,6 @@
 <h1>Types of Inheritance</h1><br>
 <h2>Single Inheritance</h2><br>
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220728111827/1-660x329.jpg" alt="Single Inheritance" width="400" height="400">
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220728111827/1-660x329.jpg" alt="Single Inheritance" width="400" height="450">
 
 
 
