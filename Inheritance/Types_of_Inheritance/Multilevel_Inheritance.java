@@ -1,4 +1,4 @@
-package Types_of_Inheritance;
+package Inheritance.Types_of_Inheritance;
 //⁡⁣⁣⁢--->Note:⁡
 //Multilevel inheritance occurs when a class is derived from a
 // class that is also derived from another class.
