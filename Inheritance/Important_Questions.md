@@ -1,9 +1,9 @@
 <h1>Some important Quetsions for Interview?</h1><br>
 
-<h2>1.Can OOPS exist without Inheritance?</h2><br>
+<h2⁡⁣⁢⁣>1.Can OOPS exist without Inheritance?⁡</h2><br>
 Yes, object-oriented programming (OOP) can exist without inheritance. Inheritance is just one feature of OOP where a class can inherit attributes and methods from another class. OOP can still utilize other fundamental concepts like encapsulation, polymorphism, and abstraction without inheritance. However, inheritance can often provide a convenient way to model relationships between classes and reuse code.<br>
 
-<h2>2.Give a Real life example of Multiple Inheritance</h2><br>
+<h2>⁡⁣⁢⁣2.Give a Real life example of Multiple Inheritance⁡</h2><br>
 // Parent class 1<br>
 class Engine {<br>
     public void start() {<br>
@@ -40,7 +40,7 @@ public class Main {<br>
     }<br>
 }<br>
 
-<h2>3.What is a Sealed Modifier?</h2><br>
+<h2>⁡⁣⁢⁣3.What is a Sealed Modifier?⁡</h2><br>
 In programming languages like Java the "Sealed Modifiers" are used to restrict the Inheritance of the class<br>
 ex:<br>
 Final Keyword is used in Java instead of 'Sealed'<br>
@@ -53,7 +53,7 @@ final class FinalClass {<br>
 // Cannot subclass FinalClass because it is final<br>
 // class SubClass extends FinalClass { } // This will result in a compilation error<br>
 
-<h2>How can we call a Base Method without creating an Instance(Object)?</h2><br>
+<h2>⁡⁣⁢⁣How can we call a Base Method without creating an Instance(Object)?⁡</h2><br>
 Sure! Here’s how you can call a base method in Java using both static and instance methods.<br>
 
 <u>Calling a static method:<u><br>
