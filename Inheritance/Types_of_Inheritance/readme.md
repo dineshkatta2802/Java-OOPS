@@ -17,4 +17,7 @@
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220728112121/3-660x329.jpg" alt="Multiple Inheritance" width="602" height="300">
 Multiple Inheritance is a feature of an object-oriented concept, where a class can inherit properties of more than one parent class.<br>
 <h3>Note:</h3><br>
-Java doesn’t support Multiple Inheritance
+Java doesn’t support Multiple Inheritance<br>
+It leads to confusion for a Java programmer<br>
+The programmer can achieve Multiple Inheritance by using Interfaces<br>
+The programmer can achieve Multiple Inheritance by repeatedly using Single Inheritance<br>
