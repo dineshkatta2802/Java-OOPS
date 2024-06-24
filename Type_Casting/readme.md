@@ -106,10 +106,10 @@ It's scope is Narrowing.<br>
 Example:<br>
 If we have to say fruit is a citrus fruit the java compiler asks to use Cast Operator specifically and we become more specific and we need to do Explict Casting.<br>
 
-<h2>Note:</h2>
+<h2>⁡⁢⁣⁣Note:⁡⁡</h2>
 The method names should be same in Super and Subclass to call
 
-<h2>Generalization of Objects</h2>
+<h2>⁡⁣⁢⁣Generalization of Objects⁡</h2>
 package Type_Casting;<br>
 We know that for Typcasting objects we need some relation between two classes<br>
 like Inheritance<br>
@@ -136,7 +136,7 @@ public class Widening_Object {<br>
     }<br>
 <br>
 }<br>
-<h2>Note:</h2>
+<h2>⁡⁢⁣⁣Imp Note:⁡</h2>
 Assigning the sub class object "Dog" to the variable of super class<br>
 here we make the Object of Sublass and Object of super class same<br>
 Now,calling subclass method with superclass Object<br>
@@ -145,3 +145,74 @@ The method names should be same in Super and Sub class<br>
 The above Declaration of object can also be done in the following way<br>
 Animal myAnimal = new Dog();<br>
 myAnimal.makesound();<br>
+
+<h2>⁡⁣⁢⁣Specialization of Objects⁡</h2>
+<br>
+<br>
+<br>
+
+<h2>⁡⁣⁢⁣Differentiate between Generalizationa and Specialization in java⁡</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generalization vs Specialization</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Generalization vs Specialization</h2>
+
+<table>
+    <tr>
+        <th>Aspect</th>
+        <th>Generalization</th>
+        <th>Specialization</th>
+    </tr>
+    <tr>
+        <td>Definition</td>
+        <td>Generalization is the process of extracting common characteristics from two or more classes and combining them into a generalized superclass.</td>
+        <td>Specialization is the process of creating new subclasses from an existing class, where the new subclasses inherit attributes and methods from the superclass but also add specific features.</td>
+    </tr>
+    <tr>
+        <td>Purpose</td>
+        <td>To reduce redundancy by abstracting common features (attributes and methods) into a superclass.</td>
+        <td>To create specific classes that extend the functionality of the general class by adding unique attributes and methods.</td>
+    </tr>
+    <tr>
+        <td>Direction</td>
+        <td>Bottom-up</td>
+        <td>Top-down</td>
+    </tr>
+    <tr>
+        <td>Example</td>
+        <td>Creating a general <code>Animal</code> class from <code>Dog</code>, <code>Cat</code>, and <code>Bird</code> classes.</td>
+        <td>Creating <code>Dog</code>, <code>Cat</code>, and <code>Bird</code> classes from a general <code>Animal</code> class.</td>
+    </tr>
+    <tr>
+        <td>Class Hierarchy</td>
+        <td>General class (superclass) is at the top, specific classes (subclasses) are derived from it.</td>
+        <td>Specific classes (subclasses) are at the bottom, derived from the general class (superclass) at the top.</td>
+    </tr>
+    <tr>
+        <td>Real-world Analogy</td>
+        <td>Creating a general "Vehicle" category that includes "Cars", "Bikes", and "Trucks".</td>
+        <td>Starting with a general "Vehicle" and creating more specific categories like "Car", "Bike", and "Truck".</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
