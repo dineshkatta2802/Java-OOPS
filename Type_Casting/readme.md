@@ -22,4 +22,4 @@ Primitives datatypes are also classified into 2 more type they are:
 <br>
 <h2>Hierarchy of Primitive Datatypes</h2>
 <h3>byte -> short -> char -> int -> long -> float -> double</h3>
-Lower<----------------------------------------------------------------igher<br>
+Lower<----------------------------------------------------------------Higher<br>
