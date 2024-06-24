@@ -48,7 +48,7 @@ int to long, float, double<br>
 long to float, double<br>
 float to double<br>
 
-<h3>Narrowing or Explic Casting</h3>
+<h3>Narrowing or Explict Casting</h3>
 This type of casting must be explicitly specified in the code to inform the compiler of the developer’s intent.<br>
 Explicit casting can potentially lose data or cause precision issues, so it should be used with caution.<br>
 Example:<br>
