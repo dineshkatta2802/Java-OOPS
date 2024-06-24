@@ -1,6 +1,6 @@
-<h1>Some Important Questions for Interview on Polymorphism</h1><br>
+<h1>⁡⁢⁣⁢Some Important Questions for Interview on Polymorphism⁡</h1><br>
 
-<h2>1.Differentiate between Staticand Dynamic polymorphism(Compile-time polymorphism and Runtime Plymorphism)?</h2><br>
+<h2>⁡⁣⁢⁣1.Differentiate between Staticand Dynamic polymorphism(Compile-time polymorphism and Runtime Plymorphism)?⁡</h2><br>
 <!DOCTYPE html>
 <html>
 <head>
@@ -91,3 +91,48 @@ public class Test {
     </table>
 </body>
 </html>
+
+<h2>⁡⁣⁢⁣2.What Function that cannot be Overloaded by C++?⁡</h2><br>
+
+<h3>⁡⁢⁣⁣1.Main Function (`main`):⁡</h3><br>
+The starting point of a C++ program; its signature cannot be changed or overloaded.<br>
+   <br>
+<h3>⁡⁢⁣⁣2.Constructors and Destructors:⁡</h3> <br>
+    Constructors can be overloaded, but you cannot create non-constructor member functions with the same name as the class.<br>
+    Destructors cannot be overloaded; there can only be one destructor per class.<br>
+<br>
+<h3>⁡⁢⁣⁣3.Certain Operators: The following operators cannot be overloaded:⁡</h3><br>
+    Scope resolution operator (`::`)<br>
+    Member access operator (`.`)<br>
+    Pointer-to-member operator (`.*`)<br>
+    Conditional (ternary) operator (`?:`)<br>
+<br>
+Here's a quick overview with examples:<br>
+<br>
+<h3>Main Function (`main`)</h3><br>
+int main() {<br>
+    return 0;<br>
+}<br>
+// Cannot have another main function with a different signature.<br>
+<br>
+<h3>⁡⁢⁣⁣Constructors and Destructors⁡</h3><br>
+class Example {<br>
+public:<br>
+    Example() {}       // Constructor<br>
+    // void Example() {} // Error: cannot have a non-constructor function with the same name<br>
+<br>
+    ~Example() {}      // Destructor<br>
+    //~Example(int a) {} // Error: cannot overload destructors<br>
+}<br>
+<br>
+<h3>⁡⁢⁣⁣Certain Operators⁡</h3><br>
+class Example {<br>
+public:<br>
+    // void operator::() {} // Error: scope resolution operator cannot be overloaded<br>
+    // void operator.() {}  // Error: member access operator cannot be overloaded<br>
+    // void operator.*() {} // Error: pointer-to-member operator cannot be overloaded<br>
+    // void operator?() {}  // Error: conditional operator cannot be overloaded<br>
+};<br>
+```<br>
+<br>
+In summary, the `main` function, destructors, and certain operators have restrictions in C++ and cannot be overloaded.<br>
