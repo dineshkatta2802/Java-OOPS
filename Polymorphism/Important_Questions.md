@@ -245,7 +245,7 @@ In summary, the `main` function, destructors, and certain operators have restric
     </style>
 </head>
 <body>
-    <h2>Definition of Virtual Functions</h2>
+    <h3>Definition of Virtual Functions</h3>
     <p>
         <strong>Virtual Function in C++:</strong> 
         A virtual function in C++ is a member function in a base class that you expect to override in derived classes. 
@@ -258,7 +258,7 @@ In summary, the `main` function, destructors, and certain operators have restric
         meaning they support dynamic (runtime) polymorphism. This allows Java to determine the appropriate method to invoke at runtime based on the actual object type, 
         not the reference type.
     </p>
-    <h2>Differences Between Virtual Functions in C++ and Java</h2>
+    <h3>Differences Between Virtual Functions in C++ and Java</h3>
     <table>
         <tr>
             <th>Criteria</th>
@@ -325,7 +325,7 @@ In summary, the `main` function, destructors, and certain operators have restric
     </style>
 </head>
 <body>
-    <h2>Definition of Virtual (Abstract) Classes</h2>
+    <h3>Definition of Virtual (Abstract) Classes</h3>
     <p>
         <strong>Virtual (Abstract) Class in C++:</strong>
         A virtual class in C++ is typically referred to as an abstract class. It is a class that cannot be instantiated and is designed to be inherited by other classes. 
@@ -337,7 +337,7 @@ In summary, the `main` function, destructors, and certain operators have restric
         An abstract class can contain abstract methods, which are methods declared without an implementation. 
         These methods must be implemented by subclasses.
     </p>
-    <h2>Differences Between Virtual (Abstract) Classes in C++ and Java</h2>
+    <h3>Differences Between Virtual (Abstract) Classes in C++ and Java</h3>
     <table>
         <tr>
             <th>Criteria</th>
@@ -404,7 +404,7 @@ In summary, the `main` function, destructors, and certain operators have restric
     </style>
 </head>
 <body>
-    <h2>Definition of Derived Classes</h2>
+    <h3>Definition of Derived Classes</h3>
     <p>
         <strong>Derived Class in C++:</strong> 
         A derived class in C++ is a class that is created from another class, known as the base class or parent class. 
@@ -416,7 +416,7 @@ In summary, the `main` function, destructors, and certain operators have restric
         It is a class that inherits properties and behaviors from another class, known as the superclass or parent class. 
         Java supports single inheritance, meaning a subclass can inherit from only one superclass, but it can implement multiple interfaces.
     </p>
-    <h2>Differences Between Derived Classes in C++ and Java</h2>
+    <h3>Differences Between Derived Classes in C++ and Java</h3>
     <table>
         <tr>
             <th>Criteria</th>
