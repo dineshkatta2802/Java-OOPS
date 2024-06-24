@@ -38,7 +38,7 @@ Java automatically handles this conversion without requiring explicit syntax<br>
 This type of casting is safe because no data is lost.<br>
 Example:<br>
 int a = 10;<br>
-double b = a; // Implicit casting from int to double<br>
+double b = a;  Implicit casting from int to double<br>
 
 <h4>⁡⁢⁣⁡⁣⁣⁢Types of Implicit Casting:⁡⁡</h4>
 byte to short, int, long, float, double<br>
@@ -53,7 +53,7 @@ This type of casting must be explicitly specified in the code to inform the comp
 Explicit casting can potentially lose data or cause precision issues, so it should be used with caution.<br>
 Example:<br>
 double x = 10.5;<br>
-int y = (int) x; // Explicit casting from double to int<br>
+int y = (int) x;  Explicit casting from double to int<br>
 
 <h4>⁡⁣⁣⁢Types of Explicit Casting:⁡⁡</h4>
 double to float, long, int, short, byte<br>
@@ -105,3 +105,43 @@ It is also called Sowncasting or Narrowing.<br>
 It's scope is Narrowing.<br>
 Example:<br>
 If we have to say fruit is a citrus fruit the java compiler asks to use Cast Operator specifically and we become more specific and we need to do Explict Casting.<br>
+
+<h2>Note:</h2>
+The method names should be same in Super and Subclass to call
+
+<h2>Generalization of Objects</h2>
+package Type_Casting;<br>
+We know that for Typcasting objects we need some relation between two classes<br>
+like Inheritance<br>
+//⁡⁣⁢⁣Super Class⁡<br>
+class Animal{<br>
+    void makesound(){<br>
+        System.out.println("Animals eat!");<br>
+    }<br>
+    }<br>
+    <br>
+//⁡⁣⁢⁣Subclass⁡<br>
+    class Dog extends Animal{<br>
+        @Override<br>
+    void makesound(){<br>
+        System.out.println("Woof! Woof!");<br>
+    }<br>
+    }<br>
+public class Widening_Object {<br>
+<br>
+    public static void main(String[] args) {<br>
+        Dog Terex = new Dog();<br>
+        Animal myAnimal = Terex;//Upcast to Animal<br>
+        myAnimal.makesound();<br>
+    }<br>
+<br>
+}<br>
+<h2>Note:</h2>
+Assigning the sub class object "Dog" to the variable of super class<br>
+here we make the Object of Sublass and Object of super class same<br>
+Now,calling subclass method with superclass Object<br>
+The method names should be same in Super and Sub class<br>
+<br>
+The above Declaration of object can also be done in the following way<br>
+Animal myAnimal = new Dog();<br>
+myAnimal.makesound();<br>
