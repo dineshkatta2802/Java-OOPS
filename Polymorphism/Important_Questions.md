@@ -585,13 +585,13 @@ public class Main {<br>
 <br>
  <h3>Key Points:</h3><br>
 <br>
- <h4>Purpose: </h4><br>
+ <h4>Purpose: </h4>
  Abstract classes are used to define common behavior or methods that subclasses must implement, ensuring consistency and providing a base implementation.<br>
 <br>
- <h4>Inheritance:</h4><br>
+ <h4>Inheritance:</h4>
   Subclasses extend abstract classes using the `extends` keyword in Java (similar to `: public` in C++), inheriting both abstract and concrete methods.<br>
 <br>
- <h4>Flexibility:</h4><br>
+ <h4>Flexibility:</h4>
  Abstract classes allow for both common implementations across subclasses (through concrete methods) and customization (through abstract methods).<br>
 <br>
 Abstract classes are particularly useful in scenarios where you want to define a structure or contract that multiple related classes must adhere to, while also providing flexibility for specific implementations in subclasses.<br>
