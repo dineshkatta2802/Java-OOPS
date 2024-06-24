@@ -11,7 +11,13 @@ We know that in Java we have 2 typed of datatypes:<br>
 Casting of Primitive Datatypes is categorized into 2 types:<br>
 <ol>
 <li>Implict Casting(Automatic/Widening Casting)</li>
+<ul>
+<li>Lower datatype to Higher Datatype</li>
+</ul>
 <li>Explict Casting(Narrow Casting)</li>
+<ul>
+<li>Higher datatype to Lower Datatype</li>
+</ul>
 </ol>
 <br>
 Primitives datatypes are also classified into 2 more type they are:
