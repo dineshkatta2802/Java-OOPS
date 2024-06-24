@@ -29,7 +29,7 @@ Primitives datatypes are also classified into 2 more type they are:
 </ol>
 <br>
 
-<h3>Hierarchy of Primitive Datatypes</h3>
+<h3>Hierarchy of Primitive Datatypes:</h3>
 <h3>byte -> short -> char -> int -> long -> float -> double</h3>
 Lower<----------------------------------------------------------------Higher<br>
 
@@ -40,7 +40,7 @@ Example:<br>
 int a = 10;<br>
 double b = a; // Implicit casting from int to double<br>
 
-<h3>Types of Implicit Casting:</h3>
+<h4>Types of Implicit Casting:</h4>
 byte to short, int, long, float, double<br>
 short to int, long, float, double<br>
 char to int, long, float, double<br>
@@ -55,7 +55,7 @@ Example:<br>
 double x = 10.5;<br>
 int y = (int) x; // Explicit casting from double to int<br>
 
-<h3>Types of Explicit Casting:</h3>
+<h4>Types of Explicit Casting:</h4>
 double to float, long, int, short, byte<br>
 float to long, int, short, byte<br>
 long to int, short, byte<br>
