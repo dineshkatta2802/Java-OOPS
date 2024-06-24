@@ -584,7 +584,6 @@ public class Main {<br>
 }<br>
 <br>
  <h3>Key Points:</h3><br>
-<br>
  <h4>Purpose: </h4>
  Abstract classes are used to define common behavior or methods that subclasses must implement, ensuring consistency and providing a base implementation.<br>
 <br>
