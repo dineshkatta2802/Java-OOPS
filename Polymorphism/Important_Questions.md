@@ -136,3 +136,90 @@ public:<br>
 ```<br>
 <br>
 In summary, the `main` function, destructors, and certain operators have restrictions in C++ and cannot be overloaded.<br>
+
+<h2>⁡⁣⁢⁣3.What are all the Operartors that cannot be overloaded?⁡</h2><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operators That Cannot Be Overloaded in C++ and Java</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Operators That Cannot Be Overloaded in C++ and Java</h2>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>C++</th>
+            <th>Java</th>
+        </tr>
+        <tr>
+            <td>Scope Resolution Operator (`::`)</td>
+            <td>Cannot be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Member Access Operator (`.`)</td>
+            <td>Cannot be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Pointer-to-Member Operator (`.*`)</td>
+            <td>Cannot be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Conditional (Ternary) Operator (`?:`)</td>
+            <td>Cannot be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Assignment Operator (`=`)</td>
+            <td>Can be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Arithmetic Operators (`+`, `-`, `*`, `/`, `%`)</td>
+            <td>Can be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Relational Operators (`==`, `!=`, `<`, `>`, `<=`, `>=`)</td>
+            <td>Can be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Logical Operators (`&&`, `||`, `!`)</td>
+            <td>Can be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Bitwise Operators (`&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`)</td>
+            <td>Can be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Increment and Decrement Operators (`++`, `--`)</td>
+            <td>Can be overloaded</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+        <tr>
+            <td>Type Comparison Operator (`instanceof`)</td>
+            <td>Not applicable</td>
+            <td>Not applicable (no operator overloading)</td>
+        </tr>
+    </table>
+</body>
+</html>
