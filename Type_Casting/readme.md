@@ -29,7 +29,7 @@ Primitives datatypes are also classified into 2 more type they are:
 </ol>
 <br>
 
-<h3><u>Hierarchy of Primitive Datatypes:<u></h3>
+<u><h3>Hierarchy of Primitive Datatypes:</h3></u>
 <h3>byte -> short -> char -> int -> long -> float -> double</h3>
 Lower<--------------------------------------------------------------->Higher<br>
 
