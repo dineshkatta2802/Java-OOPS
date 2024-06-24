@@ -536,110 +536,62 @@ In summary, the `main` function, destructors, and certain operators have restric
 </body>
 </html>
 
-<h2>⁡⁣⁢⁣⁡⁣⁢⁡⁣⁢⁣8.Can Virtual function can be set to private?⁡⁡</h2><br>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Virtual Functions and Private Declaration</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-    <h3>Virtual Functions and Private Declaration</h3>
-    <p>
-        In both C++ and Java, virtual functions (or methods intended for overriding) cannot be declared as <code>private</code>. 
-        This is because virtual functions are designed to be overridden by subclasses (or derived classes), which requires them to be accessible to those subclasses.
-        Declaring a virtual function as <code>private</code> would prevent subclasses from overriding it, thus contradicting the principles of inheritance and polymorphism.
-    </p>
-    
-    <h3>Example and Explanation:</h3>
-    
-    <h4>C++:</h4>
-    <p>
-        In C++, virtual functions are declared in the <code>public</code> or <code>protected</code> sections of a class to enable dynamic polymorphism through inheritance. 
-        Declaring a virtual function as <code>private</code> in C++ prevents derived classes from accessing it for overriding.
-    </p>
-    
-    <table>
-        <tr>
-            <th>Code Example:</th>
-        </tr>
-        <tr>
-            <td>
-                <pre><code class="language-cpp">
-class Base {
-private:
-    virtual void display() { // Error: 'virtual' cannot be specified on member function 'Base::display' because it is private
-        cout << "Base display function" << endl;
-    }
-};
-
-class Derived : public Base {
-public:
-    void display() override { // Override attempt will fail due to private access specifier in base class
-        cout << "Derived display function" << endl;
-    }
-};
-
-int main() {
-    Derived d;
-    d.display(); // This will not override the private virtual function in Base
-    return 0;
-}
-                </code></pre>
-            </td>
-        </tr>
-    </table>
-
-    <h4>Java:</h4>
-    <p>
-        Similarly, in Java, methods that are intended for overriding (analogous to virtual functions in C++) must be accessible to subclasses. 
-        Methods in Java are implicitly <code>public</code> or <code>protected</code> in the superclass for this reason.
-    </p>
-    
-    <table>
-        <tr>
-            <th>Code Example:</th>
-        </tr>
-        <tr>
-            <td>
-                <pre><code class="language-java">
-class Base {
-    private void display() { // Error: Cannot reduce the visibility of the inherited method from Base
-        System.out.println("Base display method");
-    }
-}
-
-class Derived extends Base {
-    \@Override
-    void display() { // Override attempt will fail due to private access specifier in base class
-        System.out.println("Derived display method");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Derived d = new Derived();
-        d.display(); // This will not override the private method in Base
-    }
-}
-                </code></pre>
-            </td>
-        </tr>
-    </table>
-
-</body>
-</html>
-
+<h2>⁡⁣⁢⁣8.What is an Abstract Class?⁡</h2><br>
+An abstract class is a concept in object-oriented programming (OOP) that serves as a blueprint for other classes. It cannot be instantiated itself but instead is meant to be subclassed by other classes. Abstract classes can contain abstract methods, which are declared but not implemented in the abstract class. Subclasses (concrete classes) that extend an abstract class must provide implementations for all abstract methods defined in the abstract class.<br>
+<br>
+ Characteristics of an Abstract Class:<br>
+<br>
+<h3>1.Cannot be Instantiated:</h3><br>
+ You cannot create an instance (object) of an abstract class directly using the `new` keyword. It exists primarily to be inherited by other classes.<br>
+<br>
+<h3>2.May Contain Abstract Methods:</h3><br>
+ Abstract classes can have abstract methods, which are declared without implementation (no method body). These methods are meant to be overridden by subclasses.<br>
+<br>
+<h3>3.Can Contain Concrete Methods: </h3><br>
+Abstract classes can also have concrete (implemented) methods, which provide default behavior or functionality that subclasses can use or override.<br>
+<br>
+<h3>4.Provides a Template for Subclasses:</h3> <br>
+An abstract class defines a common interface or structure that its subclasses must follow. It establishes a contract for what subclasses must implement.<br>
+<br>
+ Example (Java):<br>
+<br>
+// Abstract class definition<br>
+abstract class Shape {<br>
+    // Abstract method (no implementation)<br>
+    abstract void draw();<br>
+    <br>
+    // Concrete method with implementation<br>
+    void display() {<br>
+        System.out.println("Displaying shape");<br>
+    }<br>
+}<br>
+<br>
+// Concrete subclass of Shape<br>
+class Circle extends Shape {<br>
+    // Overriding abstract method<br>
+    void draw() {<br>
+        System.out.println("Drawing circle");<br>
+    }<br>
+}<br>
+<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        // Shape s = new Shape(); // Error: Cannot instantiate abstract class<br>
+        Circle c = new Circle(); // Can instantiate concrete subclass<br>
+        c.draw(); // Calls overridden method<br>
+        c.display(); // Calls inherited method<br>
+    }<br>
+}<br>
+<br>
+ <h3>Key Points:</h3><br>
+<br>
+ <h4>Purpose: </h4><br>
+ Abstract classes are used to define common behavior or methods that subclasses must implement, ensuring consistency and providing a base implementation.<br>
+<br>
+ <h4>Inheritance:</h4><br>
+  Subclasses extend abstract classes using the `extends` keyword in Java (similar to `: public` in C++), inheriting both abstract and concrete methods.<br>
+<br>
+ <h4>Flexibility:</h4><br>
+ Abstract classes allow for both common implementations across subclasses (through concrete methods) and customization (through abstract methods).<br>
+<br>
+Abstract classes are particularly useful in scenarios where you want to define a structure or contract that multiple related classes must adhere to, while also providing flexibility for specific implementations in subclasses.<br>
