@@ -463,8 +463,6 @@ In summary, the `main` function, destructors, and certain operators have restric
 </html>
 
 <h2>⁡⁣⁢⁣7.What is a Inline Function?⁡</h2><br>
-
-<h2>⁡⁣⁢⁣⁡⁣⁢⁡⁣⁢⁣8.Can Virtual function can be set to private?⁡⁡</h2><br>
 <!DOCTYPE html>
 <html>
 <head>
@@ -537,3 +535,111 @@ In summary, the `main` function, destructors, and certain operators have restric
     </table>
 </body>
 </html>
+
+<h2>⁡⁣⁢⁣⁡⁣⁢⁡⁣⁢⁣8.Can Virtual function can be set to private?⁡⁡</h2><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Functions and Private Declaration</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h3>Virtual Functions and Private Declaration</h3>
+    <p>
+        In both C++ and Java, virtual functions (or methods intended for overriding) cannot be declared as <code>private</code>. 
+        This is because virtual functions are designed to be overridden by subclasses (or derived classes), which requires them to be accessible to those subclasses.
+        Declaring a virtual function as <code>private</code> would prevent subclasses from overriding it, thus contradicting the principles of inheritance and polymorphism.
+    </p>
+    
+    <h3>Example and Explanation:</h3>
+    
+    <h4>C++:</h4>
+    <p>
+        In C++, virtual functions are declared in the <code>public</code> or <code>protected</code> sections of a class to enable dynamic polymorphism through inheritance. 
+        Declaring a virtual function as <code>private</code> in C++ prevents derived classes from accessing it for overriding.
+    </p>
+    
+    <table>
+        <tr>
+            <th>Code Example:</th>
+        </tr>
+        <tr>
+            <td>
+                <pre><code class="language-cpp">
+class Base {
+private:
+    virtual void display() { // Error: 'virtual' cannot be specified on member function 'Base::display' because it is private
+        cout << "Base display function" << endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void display() override { // Override attempt will fail due to private access specifier in base class
+        cout << "Derived display function" << endl;
+    }
+};
+
+int main() {
+    Derived d;
+    d.display(); // This will not override the private virtual function in Base
+    return 0;
+}
+                </code></pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Java:</h4>
+    <p>
+        Similarly, in Java, methods that are intended for overriding (analogous to virtual functions in C++) must be accessible to subclasses. 
+        Methods in Java are implicitly <code>public</code> or <code>protected</code> in the superclass for this reason.
+    </p>
+    
+    <table>
+        <tr>
+            <th>Code Example:</th>
+        </tr>
+        <tr>
+            <td>
+                <pre><code class="language-java">
+class Base {
+    private void display() { // Error: Cannot reduce the visibility of the inherited method from Base
+        System.out.println("Base display method");
+    }
+}
+
+class Derived extends Base {
+    \@Override
+    void display() { // Override attempt will fail due to private access specifier in base class
+        System.out.println("Derived display method");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Derived d = new Derived();
+        d.display(); // This will not override the private method in Base
+    }
+}
+                </code></pre>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
