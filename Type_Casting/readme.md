@@ -268,3 +268,60 @@ a method specific to the Dog class.<br>
 </body>
 </html>
 
+<h2>Advantages and Disadvantages of TypeCasting</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advantages and Disadvantages of Type Casting in Java</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advantages and Disadvantages of Type Casting in Java</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Polymorphism: Allows objects to be treated as instances of their parent class, enabling method overriding and dynamic method invocation.</td>
+                <td>Runtime Errors: Incorrect type casting can lead to <code>ClassCastException</code> at runtime.</td>
+            </tr>
+            <tr>
+                <td>Code Reusability and Generalization: Enables methods and classes to be written in a generic way, facilitating the use of collections.</td>
+                <td>Loss of Data: Casting from a larger data type to a smaller one can result in loss of information.</td>
+            </tr>
+            <tr>
+                <td>Interoperability: Facilitates interaction between different data types, useful for integrating various systems or libraries.</td>
+                <td>Code Clarity and Maintainability: Extensive use of type casting can make the code harder to read and maintain.</td>
+            </tr>
+            <tr>
+                <td>Memory Management: Narrowing casting can save memory by converting a larger data type to a smaller one when the larger capacity is not needed.</td>
+                <td>Type Safety Issues: Bypasses Java's type safety features, potentially leading to unpredictable behavior and bugs.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Performance Overhead: Type casting can introduce performance overhead due to additional checks and conversions.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
