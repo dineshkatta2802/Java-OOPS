@@ -462,3 +462,78 @@ In summary, the `main` function, destructors, and certain operators have restric
 </body>
 </html>
 
+<h2>⁡⁣⁢⁣7.What is a Inline Function?⁡</h2><br>
+
+<h2>⁡⁣⁢⁣⁡⁣⁢⁡⁣⁢⁣8.Can Virtual function can be set to private?⁡⁡</h2><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline Functions in Java and C++</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h3>Definition of Inline Functions</h3>
+    <p>
+        <strong>Inline Function in C++:</strong> 
+        In C++, an inline function is a function that is expanded in-line at the point of call rather than being called through a function call mechanism. 
+        It is typically used to optimize code execution by reducing function call overhead and is defined using the <code>inline</code> keyword.
+    </p>
+    <p>
+        <strong>Inline Function in Java:</strong> 
+        In Java, methods are not explicitly declared as inline. 
+        Instead, the Java Virtual Machine (JVM) dynamically optimizes the code, including possibly inlining methods during runtime execution. 
+        Java provides no direct control over method inlining as in C++.
+    </p>
+    <h3>Differences Between Inline Functions in C++ and Java</h3>
+    <table>
+        <tr>
+            <th>Criteria</th>
+            <th>C++</th>
+            <th>Java</th>
+        </tr>
+        <tr>
+            <td>Keyword for Inlining</td>
+            <td>Uses the <code>inline</code> keyword to hint the compiler to inline the function.</td>
+            <td>Methods are not explicitly marked as inline; JVM may dynamically inline methods.</td>
+        </tr>
+        <tr>
+            <td>Control Over Inlining</td>
+            <td>Provides direct control over inlining through the <code>inline</code> keyword.</td>
+            <td>No direct control over method inlining; JVM handles optimizations at runtime.</td>
+        </tr>
+        <tr>
+            <td>Optimization Purpose</td>
+            <td>Primarily used for optimizing performance by reducing function call overhead.</td>
+            <td>JVM optimizes code dynamically, including potential inlining based on runtime conditions.</td>
+        </tr>
+        <tr>
+            <td>Function Call Overhead</td>
+            <td>Reduces function call overhead by expanding the function body at the call site.</td>
+            <td>Methods are typically called through the JVM's method invocation mechanism.</td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>Commonly used for small, frequently called functions to improve performance.</td>
+            <td>Emphasizes maintainability and platform independence rather than low-level optimizations.</td>
+        </tr>
+        <tr>
+            <td>Compiler Behavior</td>
+            <td>Compiler may choose not to inline a function even if marked with <code>inline</code> keyword.</td>
+            <td>JVM dynamically optimizes code, including potential inlining during runtime.</td>
+        </tr>
+    </table>
+</body>
+</html>
