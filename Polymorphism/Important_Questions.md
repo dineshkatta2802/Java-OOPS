@@ -223,3 +223,242 @@ In summary, the `main` function, destructors, and certain operators have restric
     </table>
 </body>
 </html>
+
+<h2>⁡⁣⁢⁣4.What is a Virtual Function?⁡</h2><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Functions in Java and C++</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Definition of Virtual Functions</h2>
+    <p>
+        <strong>Virtual Function in C++:</strong> 
+        A virtual function in C++ is a member function in a base class that you expect to override in derived classes. 
+        Declaring a function as <code>virtual</code> allows you to achieve dynamic (runtime) polymorphism, which means that the correct function is called for an object, 
+        regardless of the type of reference (or pointer) used for the function call.
+    </p>
+    <p>
+        <strong>Virtual Function in Java:</strong> 
+        In Java, virtual functions are implemented using method overriding. By default, all non-static methods in Java are virtual, 
+        meaning they support dynamic (runtime) polymorphism. This allows Java to determine the appropriate method to invoke at runtime based on the actual object type, 
+        not the reference type.
+    </p>
+    <h2>Differences Between Virtual Functions in C++ and Java</h2>
+    <table>
+        <tr>
+            <th>Criteria</th>
+            <th>C++</th>
+            <th>Java</th>
+        </tr>
+        <tr>
+            <td>Declaration</td>
+            <td>Explicitly declared using the <code>virtual</code> keyword.</td>
+            <td>All non-static methods are virtual by default.</td>
+        </tr>
+        <tr>
+            <td>Keyword for Overriding</td>
+            <td>No special keyword is required, but <code>override</code> can be used for clarity (C++11 and later).</td>
+            <td><code>@Override</code> annotation is used to indicate method overriding.</td>
+        </tr>
+        <tr>
+            <td>Default Behavior</td>
+            <td>Methods are not virtual unless specified with <code>virtual</code> keyword.</td>
+            <td>Methods are virtual by default.</td>
+        </tr>
+        <tr>
+            <td>Destructors</td>
+            <td>Can be virtual to ensure proper cleanup of derived class objects.</td>
+            <td>Not applicable (Java uses garbage collection).</td>
+        </tr>
+        <tr>
+            <td>Performance</td>
+            <td>Potentially more efficient since not all methods are virtual by default.</td>
+            <td>All methods are virtual by default, which can introduce slight overhead.</td>
+        </tr>
+        <tr>
+            <td>Inheritance</td>
+            <td>Allows for selective polymorphism with the use of the <code>virtual</code> keyword.</td>
+            <td>Supports polymorphism for all non-static methods.</td>
+        </tr>
+        <tr>
+            <td>Abstract Methods</td>
+            <td>Declared by assigning 0 to a virtual function: <code>virtual void func() = 0;</code></td>
+            <td>Declared with the <code>abstract</code> keyword in an abstract class.</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<h2>⁡⁣⁢⁣5.What is a Virtual Class?⁡</h2><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual (Abstract) Classes in Java and C++</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Definition of Virtual (Abstract) Classes</h2>
+    <p>
+        <strong>Virtual (Abstract) Class in C++:</strong>
+        A virtual class in C++ is typically referred to as an abstract class. It is a class that cannot be instantiated and is designed to be inherited by other classes. 
+        An abstract class in C++ contains at least one pure virtual function, which is a function declared by assigning 0 in its declaration.
+    </p>
+    <p>
+        <strong>Virtual (Abstract) Class in Java:</strong>
+        In Java, an abstract class is a class that cannot be instantiated and is meant to be subclassed. 
+        An abstract class can contain abstract methods, which are methods declared without an implementation. 
+        These methods must be implemented by subclasses.
+    </p>
+    <h2>Differences Between Virtual (Abstract) Classes in C++ and Java</h2>
+    <table>
+        <tr>
+            <th>Criteria</th>
+            <th>C++</th>
+            <th>Java</th>
+        </tr>
+        <tr>
+            <td>Declaration</td>
+            <td>Declared using the keyword <code>class</code> and contains at least one pure virtual function.</td>
+            <td>Declared using the keyword <code>abstract</code>.</td>
+        </tr>
+        <tr>
+            <td>Abstract Methods</td>
+            <td>Declared by assigning 0 to a virtual function: <code>virtual void func() = 0;</code></td>
+            <td>Declared with the <code>abstract</code> keyword and without a body: <code>abstract void func();</code></td>
+        </tr>
+        <tr>
+            <td>Instantiation</td>
+            <td>Cannot be instantiated directly. Can only be used as a base class.</td>
+            <td>Cannot be instantiated directly. Can only be used as a base class.</td>
+        </tr>
+        <tr>
+            <td>Constructors</td>
+            <td>Can have constructors, which can be called by derived classes.</td>
+            <td>Can have constructors, which can be called by derived classes.</td>
+        </tr>
+        <tr>
+            <td>Implementation of Abstract Methods</td>
+            <td>Derived classes must implement all pure virtual functions.</td>
+            <td>Subclasses must implement all abstract methods unless the subclass is also abstract.</td>
+        </tr>
+        <tr>
+            <td>Multiple Inheritance</td>
+            <td>Supports multiple inheritance through multiple base classes.</td>
+            <td>Supports single inheritance but can implement multiple interfaces.</td>
+        </tr>
+        <tr>
+            <td>Keyword for Inheritance</td>
+            <td>Inherited using the <code>:</code> symbol.</td>
+            <td>Inherited using the <code>extends</code> keyword.</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<h2>⁡⁣⁢⁣6.What is Derived Class?⁡</h2><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Derived Classes in Java and C++</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Definition of Derived Classes</h2>
+    <p>
+        <strong>Derived Class in C++:</strong> 
+        A derived class in C++ is a class that is created from another class, known as the base class or parent class. 
+        The derived class inherits properties and behaviors (member variables and member functions) from the base class and can extend or override them as needed.
+    </p>
+    <p>
+        <strong>Derived Class in Java:</strong> 
+        In Java, a derived class is referred to as a subclass. 
+        It is a class that inherits properties and behaviors from another class, known as the superclass or parent class. 
+        Java supports single inheritance, meaning a subclass can inherit from only one superclass, but it can implement multiple interfaces.
+    </p>
+    <h2>Differences Between Derived Classes in C++ and Java</h2>
+    <table>
+        <tr>
+            <th>Criteria</th>
+            <th>C++</th>
+            <th>Java</th>
+        </tr>
+        <tr>
+            <td>Inheritance Syntax</td>
+            <td>Uses the colon (<code>:</code>) to indicate inheritance.</td>
+            <td>Uses the keyword <code>extends</code> to indicate inheritance.</td>
+        </tr>
+        <tr>
+            <td>Multiple Inheritance</td>
+            <td>Supports multiple inheritance.</td>
+            <td>Supports single inheritance (one class can only extend one superclass).</td>
+        </tr>
+        <tr>
+            <td>Interface Implementation</td>
+            <td>Separate concept of interfaces; classes can implement multiple interfaces.</td>
+            <td>Uses interfaces for multiple inheritance of type only (no multiple inheritance of implementation).</td>
+        </tr>
+        <tr>
+            <td>Access Modifiers</td>
+            <td>Supports access specifiers for inherited members (public, protected, private).</td>
+            <td>Uses access modifiers for inherited members (public, protected, private).</td>
+        </tr>
+        <tr>
+            <td>Constructor Inheritance</td>
+            <td>Constructors are not inherited but are called explicitly from the derived class.</td>
+            <td>Constructors are not inherited but are called explicitly from the derived class.</td>
+        </tr>
+        <tr>
+            <td>Final Classes and Methods</td>
+            <td>Can use the <code>final</code> keyword to prevent a class from being subclassed or a method from being overridden.</td>
+            <td>Uses the <code>final</code> keyword similarly to prevent a class from being subclassed or a method from being overridden.</td>
+        </tr>
+        <tr>
+            <td>Abstract Classes</td>
+            <td>Uses abstract classes with pure virtual functions for defining interfaces.</td>
+            <td>Uses abstract classes with abstract methods for defining interfaces.</td>
+        </tr>
+    </table>
+</body>
+</html>
+
