@@ -80,11 +80,24 @@ Consider,<br>
 <li>Non-Citrus
 <ul>
 <li>Banana</li>
-<li>Mango</li>
-</ul>
+<li>Mango</li></ul>
 </li>
 </ul>
 </li>
 </ul>
 <br>
-Just like the Type Casting in primitive type, we have 2 types in which the Refrenced Datatypes can be Casted<br>
+When we talk about the "Fruit" we are basically generalise all the fruits which fall under the Fruit Category,So here the Scope is "Widended"<br>
+Whereas when talk about a specifically about some type of fruits like which are Citrus we actually come down to being specific eliminating other types<br>
+This means that when we move from SuperClass to SubClass we become more speciifc.<br>
+So just like the Type Casting in primitive type, we have 2 types in which the Refrenced Datatypes can be Casted<br>
+<ol><li>Generalization</li>
+<li>Specialisation</li></ol>
+<br>
+<h3>Generalisation:</h3>
+It is the phenomenon in which a subclass is promoted to super class  and hence becoem generalise and safer.<br>
+It is also called Upcasting or Widening.<br>
+It's scope is Widening.<br>
+<h3>Specialization</h3>
+It is  the phenomenon in which a Super class is converted to Sub class and hence become Specific and it not safe.<br>
+It is also called Sowncasting or Narrowing.<br>
+It's scope is Narrowing.<br>
