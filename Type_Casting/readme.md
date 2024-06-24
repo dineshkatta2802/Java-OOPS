@@ -68,12 +68,12 @@ short to byte<br>
 Here a "Class" is a  Reference Datatype<br>
 Converting one  Class to another is also possibele but the "Classes should have some kind of relation i.e, thet can be Inherited".<br>
 Consider,<br>
-                                    Fruit<br>
-                    __________________|___________________<br>
-                   |                                      |<br>
-                Citrus                                 Non-Citrus<br>
-              _____|_____                             ______|______<br>
-             |           |                           |             |<br>
-            Lemon     Orange                      Banana         Mango<br>
-
+Fruit<br>
+├── Citrus<br>
+│   ├── Lemon<br>
+│   └── Orange<br>
+└── Non-Citrus<br>
+    ├── Banana<br>
+    └── Mango<br>
+<br>
 Just like the Type Casting in primitive type, we have 2 types in which the Refrenced Datatypes can be Casted<br>
