@@ -12,11 +12,11 @@ Casting of Primitive Datatypes is categorized into 2 types:<br>
 <ol>
 <li>Implict Casting(Automatic/Widening Casting)</li>
 <ul>
-<li>Lower datatype to Higher Datatype</li>
+<li>Converting Lower datatype to Higher Datatype</li>
 </ul>
 <li>Explict Casting(Narrow Casting)</li>
 <ul>
-<li>Higher datatype to Lower Datatype</li>
+<li>Converting Higher datatype to Lower Datatype</li>
 </ul>
 </ol>
 <br>
