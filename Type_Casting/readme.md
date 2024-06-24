@@ -1,4 +1,4 @@
-<h1>Type Casting in Java</h1>
+<h1>⁡⁣⁢⁣Type Casting in Java⁡</h1>
 
 Converting one datatype to another datatype is called Type Casting or simple Casting.<br>
 We know that in Java we have 2 typed of datatypes:<br>
@@ -8,7 +8,7 @@ We know that in Java we have 2 typed of datatypes:<br>
 </ol>
 <br>
 
-<h2>Casting Primitive Datatypes:</h2>
+<h2>⁡⁣⁢⁣Casting Primitive Datatypes:⁡</h2>
 Casting of Primitive Datatypes is categorized into 2 types:<br>
 <ol>
 <li>Implict Casting(Automatic/Widening Casting)</li>
@@ -29,7 +29,7 @@ Primitives datatypes are also classified into 2 more type they are:
 </ol>
 <br>
 
-<h3>Hierarchy of Primitive Datatypes:</h3>
+<h3>⁡⁢⁣⁣Hierarchy of Primitive Datatypes:⁡</h3>
 <h3>byte -> short -> char -> int -> long -> float -> double</h3>
 Lower<--------------------------------------------------------------->Higher<br>
 
@@ -40,7 +40,7 @@ Example:<br>
 int a = 10;<br>
 double b = a; // Implicit casting from int to double<br>
 
-<h4>Types of Implicit Casting:</h4>
+<h4>⁡⁢⁣⁡⁣⁣⁢Types of Implicit Casting:⁡⁡</h4>
 byte to short, int, long, float, double<br>
 short to int, long, float, double<br>
 char to int, long, float, double<br>
@@ -48,16 +48,20 @@ int to long, float, double<br>
 long to float, double<br>
 float to double<br>
 
-<h3>Narrowing or Explict Casting:</h3>
+<h3>⁡⁢⁣⁣Narrowing or Explict Casting:⁡</h3>
 This type of casting must be explicitly specified in the code to inform the compiler of the developer’s intent.<br>
 Explicit casting can potentially lose data or cause precision issues, so it should be used with caution.<br>
 Example:<br>
 double x = 10.5;<br>
 int y = (int) x; // Explicit casting from double to int<br>
 
-<h4>Types of Explicit Casting:</h4>
+<h4>⁡⁣⁣⁢Types of Explicit Casting:⁡⁡</h4>
 double to float, long, int, short, byte<br>
 float to long, int, short, byte<br>
 long to int, short, byte<br>
 int to short, byte<br>
 short to byte<br>
+
+
+
+<h2>⁡⁣⁢⁣Casting Referenced or Adnaanced Datatypes:⁡⁡</h2>
