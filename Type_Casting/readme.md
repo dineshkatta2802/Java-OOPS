@@ -31,7 +31,7 @@ Primitives datatypes are also classified into 2 more type they are:
 
 <h3>Hierarchy of Primitive Datatypes:</h3>
 <h3>byte -> short -> char -> int -> long -> float -> double</h3>
-Lower<----------------------------------------------------------------Higher<br>
+Lower<--------------------------------------------------------------->Higher<br>
 
 <h3>Widening or Automatic or Implict Casting:</h3>
 Java automatically handles this conversion without requiring explicit syntax<br>
