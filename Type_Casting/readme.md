@@ -97,7 +97,11 @@ So just like the Type Casting in primitive type, we have 2 types in which the Re
 It is the phenomenon in which a subclass is promoted to super class  and hence becoem generalise and safer.<br>
 It is also called Upcasting or Widening.<br>
 It's scope is Widening.<br>
+Example:<br>
+If we say lemon a s a fruit, there will no objection and the java compiler do the Implict Casting  and doesnot ask for cast operator.<br>
 <h3>Specialization</h3>
 It is  the phenomenon in which a Super class is converted to Sub class and hence become Specific and it not safe.<br>
 It is also called Sowncasting or Narrowing.<br>
 It's scope is Narrowing.<br>
+Example:<br>
+If we have to say fruit is a citrus fruit the java compiler asks to use Cast Operator specifically and we become more specific and we need to do Explict Casting.<br>
