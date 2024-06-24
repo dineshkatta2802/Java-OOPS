@@ -147,9 +147,60 @@ Animal myAnimal = new Dog();<br>
 myAnimal.makesound();<br>
 
 <h2>⁡⁣⁢⁣Specialization of Objects⁡</h2>
+package Type_Casting;<br>
+//We know that for Typcasting objects we need some relation between two classes<br>
+//like Inheritance<br>
+//⁡⁣⁢⁣Super Class⁡<br>
+class Animal{<br>
+    void makesound(){<br>
+        System.out.println("Animals eat!");<br>
+    }<br>
+    }<br>
+    <br>
+//⁡⁣⁢⁣Subclass⁡<br>
+    class Dog extends Animal{<br>
+        @Override<br>
+    void makesound(){<br>
+        System.out.println("Woof! Woof!");<br>
+    }<br>
+<br>
+    void fetch(){<br>
+        System.out.println("fetch Balls");<br>
+    }<br>
+    }<br>
+public class Narrowing_Object {<br>
+<br>
+    public static void main(String[] args) {<br>
+        Animal myAnimal = new Dog();<br>
+        myAnimal.makesound();<br>
+<br>
+        //Since we know that the DownCasting is "not safe"<br>
+        //"Instance of" operator checks the if 'myAnimal' is actually the object of class 'Dog<br>
+        // If the check passes, myAnimal is downcast to Dog using (Dog) myAnimal;<br>
+        // This explicit cast allows us to treat myAnimal as a Dog.<br>
+        //Now that myAnimal is downcast to Dog, we can call myDog.fetch()<br>
+        // a method specific to the Dog class.<br>
+<br>
+        if (myAnimal instanceof Dog) {<br>
+            Dog myDog = (Dog) myAnimal; // Downcasting<br>
+            myDog.fetch(); // Outputs: Fetches ball<br>
+        }<br>
+        <br>
 <br>
 <br>
+        //--->Note:<br>
+        //The above Declaration of object can also be done in the following way<br>
+        // Dog Terex = new Dog();<br>
+        // //Assigning the sub class object "Dog" to the variable of super class<br>
+        // Animal myAnimal = Terex;//Upcast to Animal<br>
+        // //here we make the Object of Sublass and Object of super class same<br>
+        // //Now,calling subclass method with superclass Object<br>
+        // //⁡⁣⁣⁢⁡⁣⁣⁢--->Note:⁡<br>
+        // //The method names should be same in Super and Sub class<br>
+        // myAnimal.makesound();<br>
+    }<br>
 <br>
+}
 
 <h2>⁡⁣⁢⁣Differentiate between Generalizationa and Specialization in java⁡</h2>
 <!DOCTYPE html>

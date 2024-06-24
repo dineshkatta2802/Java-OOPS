@@ -24,6 +24,17 @@ public class Narrowing_Object {
     public static void main(String[] args) {
         Animal myAnimal = new Dog();
         myAnimal.makesound();
+        //Since we know that the DownCasting is "not safe"
+        //"Instance of" operator checks the if 'myAnimal' is actually the object of class 'Dog
+        // If the check passes, myAnimal is downcast to Dog using (Dog) myAnimal;
+        // This explicit cast allows us to treat myAnimal as a Dog.
+        //Now that myAnimal is downcast to Dog, we can call myDog.fetch()
+        // a method specific to the Dog class.
+        if (myAnimal instanceof Dog) {
+            Dog myDog = (Dog) myAnimal; // Downcasting
+            myDog.fetch(); // Outputs: Fetches ball
+        }
+        
 
 
         //--->Note:
