@@ -64,4 +64,4 @@ short to byte<br>
 
 
 
-<h2>⁡⁣⁢⁣Casting Referenced or Adnaanced Datatypes:⁡⁡</h2>
+<h2>⁡⁣⁢⁣Casting Referenced or Advanced Datatypes:⁡⁡</h2>
