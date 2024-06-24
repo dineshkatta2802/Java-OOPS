@@ -68,5 +68,66 @@ short to byte<br>
 Here a "Class" is a  Reference Datatype<br>
 Converting one  Class to another is also possibele but the "Classes should have some kind of relation i.e, thet can be Inherited".<br>
 Consider,<br>
-<img src="D:\CODING\JAVA\JAVA(NEW)\NEW JAVA(PRACTICE)\Screenshot 2024-06-24 161910.png" alt="Fruit Diagram" width="661" height="224">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Diagram</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 10px;
+            border-top: 1px solid black;
+        }
+        li::after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            border-left: 1px solid black;
+        }
+        li:last-child::after {
+            height: 50%;
+            top: 50%;
+        }
+        li > ul > li::before {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Fruit
+            <ul>
+                <li>Citrus
+                    <ul>
+                        <li>Lemon</li>
+                        <li>Orange</li>
+                    </ul>
+                </li>
+                <li>Non-Citrus
+                    <ul>
+                        <li>Banana</li>
+                        <li>Mango</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+<br>
 Just like the Type Casting in primitive type, we have 2 types in which the Refrenced Datatypes can be Casted<br>
