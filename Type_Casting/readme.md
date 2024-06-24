@@ -8,7 +8,7 @@ We know that in Java we have 2 typed of datatypes:<br>
 </ol>
 <br>
 
-<h3>Casting Primitive Datatypes:</h3>
+<h2>Casting Primitive Datatypes:</h2>
 Casting of Primitive Datatypes is categorized into 2 types:<br>
 <ol>
 <li>Implict Casting(Automatic/Widening Casting)</li>
