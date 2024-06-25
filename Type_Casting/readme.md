@@ -326,29 +326,6 @@ class GFG <br>
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210119153952/Downcasting.jpg" alt="UpCasting and DOwncasting" width="596" height="300">
 
 <h2>Advantages and Disadvantages of TypeCasting</h2>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advantages and Disadvantages of Type Casting in Java</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
-</head>
-<body>
-    <h1>Advantages and Disadvantages of Type Casting in Java</h1>
     <table>
         <thead>
             <tr>
@@ -379,6 +356,5 @@ class GFG <br>
             </tr>
         </tbody>
     </table>
-</body>
-</html>
+
 
