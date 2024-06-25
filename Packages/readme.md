@@ -14,70 +14,101 @@ here java is a directory and io is the sub direactory<br>
 <li>Reusability</li>
 </ol>
 
+    <table>
+        <tr>
+            <th>Criteria</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>A package in Java is a namespace that organizes a set of related classes and interfaces. It is used to avoid naming conflicts and to control access to classes, interfaces, and other packages.</td>
+        </tr>
+        <tr>
+            <td>Characteristics</td>
+            <td>
+                <ul>
+                    <li>Logical grouping of classes and interfaces.</li>
+                    <li>Prevents naming conflicts.</li>
+                    <li>Facilitates code reusability and maintenance.</li>
+                    <li>Provides access protection.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Properties</td>
+            <td>
+                <ul>
+                    <li>Packages can be nested.</li>
+                    <li>Java provides a standard package hierarchy (e.g., java.lang, java.util).</li>
+                    <li>Package names are typically written in all lower-case letters.</li>
+                    <li>Custom packages can be created by developers.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>What</td>
+            <td>Packages are used to group related classes and interfaces together in a logical manner.</td>
+        </tr>
+        <tr>
+            <td>Where</td>
+            <td>Packages are declared at the top of a Java source file using the `package` keyword.</td>
+        </tr>
+        <tr>
+            <td>How</td>
+            <td>Packages are created using the `package` keyword followed by the package name. Classes within the package are referenced by their fully qualified names or imported using the `import` statement.</td>
+        </tr>
+        <tr>
+            <td>When</td>
+            <td>Packages are typically created when organizing large projects, or when creating libraries or APIs to be used across different projects.</td>
+        </tr>
+        <tr>
+            <td>Why</td>
+            <td>To avoid naming conflicts, to control access to classes and interfaces, to organize code logically, and to enhance code reusability and maintainability.</td>
+        </tr>
+        <tr>
+            <td>Advantages</td>
+            <td>
+                <ul>
+                    <li>Avoids naming conflicts.</li>
+                    <li>Improves code organization.</li>
+                    <li>Facilitates code reuse and maintainability.</li>
+                    <li>Provides access control through package-private visibility.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Disadvantages</td>
+            <td>
+                <ul>
+                    <li>Can make code navigation more complex if not organized properly.</li>
+                    <li>May lead to dependency issues if packages are not managed correctly.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Example</td>
+            <td>
+                <pre>
+package com.example.animals;
 
-
-<h2>Comparison of Packages in Java</h2>
-
-<table>
-    <tr>
-        <th>Aspect</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>Definition</td>
-        <td>A package in Java is a namespace that organizes a set of related classes and interfaces. It helps in preventing naming conflicts and can be used to control access.</td>
-    </tr>
-    <tr>
-        <td>Characteristics</td>
-        <td>Packages help in grouping related classes and interfaces, provide access protection, and help in organizing code. They can be nested and are hierarchical.</td>
-    </tr>
-    <tr>
-        <td>Properties</td>
-        <td>Packages have unique names, follow a directory structure, can contain sub-packages, and help in encapsulation and modularization of code.</td>
-    </tr>
-    <tr>
-        <td>What</td>
-        <td>Packages are used to group related classes and interfaces together, making code more manageable and readable.</td>
-    </tr>
-    <tr>
-        <td>Where</td>
-        <td>Packages are defined at the top of Java source files using the `package` keyword. They correspond to directories on the file system.</td>
-    </tr>
-    <tr>
-        <td>How</td>
-        <td>To create a package, use the `package` keyword followed by the package name. Classes and interfaces are then declared within this package. To use a class from a package, use the `import` keyword.</td>
-    </tr>
-    <tr>
-        <td>When</td>
-        <td>Packages are used when there is a need to organize a large number of related classes and interfaces, to avoid naming conflicts, and to provide access control.</td>
-    </tr>
-    <tr>
-        <td>Why</td>
-        <td>Using packages improves code organization, readability, and maintainability. They help in avoiding class name conflicts and provide a way to control access to classes.</td>
-    </tr>
-    <tr>
-        <td>Example</td>
-        <td>
-            <pre>
-<code>package com.example.animals;
-
-public class Dog {
-    public void bark() {
-        System.out.println("Woof!");
-    }
+public interface Animal {
+    void eat();
+    void sleep();
 }
 
-import com.example.animals.Dog;
+public class Dog implements Animal {
+    @Override
+    public void eat() {
+        System.out.println("Dog is eating");
+    }
 
-public class Main {
-    public static void main(String[] args) {
-        Dog myDog = new Dog();
-        myDog.bark();
+    @Override
+    public void sleep() {
+        System.out.println("Dog is sleeping");
     }
 }
-</code>
-            </pre>
-        </td>
-    </tr>
-</table>
+                </pre>
+            </td>
+        </tr>
+    </table>
 
