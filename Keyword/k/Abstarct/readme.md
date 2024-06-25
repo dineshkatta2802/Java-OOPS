@@ -41,34 +41,6 @@ An abstract class is declared using the abstract keyword.<br>
 An abstract class is a class that cannot be instantiated on its own and is intended to be subclassed. It can contain both abstract methods (methods without a body) and concrete methods (methods with a body). Abstract classes are used to define a common interface for a group of subclasses.<br>
 
 <h2>Advantages and Disadvantages if Abstract Class</h2>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Advantages and Disadvantages of Abstract Classes in Java</title>
-<style>
-  /* Optional: Adding some basic styles for demonstration */
-  table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-  }
-  th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-  }
-  th {
-    background-color: #f2f2f2;
-  }
-</style>
-</head>
-<body>
-
-<h2>Advantages and Disadvantages of Abstract Classes in Java</h2>
-
 <table>
   <thead>
     <tr>
