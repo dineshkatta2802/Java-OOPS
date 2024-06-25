@@ -136,6 +136,7 @@ public class Widening_Object {<br>
     }<br>
 <br>
 }<br>
+
 <h2>⁡⁢⁣⁣Imp Note:⁡</h2>
 Assigning the sub class object "Dog" to the variable of super class<br>
 here we make the Object of Sublass and Object of super class same<br>
@@ -267,6 +268,62 @@ a method specific to the Dog class.<br>
 
 </body>
 </html>
+
+<h2>⁡⁣⁢⁣Another Example of TypCasting⁡</h2>
+// Importing input output classes<br>
+import java.io.*;<br>
+<br>
+// Class 1<br>
+// Parent class<br>
+class Parent <br>
+{<br>
+<br>
+// Function <br>
+void show()<br>
+{<br>
+<br>
+	// Print message for this class<br>
+	System.out.println("Parent show method is called");<br>
+}<br>
+} <br>
+<br>
+// Class 2<br>
+// Child class<br>
+class Child extends Parent<br>
+{<br>
+<br>
+	// Overriding existing method of Parent class<br>
+	@Override<br>
+<br>
+	// Same Function which will override <br>
+	// existing Parent class function<br>
+	void show() <br>
+	{<br>
+<br>
+	// Print message for this class<br>
+	System.out.println("Child show method is called");<br>
+	}<br>
+<br>
+}<br>
+<br>
+// Class3<br>
+// Main class<br>
+class GFG <br>
+{<br>
+<br>
+	// Main driver method<br>
+	public static void main(String[] args)<br>
+	{<br>
+	// Creating a Parent class object <br>
+	// but referencing it to a Child class<br>
+	Parent obj = new Child();<br>
+	<br>
+	// Calling the show() method to execute<br>
+	obj.show();<br>
+	}<br>
+}<br>
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210119153952/Downcasting.jpg" alt="UpCasting and DOwncasting" width="596" height="300">
 
 <h2>Advantages and Disadvantages of TypeCasting</h2>
 <!DOCTYPE html>
