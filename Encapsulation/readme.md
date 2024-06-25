@@ -1,12 +1,5 @@
 <h1>Encapsulation</h2>
 <h2>Differnce between Encapsulation and Abstraction</h2>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Encapsulation vs Abstraction</title>
-<style>
     table {
         width: 100%;
         border-collapse: collapse;
@@ -144,6 +137,5 @@ Area: 78.53981633974483
 </code>
 </pre>
 
-</body>
-</html>
+
 
