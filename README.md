@@ -1,6 +1,7 @@
 <h1>Java</h1>
 This java file Consists of the new Java programs With clear explanation and examples
-<h2>Differntiating table between Inheritance,Polymorphism,abstracton,Encapsulation</h2>
+
+<h2>Differntiating table between Inheritance,Polymorphism,Abstracton,Encapsulation</h2>
 <table>
     <tr>
         <th>Aspect</th>
