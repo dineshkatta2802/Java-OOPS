@@ -106,3 +106,151 @@ Interfaces cannot contain instance fields, constructors, or method implementatio
     </table>
 
 
+<h2>Interface v/s Classes</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Interface</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td><strong>Definition</strong></td>
+            <td>An interface in Java defines a contract that classes can choose to implement. It contains method signatures and constants, without method bodies.</td>
+            <td>A class in Java is a blueprint from which objects are created. It can contain methods, constructors, fields, initialization blocks, and instance/static variables.</td>
+        </tr>
+        <tr>
+            <td><strong>Where</strong></td>
+            <td>Used when you want to define a set of methods that a class must implement, without specifying how they are implemented.</td>
+            <td>Used when you want to create objects that have state and behavior, encapsulating data and methods.</td>
+        </tr>
+        <tr>
+            <td><strong>How</strong></td>
+            <td>Defined using the <code>interface</code> keyword. Methods are declared but not implemented.</td>
+            <td>Defined using the <code>class</code> keyword. Can have constructors, methods with implementations, and various access specifiers.</td>
+        </tr>
+        <tr>
+            <td><strong>When</strong></td>
+            <td>When you want to enforce a certain behavior across multiple unrelated classes.</td>
+            <td>When you want to create objects with specific characteristics and behaviors.</td>
+        </tr>
+        <tr>
+            <td><strong>Why</strong></td>
+            <td>To achieve abstraction and multiple inheritances of type.</td>
+            <td>To model real-world entities, manage complexity, and achieve encapsulation and inheritance.</td>
+        </tr>
+        <tr>
+            <td><strong>Advantages</strong></td>
+            <td>
+                <ul>
+                    <li>Enforces a contract among unrelated classes.</li>
+                    <li>Supports multiple inheritances of type.</li>
+                    <li>Promotes code reusability and flexibility.</li>
+                    <li>Allows for loose coupling and easier maintenance.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Encapsulates data and behavior.</li>
+                    <li>Supports inheritance and polymorphism.</li>
+                    <li>Allows for code organization and modularization.</li>
+                    <li>Provides mechanisms for abstraction and encapsulation.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Disadvantages</strong></td>
+            <td>
+                <ul>
+                    <li>Cannot contain instance fields (only constants).</li>
+                    <li>Does not provide implementation details.</li>
+                    <li>May lead to a large number of interfaces if not managed properly.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>May lead to tight coupling if not designed properly.</li>
+                    <li>Requires careful management of inheritance to avoid complexity.</li>
+                    <li>Cannot support multiple inheritances of implementation.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Example</strong></td>
+            <td>
+                <pre><code>
+// Example of an interface
+interface Animal {
+    void eat();
+    void sleep();
+}
+
+// Example of a class implementing the interface
+class Dog implements Animal {
+    public void eat() {
+        System.out.println("Dog is eating");
+    }
+    
+    public void sleep() {
+        System.out.println("Dog is sleeping");
+    }
+}
+
+// Main program to demonstrate usage
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat();
+        dog.sleep();
+    }
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+// Example of a class with methods and fields
+class Car {
+    private String model;
+    private int year;
+
+    public Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    public void start() {
+        System.out.println("Car started");
+    }
+
+    public void stop() {
+        System.out.println("Car stopped");
+    }
+}
+
+// Main program to demonstrate usage
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota", 2020);
+        myCar.start();
+        myCar.stop();
+    }
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Output (Example)</strong></td>
+            <td>
+                <pre>
+Dog is eating
+Dog is sleeping
+                </pre>
+            </td>
+            <td>
+                <pre>
+Car started
+Car stopped
+                </pre>
+            </td>
+        </tr>
+    </table>
+
