@@ -1,5 +1,5 @@
 package Type_Casting;
-
+//Since we are using abstract methods to make code flexible and reusable we made class abstract
 abstract class Vehicle {
     public String Brand;
     public String Model;
@@ -22,6 +22,9 @@ abstract class Vehicle {
     public int getYear() {
         return Year;
     }
+
+    //Abstract methods are use becoz these methods ahve to be implemented by Subclasses only and 
+    //promotes code flexibility and reusability
 
     public abstract void StartEngine();
 
