@@ -66,3 +66,43 @@ Interfaces cannot contain instance fields, constructors, or method implementatio
         </tr>
     </table>
 
+<h2>Advantages and Disadvantages</h2>
+    <table>
+        <tr>
+            <th>Aspect</th>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+        <tr>
+            <td>Multiple Inheritance</td>
+            <td>Allows a class to implement multiple interfaces, facilitating multiple inheritance and more flexible design.</td>
+            <td>Can lead to complexity and ambiguity if overused, making the code harder to understand and maintain.</td>
+        </tr>
+        <tr>
+            <td>Design and Flexibility</td>
+            <td>Provides a way to define a contract for what a class can do, allowing for flexible and interchangeable code components.</td>
+            <td>May lead to over-engineering if interfaces are created without a clear need, adding unnecessary complexity.</td>
+        </tr>
+        <tr>
+            <td>Implementation Independence</td>
+            <td>Decouples the implementation from the interface, allowing different implementations to be used interchangeably.</td>
+            <td>Requires all implementing classes to provide concrete implementations for all methods, which can be tedious and redundant.</td>
+        </tr>
+        <tr>
+            <td>Code Reusability</td>
+            <td>Promotes code reusability by allowing common functionality to be defined in an interface and implemented by multiple classes.</td>
+            <td>Default methods in interfaces can sometimes lead to conflicts and ambiguity, especially in complex hierarchies.</td>
+        </tr>
+        <tr>
+            <td>Testing and Maintenance</td>
+            <td>Facilitates easier testing and maintenance by allowing the use of mock implementations during testing.</td>
+            <td>Can make the codebase more difficult to maintain if interfaces are not well-documented or if their usage is not clear.</td>
+        </tr>
+        <tr>
+            <td>API Design</td>
+            <td>Helps in designing clean and clear APIs by specifying the methods that must be implemented without dictating how they should be implemented.</td>
+            <td>Interfaces cannot contain implementation-specific details, which might limit their use in some scenarios where concrete classes would be more appropriate.</td>
+        </tr>
+    </table>
+
+
