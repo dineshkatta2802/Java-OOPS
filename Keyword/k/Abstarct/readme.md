@@ -88,23 +88,23 @@ If the Child class is unable to provide implementation to all abstract methods o
 <h3></h3>Cannot Be Instantiated</h3>
 Explanation: You can't create an object directly from an abstract class.<br>
 Purpose: Abstract classes are designed to be templates for other classes to use.<br>
-<br>
+
 <h3>Can Have Abstract Methods</h3>
 Explanation: Abstract methods are like empty instructions that subclasses must fill in.<br>
 Purpose: Ensures that all subclasses provide their own versions of these methods.<br>
-<br>
+
 <h3>Can Have Concrete Methods</h3>
 Explanation: Abstract classes can also have normal methods with complete instructions.<br>
 Purpose: Provides common behavior that all subclasses can use.<br>
-<br>
+
 <h3>Can Have Constructors</h3>
 Explanation: Abstract classes can have special methods to set up their state.<br>
 Purpose: Initializes common settings or data when a subclass is created.<br>
-<br>
+
 <h3>Can Have Member Variables</h3>
 Explanation: Abstract classes can have variables to store common data.<br>
 Purpose: Shares common data across all subclasses.<br>
-<br>
+
 <h3>Supports Inheritance</h3>
 Explanation: Other classes can extend (inherit from) abstract classes.<br>
 Purpose: Allows subclasses to use common features and add their own specifics.<br>
