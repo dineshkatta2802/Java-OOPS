@@ -19,6 +19,9 @@ abstract class  Vehicle{
     }
     public abstract void StartEngine();
     public abstract void StopEngine();
+    /*--->Note:
+     * Here We could clearly observe that the method doesn't have any body i.e,method vody
+     */
 }
 
 class Car extends Vehicle{

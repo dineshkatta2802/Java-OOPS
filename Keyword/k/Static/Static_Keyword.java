@@ -1,4 +1,4 @@
-package Keyword.k;
+package Keyword.k.Static;
 //⁡⁣⁣⁢Note:⁡
 //It is declared by using the "Static" Keyword
 //A Static method is a method that doednot act upon the instance variables 
