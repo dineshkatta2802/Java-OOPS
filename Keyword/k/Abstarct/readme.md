@@ -73,7 +73,7 @@ Since these methods would not be having method body they need to be Overrided by
 
 <h3>⁡⁢⁣⁣Some important steps to follow⁡</h3>
 <ol>
-<li></li>An instance of an abstract class can not be created.</li>
+<li>An instance of an abstract class can not be created.</li>
 <li>Constructors are allowed.</li>
 <li>We can have an abstract class without any abstract method.</li>
 There can be a final method in abstract class but any abstract method in class(abstract class) can not be declared as final  or in simpler terms final method can not be abstract itself as it will yield an error: “Illegal combination of <li>modifiers: abstract and final”</li>
