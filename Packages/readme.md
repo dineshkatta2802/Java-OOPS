@@ -14,6 +14,7 @@ here java is a directory and io is the sub direactory<br>
 <li>Reusability</li>
 </ol>
 
+<h2>Comparision table</h2>
     <table>
         <tr>
             <th>Criteria</th>
