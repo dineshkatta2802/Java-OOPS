@@ -8,7 +8,6 @@ Interfaces cannot contain instance fields, constructors, or method implementatio
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230419112343/Intefaces-in-Java-1.webp" alt="Multiple Inheritance" width="670" height="247">
 
 <h2>Classes v/s Interface</h2>
-
     <table>
         <tr>
             <th>Feature</th>
