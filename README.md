@@ -3,234 +3,254 @@ This java file Consists of the new Java programs With clear explanation and exam
 <h2>Differntiating table between Inheritance,Polymorphism,abstracton,Encapsulation</h2>
 <table>
     <tr>
-        <th>Concept</th>
-        <th>Definition</th>
-        <th>Characteristics</th>
-        <th>Properties</th>
-        <th>Advantages</th>
-        <th>Disadvantages</th>
-        <th>Example</th>
+        <th>Aspect</th>
+        <th>Inheritance</th>
+        <th>Polymorphism</th>
+        <th>Abstraction</th>
+        <th>Encapsulation</th>
     </tr>
     <tr>
-        <td>Inheritance</td>
-        <td>Allows a class (subclass/derived class) to inherit behaviors and properties from another class (superclass/base class).</td>
-        <td>
-            <ul>
-                <li>Establishes a parent-child relationship between classes.</li>
-                <li>Supports code reusability.</li>
-                <li>Enables overriding of methods.</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>Uses extends keyword in Java.</li>
-                <li>Derived class inherits non-private members (fields and methods) from the base class.</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>Promotes code reusability and reduces redundancy.</li>
-                <li>Facilitates method overriding to provide specific implementation in subclasses.</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>Can lead to tight coupling between classes.</li>
-                <li>Increases complexity of the codebase.</li>
-            </ul>
-        </td>
-        <td>
-<pre>
-<code>
-class Animal {
-    void sound() {
-        System.out.println("Animal makes a sound");
-    }
-}
-
-class Dog extends Animal {
-    void sound() {
-        System.out.println("Dog barks");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Animal animal = new Dog();
-        animal.sound(); // Output: Dog barks
-    }
-}
-</code>
-</pre>
-        </td>
+        <td>Definition</td>
+        <td>Allows a class (subclass/derived class) to inherit properties and behaviors (methods) from another class (superclass/base class).</td>
+        <td>Refers to the ability of objects to take on different forms or types, allowing methods to be called on objects of different classes through a common interface.</td>
+        <td>Hides the complex implementation details of a class and shows only the essential features of the object.</td>
+        <td>Bundling data and methods into a single unit (class) and controlling access to some of the object's components.</td>
     </tr>
     <tr>
-        <td>Polymorphism</td>
-        <td>Allows objects of different classes to be treated as objects of a common superclass, providing flexibility in method invocation.</td>
+        <td>What</td>
+        <td>Relationship between classes where one class inherits from another.</td>
+        <td>Allows objects of different classes to be treated as objects of a common superclass.</td>
+        <td>Focuses on the interface and hides the implementation details.</td>
+        <td>Bundles data and methods into a single unit and controls access to them.</td>
+    </tr>
+    <tr>
+        <td>Where</td>
+        <td>Class level</td>
+        <td>Object level</td>
+        <td>Class level</td>
+        <td>Class level</td>
+    </tr>
+    <tr>
+        <td>How</td>
+        <td>Using the `extends` keyword to create a subclass that inherits from a superclass.</td>
+        <td>Through method overriding (runtime polymorphism) and method overloading (compile-time polymorphism).</td>
+        <td>Using abstract classes and interfaces to define the abstract view of objects.</td>
+        <td>Using access modifiers (private, public, protected) to control access to data.</td>
+    </tr>
+    <tr>
+        <td>When</td>
+        <td>Used when a class wants to reuse the properties and behaviors of another class.</td>
+        <td>Used when there is a need to perform different actions based on the object type.</td>
+        <td>Used when we want to hide complex implementation details and provide a simplified interface.</td>
+        <td>Used when data hiding and restricting direct access to data is required.</td>
+    </tr>
+    <tr>
+        <td>Why</td>
+        <td>To promote code reusability and to implement the "is-a" relationship.</td>
+        <td>To achieve flexibility and to support polymorphic behavior.</td>
+        <td>To simplify the complexities and focus on essential features of an object.</td>
+        <td>To improve security, maintainability, and flexibility of code.</td>
+    </tr>
+    <tr>
+        <td>Purpose</td>
+        <td>Supports code reusability and establishes a hierarchical relationship between classes.</td>
+        <td>Supports flexibility in method calls and enhances code extensibility.</td>
+        <td>Provides a clear and simplified view of objects and systems.</td>
+        <td>Protects an object's internal state and enhances maintainability.</td>
+    </tr>
+    <tr>
+        <td>Advantages</td>
         <td>
             <ul>
-                <li>Supports method overloading and overriding.</li>
-                <li>Enables dynamic method dispatch.</li>
-                <li>Facilitates code flexibility and extensibility.</li>
+                <li>Code reusability</li>
+                <li>Promotes software extensibility</li>
+                <li>Supports polymorphism</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li>Can be achieved through method overloading and overriding.</li>
-                <li>Enables interfaces and abstract classes to achieve polymorphic behavior.</li>
+                <li>Enhanced flexibility</li>
+                <li>Improved code readability</li>
+                <li>Efficient code maintenance</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li>Enhances code flexibility and reuse.</li>
-                <li>Supports the concept of "one interface, multiple methods".</li>
+                <li>Simplifies code complexity</li>
+                <li>Enhances system flexibility</li>
+                <li>Improves code maintenance</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li>Can lead to confusion if not used carefully.</li>
-                <li>Overuse can result in code that is difficult to understand and maintain.</li>
+                <li>Enhanced security</li>
+                <li>Improved maintainability</li>
+                <li>Flexibility to change implementation</li>
             </ul>
-        </td>
-        <td>
-<pre>
-<code>
-class Animal {
-    void sound() {
-        System.out.println("Animal makes a sound");
-    }
-}
-
-class Dog extends Animal {
-    void sound() {
-        System.out.println("Dog barks");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Animal animal1 = new Dog();
-        Animal animal2 = new Animal();
-        
-        animal1.sound(); // Output: Dog barks
-        animal2.sound(); // Output: Animal makes a sound
-    }
-}
-</code>
-</pre>
         </td>
     </tr>
     <tr>
-        <td>Abstraction</td>
-        <td>Hides complex implementation details and shows only the necessary features of an object.</td>
+        <td>Disadvantages</td>
         <td>
             <ul>
-                <li>Focuses on essential features.</li>
-                <li>Uses abstract classes and interfaces.</li>
-                <li>Reduces complexity and enhances maintainability.</li>
+                <li>Can lead to tight coupling between classes</li>
+                <li>Increases complexity in large hierarchies</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li>Uses abstract classes, interfaces, and access modifiers (public, private, protected).</li>
-                <li>Allows defining abstract methods (methods without a body) and concrete methods.</li>
+                <li>Requires careful design to avoid ambiguity</li>
+                <li>Potential performance overhead</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li>Provides clarity and simplification of complex systems.</li>
-                <li>Enhances modularity and maintainability of code.</li>
+                <li>May lead to over-simplification and loss of details</li>
+                <li>Requires careful design to avoid excessive abstraction</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li>May lead to over-simplification of the system.</li>
-                <li>Requires careful design to balance abstraction and implementation details.</li>
+                <li>Increased development time due to defining accessors and mutators</li>
+                <li>Potential overhead in performance due to method calls</li>
             </ul>
-        </td>
-        <td>
-<pre>
-<code>
-interface Animal {
-    void sound(); // abstract method
-}
-
-class Dog implements Animal {
-    public void sound() {
-        System.out.println("Dog barks");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Animal animal = new Dog();
-        animal.sound(); // Output: Dog barks
-    }
-}
-</code>
-</pre>
-        </td>
-    </tr>
-    <tr>
-        <td>Encapsulation</td>
-        <td>Bundles data (fields) and methods that operate on the data into a single unit (class), and restricts access to some components.</td>
-        <td>
-            <ul>
-                <li>Uses access modifiers (private, public, protected) to restrict access to data.</li>
-                <li>Protects an object's internal state.</li>
-                <li>Enhances security and flexibility of code.</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>Uses private variables and public getter/setter methods.</li>
-                <li>Supports data hiding and information abstraction.</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>Improves code maintainability and reusability.</li>
-                <li>Enables effective debugging and testing.</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>Can lead to increased complexity if not used properly.</li>
-                <li>May introduce overhead due to method calls.</li>
-            </ul>
-        </td>
-        <td>
-<pre>
-<code>
-class Circle {
-    private double radius;
-
-    public Circle(double radius) {
-        this.radius = radius;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
-    public double calculateArea() {
-        return Math.PI * radius * radius;
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Circle myCircle = new Circle(5.0);
-        System.out.println("Radius: " + myCircle.getRadius());
-        System.out.println("Area: " + myCircle.calculateArea());
-    }
-}
-</code>
-</pre>
         </td>
     </tr>
 </table>
+
+<h3>Examples</h3>
+
+<h4>Inheritance Example</h4>
+
+<pre>
+<code>
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        animal.sound(); // Output: Animal makes a sound
+
+        Dog dog = new Dog();
+        dog.sound(); // Output: Dog barks
+    }
+}
+</code>
+</pre>
+
+<h4>Polymorphism Example</h4>
+
+<pre>
+<code>
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Dog();
+        myAnimal.sound(); // Output: Dog barks
+
+        myAnimal = new Cat();
+        myAnimal.sound(); // Output: Cat meows
+    }
+}
+</code>
+</pre>
+
+<h4>Abstraction Example</h4>
+
+<pre>
+<code>
+abstract class Shape {
+    abstract void draw();
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing Circle");
+    }
+}
+
+class Rectangle extends Shape {
+    void draw() {
+        System.out.println("Drawing Rectangle");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Shape shape = new Circle();
+        shape.draw(); // Output: Drawing Circle
+
+        shape = new Rectangle();
+        shape.draw(); // Output: Drawing Rectangle
+    }
+}
+</code>
+</pre>
+
+<h4>Encapsulation Example</h4>
+
+<pre>
+<code>
+class Person {
+    private String name;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.setName("John Doe");
+        person.setAge(30);
+
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+    }
+}
+</code>
+</pre>
+
