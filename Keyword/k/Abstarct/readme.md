@@ -38,7 +38,9 @@ Since these methods would not be having method body they need to be Overrided by
 
 <h2>Abstract Class:</h2>
 An abstract class is declared using the abstract keyword.<br>
-An abstract class is a class that cannot be instantiated on its own and is intended to be subclassed. It can contain both abstract methods (methods without a body) and concrete methods (methods with a body). Abstract classes are used to define a common interface for a group of subclasses.<br>
+An abstract class is a class that cannot be instantiated on its own and is intended to be subclassed.<br>
+Since,abstarct class contains incomplete methods, it is not possible to estimate the total memory required to create the objects , so we create a Subclass and all the abstract methods of parent class sjould be implemented in the subclass<br>
+It can contain both abstract methods (methods without a body) and concrete methods (methods with a body). Abstract classes are used to define a common interface for a group of subclasses.<br>
 
 <h2>Advantages and Disadvantages of Abstract Keyword</h2>
 <table>
