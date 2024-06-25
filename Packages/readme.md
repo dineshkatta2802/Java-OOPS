@@ -13,6 +13,9 @@ here java is a directory and io is the sub direactory<br>
 <li>Access Control </li>
 <li>Reusability</li>
 </ol>
+<h2>How Packages work?</h2>
+Package names and directory names are similar,suppose college.staff.CSE is a package then we have got three directories
+i.e,CSE present inside staff ,staff present inside college directory and the college directory is accessible through ⁡⁢⁣⁣CLASSPATH⁡(It is an Environment variable that tells Java compiler where to look for the class files to import.CLASSPATH which is generally set to directory or JAR files).
 
 <h2>Comparision table</h2>
     <table>
