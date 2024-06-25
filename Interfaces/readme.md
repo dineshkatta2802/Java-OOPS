@@ -1,13 +1,13 @@
-<h1>Interfaces</h1>
+<h1>⁡⁣⁢⁣Interfaces⁡</h1>
 It is a reference type which is similar to Class<br>
 The Interface can only contain constants, method signatures, default methods, static methods, and nested types<br>
 Interfaces cannot contain instance fields, constructors, or method implementations<br>
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230419112500/Intefaces-in-Java-2.webp" alt="Multiple Inheritance" width="489" height="300">
 
-<h2>Relationship between Interfaces and Classes</h2>
+<h2>⁡⁣⁢⁣Relationship between Interfaces and Classes⁡</h2>
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230419112343/Intefaces-in-Java-1.webp" alt="Multiple Inheritance" width="670" height="247">
 
-<h2>Classes v/s Interface</h2>
+<h2>⁡⁣⁢⁣Classes v/s Interface⁡</h2>
     <table>
         <tr>
             <th>Feature</th>
@@ -66,7 +66,7 @@ Interfaces cannot contain instance fields, constructors, or method implementatio
         </tr>
     </table>
 
-<h2>Advantages and Disadvantages</h2>
+<h2>⁡⁣⁢⁣Advantages and Disadvantages⁡</h2>
     <table>
         <tr>
             <th>Aspect</th>
@@ -106,7 +106,7 @@ Interfaces cannot contain instance fields, constructors, or method implementatio
     </table>
 
 
-<h2>Interface v/s Classes</h2>
+<h2>⁡⁣⁢⁣Interface v/s Classes⁡</h2>
     <table>
         <tr>
             <th>Feature</th>
@@ -253,4 +253,63 @@ Car stopped
             </td>
         </tr>
     </table>
+
+<h2>⁡⁣⁢⁣Multiple Inheritance using Interface⁡</h2>
+// Define an interface for all animals<br>
+interface Animal {<br>
+    void eat();  // Method to eat<br>
+    void sleep();  // Method to sleep<br>
+}<br>
+<br>
+// Define an interface for pets<br>
+interface Pet {<br>
+    void play();  // Method to play<br>
+    void makeSound();  // Method to make sound<br>
+}<br>
+<br>
+// Dog class implementing both Animal and Pet interfaces<br>
+class Dog implements Animal, Pet {<br>
+    private String name;<br>
+<br>
+    // Constructor<br>
+    public Dog(String name) {<br>
+        this.name = name;<br>
+    }<br>
+<br>
+    // Implementation of Animal interface methods<br>
+    @Override<br>
+    public void eat() {<br>
+        System.out.println(name + " is eating.");<br>
+    }<br>
+<br>
+    @Override<br>
+    public void sleep() {<br>
+        System.out.println(name + " is sleeping.");<br>
+    }<br>
+<br>
+    // Implementation of Pet interface methods<br>
+    @Override<br>
+    public void play() {<br>
+        System.out.println(name + " is playing.");<br>
+    }<br>
+<br>
+    @Override<br>
+    public void makeSound() {<br>
+        System.out.println(name + " says: Woof!");<br>
+    }<br>
+}<br>
+<br>
+// Main class to demonstrate usage<br>
+public class MultipleInheritanceExample {<br>
+    public static void main(String[] args) {<br>
+        // Create an instance of Dog<br>
+        Dog dog = new Dog("Buddy");<br>
+<br>
+        // Display details using interface methods<br>
+        dog.eat();<br>
+        dog.sleep();<br>
+        dog.play();<br>
+        dog.makeSound();<br>
+    }<br>
+}<br>
 
