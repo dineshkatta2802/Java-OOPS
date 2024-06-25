@@ -29,8 +29,12 @@ public class Widening_Object {
 
         //--->Note:
         //The above Declaration of object can also be done in the following way
+        //For Method
         // Animal myAnimal = new Dog();
         // myAnimal.makesound();
+
+        //For Parameterised Constructor
+        //Animal myAnimal = new Dog("Terex",2....);
     }
 
 }
