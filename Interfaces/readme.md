@@ -255,6 +255,7 @@ Car stopped
     </table>
 
 <h2>⁡⁣⁢⁣Multiple Inheritance using Interface⁡</h2>
+<img src="https://static.javatpoint.com/images/core/multipleinheritance.jpg" alt="Multiple Inheritance" width="702" height="279">
 // Define an interface for all animals<br>
 interface Animal {<br>
     void eat();  // Method to eat<br>
