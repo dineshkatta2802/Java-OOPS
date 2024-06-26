@@ -22,6 +22,21 @@ i.e,CSE present inside staff ,staff present inside college directory and the col
 
  <h2>Types of Packages</h2>
  <img src="https://media.geeksforgeeks.org/wp-content/uploads/java-types-of-packages.jpg" alt="Types fo Inheritance" width="424" height="300">
+ <br>
+<h3>Built-in Packages</h3>
+These packages consist of a large number of classes which are a part of Java API.Some of the commonly used built-in packages are:
+<h4>java.lang:</h4> 
+Contains language support classes(e.g classes which defines primitive data types, math operations). This package is automatically imported.
+<h4>java.io:</h4> 
+Contains classes for supporting input / output operations.
+<h4>java.util:</h4> 
+Contains utility classes which implement data structures like Linked List, Dictionary and support ; for ate / Time operations.
+<h4>java.applet:</h4> 
+Contains classes for creating Applets.
+<h4>java.awt:</h4> 
+Contain classes for implementing the components for graphical user interfaces (like button , ;menus etc).
+<h4>java.net:</h4> 
+Contain classes for supporting networking operations.
 
 <h2>Comparision table</h2>
     <table>
