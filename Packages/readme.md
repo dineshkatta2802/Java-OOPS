@@ -26,6 +26,7 @@ i.e,CSE present inside staff ,staff present inside college directory and the col
 <h3>Built-in Packages</h3>
 These packages consist of a large number of classes which are a part of Java API.Some of the commonly used built-in packages are:
 <h4>java.lang:</h4> 
+lang stands for language<br>
 Contains language support classes(e.g classes which defines primitive data types, math operations). This package is automatically imported.
 <h4>java.io:</h4> 
 Contains classes for supporting input / output operations.
