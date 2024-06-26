@@ -54,6 +54,18 @@ Contain classes for supporting networking operations.
 sql-Structure query language<br>
 This package helps to comment database like Oracle or Sybase,retrive the data from them and use it in java program.
 
+<h3>⁡⁢⁣⁣User-defined Packages⁡</h3>
+These are the packages that are defined by the user.
+
+<h2>Imporant points:</h2>
+<ol>
+<li>Every class is part of some package.</li>
+If no package is specified, the classes in the file goes into a special unnamed package (the same unnamed package for <li>all files).</li>
+<li>All classes/interfaces in a file are part of the same package. Multiple files can specify the same package name.</li>
+If package name is specified, the file must be in a subdirectory called name (i.e., the directory name must match the <li>package name).</li>
+<li>We can access public classes in another (named) package using: package-name.class-name</li>
+</ol>
+
 <h2>Comparision table</h2>
     <table>
         <tr>
