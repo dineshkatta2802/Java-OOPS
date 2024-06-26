@@ -75,7 +75,7 @@ public class PrintName <br>
    }<br>
 }<br>
 
-<h2>Imporant points:</h2>
+<h2>⁡⁣⁢⁣Imporant points:⁡</h2>
 <ol>
 <li>Every class is part of some package.</li>
 If no package is specified, the classes in the file goes into a special unnamed package (the same unnamed package for <li>all files).</li>
