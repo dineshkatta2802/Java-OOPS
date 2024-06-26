@@ -1,11 +1,11 @@
-<h1>Packages</h1>
+<h1>⁡⁣⁢⁣Packages⁡</h1>
 The Directory or folder is also called a package<br>
 It is a mechanism to encapsulate the class, interface and sub classes<br>
 Exmaple:<br>
 java.io.*;<br>
 here java is a directory and io is the sub direactory<br>
 
-<h2>Why do  we use Packages</h2>
+<h2>⁡⁣⁢⁣Why do  we use Packages⁡</h2>
 <ol>
 <li>To prevent naming conflict</li>
 <li>Code Organisation makes searching and using easier</li>
@@ -13,30 +13,31 @@ here java is a directory and io is the sub direactory<br>
 <li>Access Control </li>
 <li>Reusability</li>
 </ol>
-<h2>How Packages work?</h2>
+<h2>⁡⁣⁢⁣How Packages work?⁡</h2>
 Package names and directory names are similar,suppose college.staff.CSE is a package then we have got three directories
 i.e,CSE present inside staff ,staff present inside college directory and the college directory is accessible through ⁡⁢⁣⁣CLASSPATH⁡(It is an Environment variable that tells Java compiler where to look for the class files to import.CLASSPATH which is generally set to directory or JAR files).<br>
 
-<h2>Packages Naming convention</h2>
+<h2>⁡⁣⁢⁣Packages Naming convention⁡</h2>
  Packages are named in reverse order of domain names, i.e., org.geeksforgeeks.practice. For example, in a college, the recommended convention is college.tech.cse, college.tech.ee, college.art.history, etc.<br>
 
- <h2>Types of Packages</h2>
+ <h2>⁡⁣⁢⁣Types of Packages⁡</h2>
  <img src="https://media.geeksforgeeks.org/wp-content/uploads/java-types-of-packages.jpg" alt="Types fo Inheritance" width="424" height="300">
  <br>
-<h3>Built-in Packages</h3>
+<h3>⁡⁢⁣⁣Built-in Packages⁡</h3>
 These packages consist of a large number of classes which are a part of Java API.Some of the commonly used built-in packages are:
-<h4>java.lang:</h4> 
+<h4>⁡⁢⁢⁢java.lang:⁡</h4> 
 lang stands for language<br>
+It has got wrapper class which convert primary datatype to objects.<br>
 Contains language support classes(e.g classes which defines primitive data types, math operations). This package is automatically imported.
-<h4>java.io:</h4> 
+<h4>⁡⁢⁢⁢java.io:⁡</h4> 
 Contains classes for supporting input / output operations.
-<h4>java.util:</h4> 
+<h4>⁡⁢⁢⁢java.util:⁡</h4> 
 Contains utility classes which implement data structures like Linked List, Dictionary and support ; for ate / Time operations.
-<h4>java.applet:</h4> 
+<h4>⁡⁢⁢⁢java.applet:⁡</h4> 
 Contains classes for creating Applets.
-<h4>java.awt:</h4> 
+<h4>⁡⁢⁢⁢java.awt:⁡</h4> 
 Contain classes for implementing the components for graphical user interfaces (like button , ;menus etc).
-<h4>java.net:</h4> 
+<h4>⁡⁢⁢⁢java.net:⁡</h4> 
 Contain classes for supporting networking operations.
 
 <h2>Comparision table</h2>
