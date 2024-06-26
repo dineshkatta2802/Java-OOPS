@@ -30,15 +30,29 @@ lang stands for language<br>
 It has got wrapper class which convert primary datatype to objects.<br>
 Contains language support classes(e.g classes which defines primitive data types, math operations). This package is automatically imported.
 <h4>⁡⁢⁢⁢java.io:⁡</h4> 
-Contains classes for supporting input / output operations.
+Contains classes for supporting input / output operations.<br>
+This Package contains streams which represent the flow of data from one place to another place.
+<h4>⁡⁢⁢⁡⁢⁢⁢java.text:⁡⁡</h4> 
+This package has 2 important classes ,"DateFormat" to format Date and time and "Number Format" to format numeric values.
 <h4>⁡⁢⁢⁢java.util:⁡</h4> 
-Contains utility classes which implement data structures like Linked List, Dictionary and support ; for ate / Time operations.
+Contains utility classes which implement data structures like Linked List,Stacks,Queues,Hashtable,Vector etc.. Dictionary and support ; for ate / Time operations.
 <h4>⁡⁢⁢⁢java.applet:⁡</h4> 
+Applets are programs which come from a server into a client and get executed in client computer.<br>
 Contains classes for creating Applets.
 <h4>⁡⁢⁢⁢java.awt:⁡</h4> 
+AWT-Abstract windows tool kit<br>
+Used to develop GUI(Graphic User Interface)<br>
 Contain classes for implementing the components for graphical user interfaces (like button , ;menus etc).
+<h4>⁡⁢⁢⁢java.swing⁡⁡⁢⁢⁢:⁡</h4>
+It is just like java.awt which is used to develop the GUI.<br>
+It is an extended package of java.awt.
 <h4>⁡⁢⁢⁢java.net:⁡</h4> 
+net-network<br>
+Client-Server Computing is done by this package.<br>
 Contain classes for supporting networking operations.
+<h4>⁡⁢⁢⁢⁡⁢⁢⁢java.sql:⁡⁡</h4> 
+sql-Structure query language<br>
+This package helps to comment database like Oracle or Sybase,retrive the data from them and use it in java program.
 
 <h2>Comparision table</h2>
     <table>
