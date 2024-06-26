@@ -15,7 +15,13 @@ here java is a directory and io is the sub direactory<br>
 </ol>
 <h2>How Packages work?</h2>
 Package names and directory names are similar,suppose college.staff.CSE is a package then we have got three directories
-i.e,CSE present inside staff ,staff present inside college directory and the college directory is accessible through ⁡⁢⁣⁣CLASSPATH⁡(It is an Environment variable that tells Java compiler where to look for the class files to import.CLASSPATH which is generally set to directory or JAR files).
+i.e,CSE present inside staff ,staff present inside college directory and the college directory is accessible through ⁡⁢⁣⁣CLASSPATH⁡(It is an Environment variable that tells Java compiler where to look for the class files to import.CLASSPATH which is generally set to directory or JAR files).<br>
+
+<h2>Packages Naming convention</h2>
+ Packages are named in reverse order of domain names, i.e., org.geeksforgeeks.practice. For example, in a college, the recommended convention is college.tech.cse, college.tech.ee, college.art.history, etc.<br>
+
+ <h2>Types of Packages</h2>
+ <img src="https://media.geeksforgeeks.org/wp-content/uploads/java-types-of-packages.jpg" alt="Types fo Inheritance" width="424" height="300">
 
 <h2>Comparision table</h2>
     <table>
