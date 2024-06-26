@@ -1,4 +1,4 @@
-package Inheritance.Super_Keyword;
+package Keyword.k.Super_Keyword;
 class Parent {
     void mssg() {
         System.out.println("Parent class method");
