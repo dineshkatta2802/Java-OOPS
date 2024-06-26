@@ -55,7 +55,25 @@ sql-Structure query language<br>
 This package helps to comment database like Oracle or Sybase,retrive the data from them and use it in java program.
 
 <h3>⁡⁢⁣⁣User-defined Packages⁡</h3>
-These are the packages that are defined by the user.
+These are the packages that are defined by the user.<br>
+/* import 'MyClass' class from 'names' myPackage */<br>
+import myPackage.MyClass;<br>
+<br>
+public class PrintName <br>
+{<br>
+   public static void main(String args[]) <br>
+   {       <br>
+      // Initializing the String variable <br>
+      // with a value <br>
+      String name = "GeeksforGeeks";<br>
+      <br>
+      // Creating an instance of class MyClass in <br>
+      // the package.<br>
+      MyClass obj = new MyClass();<br>
+      <br>
+      obj.getNames(name);<br>
+   }<br>
+}<br>
 
 <h2>Imporant points:</h2>
 <ol>
