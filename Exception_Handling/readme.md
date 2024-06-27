@@ -52,5 +52,18 @@ The Built-in Exceptions are classified into 2 types-<br>
 </ul>
 </ol>
 
-<h3>User-Defined Exception</h3>
+<h3>⁡⁢⁣⁣User-Defined Exception⁡</h3>
 Some Built-in java exception sometimes cannot cannot be able to describe situation in such cases the programer can make exceptions
+
+<h2>⁡⁣⁢⁣Exception Handling in Java⁡</h2>
+When there is an exception the programmer must carefully design the program to handle exceptions<br>
+There are 3 steps to handle an Exeption<br>
+<ol>
+<li>⁡⁢⁣⁣Step-1:⁡</li>
+<ul><li>A programmer should loo for the statement that can throw an exception  and has possibilty of throwing the exception, Such statements should be written in 'try' block</li>
+<li>try{<br>
+----Statements---<br>
+}<br</li></ul>
+<li>⁡⁢⁣⁣Step-2⁡⁢⁣⁣:⁡⁡</li>
+<li>⁡⁢⁣⁣Step-3:⁡</li>
+</ol>
