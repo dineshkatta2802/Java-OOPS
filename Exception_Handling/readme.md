@@ -60,12 +60,27 @@ When there is an exception the programmer must carefully design the program to h
 There are 3 steps to handle an Exeption<br>
 <ol>
 <li>⁡⁢⁣⁣Step-1:⁡</li>
-<ul><li>A programmer should loo for the statement that can throw an exception  and has possibilty of throwing the exception, Such statements should be written in 'try' block</li>
+<ul><li>A programmer should look for the statement that can throw an exception  and has possibilty of throwing the exception, Such statements should be written in 'try' block</li>
+<li>It contain the statement that throws an exception</li>
+<li>Simple we can say that the try block contains a set of statements where an exception can occur.</li>
 <li>try{<br>
 ----Statements---<br>
 }<br>
 </li>
-<li>The most important feature of the 'try' block is that it will not terminate the program even when there is an exception inside it</li></ul>
+<li>The most important feature of the 'try' block is that it will not terminate the program even when there is an exception inside it i.e, if an exception occurs in 'try' block it move on to 'Catch' block</li>
+<li>When JVM understad that there is an exception then it stores in the exception details in the exception strack and move to the 'Catch' block</li></ul>
 <li>⁡⁢⁣⁣Step-2⁡⁢⁣⁣:⁡⁡</li>
+<ul>
+<li>The Catch block contains the code that handles the exception</li>
+<li>You can have multiple exceptions in Catch bllock to handle different types of exceptiions</li>
+<li>try {<br>
+    // risky code<br>
+} catch (ExceptionType1 e1) {<br>
+    // handle exception type 1<br>
+} catch (ExceptionType2 e2) {<br>
+    // handle exception type 2<br>
+}<br>
+</li>
+</ul>
 <li>⁡⁢⁣⁣Step-3:⁡</li>
 </ol>
