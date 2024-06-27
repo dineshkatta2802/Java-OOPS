@@ -30,8 +30,15 @@ When an exception occurs within a method it creates an object it is called excep
 These Exceptions are available in Java libraries these are suitable to explain certain exceptions<br>
 The Built-in Exceptions are classified into 2 types-<br>
 <ol>
-<li>Chechked Exceptiosn</li>
-<ul><li>These Exceptiosna are also called as Compile-time Exceptiosn because these are found during the compile-time by the compiler</li></ul>
-<li>Unchecked Exceptions</li>
+<li>⁡⁢⁢⁢Chechked Exceptions⁡</li>
+<ul>
+<li>These Exceptiosna are also called as Compile-time Exceptiosn because these are found during the compile-time by the compiler</li>
+<li>Checked Exceptionis furher divide into two types-</li>
+<ul>
+<li>Fullly Checked</li>
+<li>Partially Checked</li></ul>
+</ul>
+
+<li>⁡⁢⁢⁢Unchecked Exceptions⁡</li>
 <ul><li>It is opposite to the Checked Exceptions unlike checked exceptions they don't require to be fixed because they don't disrupt the program</li></ul>
 </ol>
