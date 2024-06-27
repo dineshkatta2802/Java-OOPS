@@ -63,7 +63,9 @@ There are 3 steps to handle an Exeption<br>
 <ul><li>A programmer should loo for the statement that can throw an exception  and has possibilty of throwing the exception, Such statements should be written in 'try' block</li>
 <li>try{<br>
 ----Statements---<br>
-}<br</li></ul>
+}<br>
+</li>
+<li>The most important feature of the 'try' block is that it will not terminate the program even when there is an exception inside it</li></ul>
 <li>⁡⁢⁣⁣Step-2⁡⁢⁣⁣:⁡⁡</li>
 <li>⁡⁢⁣⁣Step-3:⁡</li>
 </ol>
