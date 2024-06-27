@@ -36,7 +36,10 @@ The Built-in Exceptions are classified into 2 types-<br>
 <li>Checked Exceptionis furher divide into two types-</li>
 <ul>
 <li>Fullly Checked</li>
-<li>Partially Checked</li></ul>
+<ul><li>A Fully checked Exception is an checked exception it's child classes are also checked like IO Exception and Interupted Exception</li></ul>
+<li>Partially Checked</li>
+<ul><li>A Partially Checked Exception is an Exception where only some of it's child classes are checked</li></ul>
+</ul>
 </ul>
 
 <li>⁡⁢⁢⁢Unchecked Exceptions⁡</li>
