@@ -43,5 +43,10 @@ The Built-in Exceptions are classified into 2 types-<br>
 </ul>
 
 <li>⁡⁢⁢⁢Unchecked Exceptions⁡</li>
-<ul><li>It is opposite to the Checked Exceptions unlike checked exceptions they don't require to be fixed because they don't disrupt the program</li></ul>
+<ul><li>It is opposite to the Checked Exceptions unlike checked exceptions they don't require to be fixed because they don't disrupt the program</li>
+<li>These exceptions are runtime exceptions that are not required to be caught or declared in a throws clause</li>
+<ul><li>ArrayIndexOutOfBoundsException: This exception is thrown when you attempt to access an array index that is out of bounds.</li>
+<li>NullPointerException: This exception is thrown when you attempt to access a null object reference.</li>
+<li>ArithmeticException: This exception is thrown when you attempt to divide by zero or perform an invalid arithmetic operation.</li></ul>
+</ul>
 </ol>
