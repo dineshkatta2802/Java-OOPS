@@ -22,3 +22,7 @@ When an exception occurs within a method it creates an object it is called excep
 
  <h2>⁡⁣⁢⁣Hierarchy for Exceptions and Errors⁡</h2>
  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230613122108/Exception-Handling-768.png" alt="Hierarchy for Errors and Exceptions" width="498" height="300">
+
+ <h2>⁡⁣⁢⁣Types of Exceptions⁡</h2>
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230714113547/Exceptions-in-Java-1-768.png" alt="Types of Exception" width="598" height="300">
+  
