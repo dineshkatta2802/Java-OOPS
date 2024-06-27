@@ -25,4 +25,13 @@ When an exception occurs within a method it creates an object it is called excep
 
  <h2>⁡⁣⁢⁣Types of Exceptions⁡</h2>
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230714113547/Exceptions-in-Java-1-768.png" alt="Types of Exception" width="598" height="300">
-  
+
+<h3>⁡⁢⁣⁣Built-in Exception:⁡</h3>
+These Exceptions are available in Java libraries these are suitable to explain certain exceptions<br>
+The Built-in Exceptions are classified into 2 types-<br>
+<ol>
+<li>Chechked Exceptiosn</li>
+<ul><li>These Exceptiosna are also called as Compile-time Exceptiosn because these are found during the compile-time by the compiler</li></ul>
+<li>Unchecked Exceptions</li>
+<ul><li>It is opposite to the Checked Exceptions unlike checked exceptions they don't require to be fixed because they don't disrupt the program</li></ul>
+</ol>
