@@ -6,7 +6,7 @@ When an exception occurs within a method it creates an object it is called excep
 
 <h2>⁡⁣⁢⁣Major reasons why an exception Occurs⁡</h2>
 <ol>
-<li></li>Invalid user input</li>
+<li>Invalid user input</li>
 <li>Device failure</li>
 <li>Loss of network connection</li>
 <li>Physical limitations (out-of-disk memory)</li>
