@@ -68,6 +68,7 @@ There are 3 steps to handle an Exeption<br>
 <ul><li>A programmer should look for the statement that can throw an exception  and has possibilty of throwing the exception, Such statements should be written in 'try' block</li>
 <li>It contain the statement that throws an exception</li>
 <li>Simple we can say that the try block contains a set of statements where an exception can occur.</li>
+<li>try block must be followed by catch</li>
 <li>try{<br>
 ----Statements---<br>
 }<br>
@@ -76,7 +77,7 @@ There are 3 steps to handle an Exeption<br>
 <li>When JVM understad that there is an exception then it stores in the exception details in the exception strack and move to the 'Catch' block</li></ul>
 <li>⁡⁢⁣⁣⁡⁢⁣⁣⁡⁢⁣⁣catch Block⁡⁡⁡⁡</li>
 <ul>
-<li>The Catch block contains the code that handles the exception</li>
+<li>The Catch block contains the code that handles the exception by declaring the exception within the parameter</li>
 <li>You can have multiple exceptions in Catch bllock to handle different types of exceptiions</li>
 <li>try {<br>
     // risky code<br>
@@ -87,6 +88,7 @@ There are 3 steps to handle an Exeption<br>
 }<br>
 </li>
 </ul>
+<li>  <img src="https://static.javatpoint.com/core/images/java-try-catch-block.png" alt="Internal work of try-catch block" width="600" height="384"></li>
 <li>⁡⁢⁣⁡⁢⁣⁣⁡⁢⁣⁣throw Block⁡⁡⁡</li>
 <ul>
 <li>The Throw Keyword is used to transfer control form try to catch</li>
@@ -96,6 +98,41 @@ There are 3 steps to handle an Exeption<br>
 <ul><li>This is used in the method signature to indicate that the method might throw certain exceptions, letting the caller know they need to handle or declare these exceptions.</li></ul>
 </ol>
 
+<h2>⁡⁣⁢⁣Example:⁡⁡</h2>
+<h3>⁡⁢⁣⁣Case 1:⁡</h3>
+package Exception_Handling;
+//Here lets see whether there the given expression can throw the exception
+public class Ex1 {
+
+    public static void main(String[] args) {
+        int x = 50/0;
+        System.out.println(x);
+        System.out.println("The is not termiinated");
+    }
+}
+
+<h3>⁡⁢⁣⁣Case 2:⁡</h3>
+<h4>⁡⁢⁢⁢"The code is not terminated", is printed.⁡</h4>
+package Exception_Handling;
+//Here lets see whether there the given expression can throw the exception
+public class Ex1 {
+    public stativ void main(string[]args){
+        //Now consider the below code
+        try{
+            //we thought that the this expression can throw the exception so we place this bit of code in try block
+            int x = 50/0;
+        }
+        //in this catch block we write what kind of exception that is to be handled sinece we are dealing with the 
+        //integers and number we used the Arithmetic Exception
+        catch(ArithmeticException e){
+            System.out.println(e);
+        }
+        System.out.println("the code is not terminated");
+    }
+}
+
+<h3>⁡⁢⁣⁣Case 3:⁡</h3>
+<h4>
 <h2>⁡⁣⁢⁣Advantages and Disadvantages⁡</h2>
 <table>
     <thead>
