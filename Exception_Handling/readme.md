@@ -115,8 +115,7 @@ public class Ex1 {<br>
 Exception in thread "main" java.lang.Error: Unresolved compilation problem:<br>
 at Exception_Handling.Ex1.main(Ex1.java:5)<br>
 
-<h3>⁡⁢⁣⁣Case 2:⁡</h3>
-<h4>⁡⁢⁢⁢"The code is not terminated", is printed.⁡</h4>
+<h3>⁡⁢⁣⁣Case 2:⁡</h3><h4>⁡⁢⁢⁢"The code is not terminated", is printed.⁡</h4>
 package Exception_Handling;<br>
 //Here lets see whether there the given expression can throw the exception<br>
 public class Ex1 {<br>
@@ -138,8 +137,7 @@ public class Ex1 {<br>
 java.lang.ArithmeticException: / by zero<br>
 the code is not terminated<br>
 
-<h3>⁡⁢⁣⁣Case 3:⁡</h3>
-<h4>⁡⁢⁢⁢⁡⁢⁢⁢"The code is not terminated", is not printed bcoz it's in try block.⁡⁡</h4>
+<h3>⁡⁢⁣⁣Case 3:⁡</h3><h4>⁡⁢⁢⁢⁡⁢⁢⁢"The code is not terminated", is not printed bcoz it's in try block.⁡⁡</h4>
 package Exception_Handling;<br>
 //Here lets see whether there the given expression can throw the exception<br>
 public class Ex1 {<br>
