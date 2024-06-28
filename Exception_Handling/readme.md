@@ -111,7 +111,6 @@ public class Ex1 {<br>
         System.out.println("The is not termiinated");<br>
     }<br>
 }<br>
-<br>
 <h4>⁡⁢⁢⁢Output:⁡</h4>⁡
 Exception in thread "main" java.lang.Error: Unresolved compilation problem:<br>
 at Exception_Handling.Ex1.main(Ex1.java:5)<br>
@@ -135,7 +134,6 @@ public class Ex1 {<br>
         System.out.println("the code is not terminated");<br>
     }<br>
 }<br>
-<br>
 <h4>⁡⁢⁢⁢Output:⁡⁡</h4>⁡
 java.lang.ArithmeticException: / by zero<br>
 the code is not terminated<br>
@@ -157,7 +155,6 @@ public class Ex1 {<br>
         }
     }<br>
 }<br>
-<br>
 <h4>⁡⁢⁢⁡⁢⁢⁢Output:⁡⁡⁡</h4>⁡
 java.lang.ArithmeticException: / by zero<br>
 
