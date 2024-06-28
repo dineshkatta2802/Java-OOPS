@@ -99,40 +99,69 @@ There are 3 steps to handle an Exeption<br>
 </ol>
 
 <h2>⁡⁣⁢⁣Example:⁡⁡</h2>
-<h3>⁡⁢⁣⁣Case 1:⁡</h3>
-package Exception_Handling;
-//Here lets see whether there the given expression can throw the exception
-public class Ex1 {
 
-    public static void main(String[] args) {
-        int x = 50/0;
-        System.out.println(x);
-        System.out.println("The is not termiinated");
-    }
-}
+<h3>⁡⁢⁣⁣Case 1:⁡</h3>
+package Exception_Handling;<br>
+//Here lets see whether there the given expression can throw the exception<br>
+public class Ex1 {<br>
+<br>
+    public static void main(String[] args) {<br>
+        int x = 50/0;<br>
+        System.out.println(x);<br>
+        System.out.println("The is not termiinated");<br>
+    }<br>
+}<br>
+<br>
+<h4>⁡⁢⁢⁢Output:⁡</h4>⁡
+Exception in thread "main" java.lang.Error: Unresolved compilation problem:<br>
+at Exception_Handling.Ex1.main(Ex1.java:5)<br>
 
 <h3>⁡⁢⁣⁣Case 2:⁡</h3>
 <h4>⁡⁢⁢⁢"The code is not terminated", is printed.⁡</h4>
-package Exception_Handling;
-//Here lets see whether there the given expression can throw the exception
-public class Ex1 {
-    public stativ void main(string[]args){
-        //Now consider the below code
+package Exception_Handling;<br>
+//Here lets see whether there the given expression can throw the exception<br>
+public class Ex1 {<br>
+    public stativ void main(string[]args){<br>
+        //Now consider the below code<br>
+        try{<br>
+            //we thought that the this expression can throw the exception so we place this bit of code in try block<br>
+            int x = 50/0;<br>
+        }<br>
+        //in this catch block we write what kind of exception that is to be handled sinece we are dealing with the <br>
+        //integers and number we used the Arithmetic Exception<br>
+        catch(ArithmeticException e){<br>
+            System.out.println(e);<br>
+        }<br>
+        System.out.println("the code is not terminated");<br>
+    }<br>
+}<br>
+<br>
+<h4>⁡⁢⁢⁢Output:⁡⁡</h4>⁡
+java.lang.ArithmeticException: / by zero<br>
+the code is not terminated<br>
+
+<h3>⁡⁢⁣⁣Case 3:⁡</h3>
+<h4>⁡⁢⁢⁢⁡⁢⁢⁢"The code is not terminated", is not printed bcoz it's in try block.⁡⁡</h4>
+package Exception_Handling;<br>
+//Here lets see whether there the given expression can throw the exception<br>
+public class Ex1 {<br>
+    public stativ void main(string[]args){<br>
+         //Now consider 
         try{
-            //we thought that the this expression can throw the exception so we place this bit of code in try block
+            //The print statement "the code is not terminated", is brought inside the try block
             int x = 50/0;
+            System.out.println("the code is not terminated");
         }
-        //in this catch block we write what kind of exception that is to be handled sinece we are dealing with the 
-        //integers and number we used the Arithmetic Exception
         catch(ArithmeticException e){
             System.out.println(e);
         }
-        System.out.println("the code is not terminated");
-    }
-}
+    }<br>
+}<br>
+<br>
+<h4>⁡⁢⁢⁡⁢⁢⁢Output:⁡⁡⁡</h4>⁡
+java.lang.ArithmeticException: / by zero<br>
 
-<h3>⁡⁢⁣⁣Case 3:⁡</h3>
-<h4>
+
 <h2>⁡⁣⁢⁣Advantages and Disadvantages⁡</h2>
 <table>
     <thead>

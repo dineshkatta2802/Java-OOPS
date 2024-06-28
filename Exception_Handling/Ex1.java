@@ -32,18 +32,17 @@ public class Ex1 {
          */
 
         // //⁡⁣⁣⁢Case 3:⁡
-         //Now consider 
-        try{
-            //The print statement "the code is not terminated", is brought inside the try block
-            int x = 50/0;
-            System.out.println("the code is not terminated");
-        }
-        catch(ArithmeticException e){
-            System.out.println(e);
-
-        /*⁡⁣⁣⁢Output:⁡
+        //  //Now consider 
+        // try{
+        //     //The print statement "the code is not terminated", is brought inside the try block
+        //     int x = 50/0;
+        //     System.out.println("the code is not terminated");
+        // }
+        // catch(ArithmeticException e){
+        //     System.out.println(e);
+        // }
+        /*⁡⁣⁣⁡⁣⁣⁢Output:⁡⁡
          * java.lang.ArithmeticException: / by zero
          */
-        }
     }
 }
