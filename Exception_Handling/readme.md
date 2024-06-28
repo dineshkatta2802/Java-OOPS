@@ -55,6 +55,11 @@ The Built-in Exceptions are classified into 2 types-<br>
 <h3>⁡⁢⁣⁣User-Defined Exception⁡</h3>
 Some Built-in java exception sometimes cannot cannot be able to describe situation in such cases the programer can make exceptions
 
+<h2>⁡⁣⁢⁣Hierarchy of Java Exception classes⁡</h2>
+  <img src="https://static.javatpoint.com/core/images/hierarchy-of-exception-handling.png" alt="Hierarchy between exception classes" width="482" height="550">
+
+<h2>⁡⁣⁢⁣Built-in Exception⁡</h2>
+
 <h2>⁡⁣⁢⁣Exception Handling in Java⁡</h2>
 When there is an exception the programmer must carefully design the program to handle exceptions<br>
 There are 3 steps to handle an Exeption<br>
@@ -122,3 +127,5 @@ There are 3 steps to handle an Exeption<br>
         </tr>
     </tbody>
 </table>
+
+<h2>⁡⁣⁢⁣Methods to print Exception Information⁡</h2>
