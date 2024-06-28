@@ -59,7 +59,7 @@ Some Built-in java exception sometimes cannot cannot be able to describe situati
 When there is an exception the programmer must carefully design the program to handle exceptions<br>
 There are 3 steps to handle an Exeption<br>
 <ol>
-<li>⁡⁢⁣⁣Step-1:⁡</li>
+<li>⁡⁢⁣⁣⁡⁢⁣⁣⁡⁢⁣⁣⁡⁢⁣⁣try Block⁡⁡⁡</li>
 <ul><li>A programmer should look for the statement that can throw an exception  and has possibilty of throwing the exception, Such statements should be written in 'try' block</li>
 <li>It contain the statement that throws an exception</li>
 <li>Simple we can say that the try block contains a set of statements where an exception can occur.</li>
@@ -69,7 +69,7 @@ There are 3 steps to handle an Exeption<br>
 </li>
 <li>The most important feature of the 'try' block is that it will not terminate the program even when there is an exception inside it i.e, if an exception occurs in 'try' block it move on to 'Catch' block</li>
 <li>When JVM understad that there is an exception then it stores in the exception details in the exception strack and move to the 'Catch' block</li></ul>
-<li>⁡⁢⁣⁣Step-2⁡⁢⁣⁣:⁡⁡</li>
+<li>⁡⁢⁣⁣⁡⁢⁣⁣⁡⁢⁣⁣catch Block⁡⁡⁡⁡</li>
 <ul>
 <li>The Catch block contains the code that handles the exception</li>
 <li>You can have multiple exceptions in Catch bllock to handle different types of exceptiions</li>
@@ -82,5 +82,43 @@ There are 3 steps to handle an Exeption<br>
 }<br>
 </li>
 </ul>
-<li>⁡⁢⁣⁣Step-3:⁡</li>
+<li>⁡⁢⁣⁡⁢⁣⁣⁡⁢⁣⁣throw Block⁡⁡⁡</li>
+<ul>
+<li>The Throw Keyword is used to transfer control form try to catch</li>
+<li>This is used to manually throw an exception. It's like saying, "Something went wrong, and I'm explicitly telling you what it is."</li>
+</ul>
+<li>⁡⁢⁣⁣throws Block⁡<li>
+<ul><li>This is used in the method signature to indicate that the method might throw certain exceptions, letting the caller know they need to handle or declare these exceptions.</li></ul>
 </ol>
+
+<h2>⁡⁣⁢⁣Advantages and Disadvantages⁡</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Improves program structure by separating error handling code from regular code.</td>
+            <td>Can make code harder to understand if exceptions are overused or misused.</td>
+        </tr>
+        <tr>
+            <td>Provides a mechanism to signal errors from one part of a program to another, improving code modularity.</td>
+            <td>Exception handling can add overhead to the program, affecting performance.</td>
+        </tr>
+        <tr>
+            <td>Allows for handling errors gracefully and providing meaningful messages to users.</td>
+            <td>Unchecked exceptions can lead to unexpected program behavior if not properly managed.</td>
+        </tr>
+        <tr>
+            <td>Facilitates debugging by allowing developers to catch and handle exceptions appropriately.</td>
+            <td>Complex exception handling logic can lead to increased code complexity.</td>
+        </tr>
+        <tr>
+            <td>Helps in resource management by ensuring resources are properly closed even in case of errors.</td>
+            <td>Exception handling can sometimes mask the actual problem, making it harder to identify the root cause.</td>
+        </tr>
+    </tbody>
+</table>
