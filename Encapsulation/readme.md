@@ -1,8 +1,9 @@
-<h1>Encapsulation</h2>
+<h1>⁡⁣⁢⁣Encapsulation⁡</h2>
 Wrapping up of data under a single unit.<br>
 Java Encapsulation is a way of hiding the implementation details of a class from outside access and only exposing a public interface that can be used to interact with the class.<br>
 It is achieved by declaring the instance variables of a class as private, which means they can only be accessed within the class<br>
-<h2>Differnce between Encapsulation and Abstraction</h2>
+<hr>
+<h2>⁡⁣⁢⁣Differnce between Encapsulation and Abstraction⁡</h2>
 <table>
     <tr>
         <th>Aspect</th>
