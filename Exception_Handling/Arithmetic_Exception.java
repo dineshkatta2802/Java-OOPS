@@ -1,6 +1,6 @@
 package Exception_Handling;
 //Here lets see whether there the given expression can throw the exception
-public class Ex1 {
+public class Arithmetic_Exception {
 
     public static void main(String[] args) {
         // //⁡⁣⁣⁢Case 1:⁡
@@ -31,16 +31,16 @@ public class Ex1 {
          *  the code is not terminated
          */
 
-        // //⁡⁣⁣⁢Case 3:⁡
-        //  //Now consider 
-        // try{
-        //     //The print statement "the code is not terminated", is brought inside the try block
-        //     int x = 50/0;
-        //     System.out.println("the code is not terminated");
-        // }
-        // catch(ArithmeticException e){
-        //     System.out.println(e);
-        // }
+        //⁡⁣⁣⁢Case 3:⁡
+        //Now consider 
+        try{
+            //The print statement "the code is not terminated", is brought inside the try block
+            int x = 50/0;
+            System.out.println("the code is not terminated");
+        }
+        catch(ArithmeticException e){
+            System.out.println(e);
+        }
         /*⁡⁣⁣⁡⁣⁣⁢Output:⁡⁡
          * java.lang.ArithmeticException: / by zero
          */

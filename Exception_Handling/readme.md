@@ -98,11 +98,10 @@ There are 3 steps to handle an Exeption<br>
 <ul><li>This is used in the method signature to indicate that the method might throw certain exceptions, letting the caller know they need to handle or declare these exceptions.</li></ul>
 </ol>
 
-<h2>⁡⁣⁢⁣Example:⁡⁡</h2>
+<h2>⁡⁣⁢⁣⁡⁣⁢⁣Different types of Built-in Exceptions⁡⁡⁣⁢⁣:⁡⁡⁡</h2>
 
+<h2>⁡⁡⁣⁢⁣Arithmetic Exception:⁡⁡</h2>
 <h3>⁡⁢⁣⁣Case 1:⁡</h3>
-package Exception_Handling;<br>
-//Here lets see whether there the given expression can throw the exception<br>
 public class Ex1 {<br>
 <br>
     public static void main(String[] args) {<br>
@@ -116,8 +115,6 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem:<br>
 at Exception_Handling.Ex1.main(Ex1.java:5)<br>
 
 <h3>⁡⁢⁣⁣Case 2:⁡⁢⁢⁡⁢⁢⁢"The code is not terminated", is printed.⁡⁡</h3>
-package Exception_Handling;<br>
-//Here lets see whether there the given expression can throw the exception<br>
 public class Ex1 {<br>
     public stativ void main(string[]args){<br>
         //Now consider the below code<br>
@@ -138,8 +135,6 @@ java.lang.ArithmeticException: / by zero<br>
 the code is not terminated<br>
 
 <h3>⁡⁢⁣⁣Case 3:⁡⁢⁢⁢"The code is not terminated", is not printed bcoz it's in try block.⁡⁡⁡</h3>⁢
-package Exception_Handling;<br>
-//Here lets see whether there the given expression can throw the exception<br>
 public class Ex1 {<br>
     public stativ void main(string[]args){<br>
          //Now consider 
