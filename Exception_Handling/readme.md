@@ -100,7 +100,8 @@ There are 3 steps to handle an Exeption<br>
 
 <h2>⁡⁣⁢⁣⁡⁣⁢⁣Different types of Built-in Exceptions⁡⁡⁣⁢⁣:⁡⁡⁡</h2>
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230714113547/Exceptions-in-Java-1-768.png" alt="Types of Exception" width="598" height="300">
-<h2>⁡⁡⁣⁢⁣Arithmetic Exception:⁡⁡</h2>
+<h2>⁡⁣⁢⁣->Checked Exceptions⁡</h2>
+<h2>⁡⁣⁢⁣-->Arithmetic Exception:⁡⁡⁡</h2>
 <h3>⁡⁢⁣⁣Case 1:⁡</h3>
 public class Ex1 {<br>
 <br>
