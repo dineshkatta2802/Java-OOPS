@@ -3,7 +3,7 @@
 An Exception is an unwanted and unexpected event that occurs during the compiling of code which disrupts the flow of the normal code<br>
 Exception handling is one of the effective method to deal with runtime errors like ClassNotFoundException,IOException,SQLException etc..., so that the regular flow of the application is preversed<br>
 When an exception occurs within a method it creates an object it is called exception object.<br>
-
+<hr>
 <h2>⁡⁣⁢⁣Major reasons why an exception Occurs⁡</h2>
 <ol>
 <li>Invalid user input</li>
@@ -13,17 +13,17 @@ When an exception occurs within a method it creates an object it is called excep
 <li>Code errors</li>
 <li>Opening an unavailable file</li>
 </ol>
-
+<hr>
 <h2>⁡⁣⁢⁣Difference between An Error and Exception⁡</h2>
 <h3>⁡⁢⁣⁣Error:⁡</h3>
  An Error indicates a serious problem that a reasonable application should not try to catch.
 <h3>⁡⁢⁣⁣Exception:⁡</h3>
  Exception indicates conditions that a reasonable application might try to catch.
-
+<hr>
  <h2>⁡⁣⁢⁣Hierarchy for Exceptions and Errors⁡</h2>
  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230613122108/Exception-Handling-768.png" alt="Hierarchy for Errors and Exceptions" width="498" height="300">
  Here Throwable is a class that represent all types of Errors and Exceptiosn that can occur in Java.
-
+<hr>
  <h2>⁡⁣⁢⁣Types of Exceptions⁡</h2>
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230714113547/Exceptions-in-Java-1-768.png" alt="Types of Exception" width="598" height="300">
 
@@ -57,8 +57,7 @@ Some Built-in java exception sometimes cannot cannot be able to describe situati
 
 <h2>⁡⁣⁢⁣Hierarchy of Java Exception classes⁡</h2>
   <img src="https://static.javatpoint.com/core/images/hierarchy-of-exception-handling.png" alt="Hierarchy between exception classes" width="482" height="550">
-
-<h2>⁡⁣⁢⁣Built-in Exception⁡</h2>
+<hr>
 
 <h2>⁡⁣⁢⁣Exception Handling in Java⁡</h2>
 When there is an exception the programmer must carefully design the program to handle exceptions<br>
@@ -97,9 +96,10 @@ There are 3 steps to handle an Exeption<br>
 <li>⁡⁢⁣⁣throws Block⁡<li>
 <ul><li>This is used in the method signature to indicate that the method might throw certain exceptions, letting the caller know they need to handle or declare these exceptions.</li></ul>
 </ol>
-
+<hr>
 <h2>⁡⁣⁢⁣⁡⁣⁢⁣Different types of Built-in Exceptions⁡⁡⁣⁢⁣:⁡⁡⁡</h2>
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230714113547/Exceptions-in-Java-1-768.png" alt="Types of Exception" width="598" height="300">
+  <hr>
 <h2>⁡⁣⁢⁣->Checked Exceptions⁡</h2>
 
 <h2>⁡⁣⁢⁣->Unchecked Exceptions⁡</h2>
@@ -155,7 +155,7 @@ public class Ex1 {<br>
 <h4>⁡⁢⁢⁡⁢⁢⁢Output:⁡⁡⁡</h4>⁡
 java.lang.ArithmeticException: / by zero<br>
 
-
+<hr>
 <h2>⁡⁣⁢⁣Advantages and Disadvantages⁡</h2>
 <table>
     <thead>
@@ -187,5 +187,5 @@ java.lang.ArithmeticException: / by zero<br>
         </tr>
     </tbody>
 </table>
-
+<hr>
 <h2>⁡⁣⁢⁣Methods to print Exception Information⁡</h2>

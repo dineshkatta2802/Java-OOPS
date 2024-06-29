@@ -3,10 +3,10 @@ It is a reference type which is similar to Class<br>
 The Interface can only contain constants, method signatures, default methods, static methods, and nested types<br>
 Interfaces cannot contain instance fields, constructors, or method implementations<br>
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230419112500/Intefaces-in-Java-2.webp" alt="Multiple Inheritance" width="489" height="300">
-
+<hr>
 <h2>⁡⁣⁢⁣Relationship between Interfaces and Classes⁡</h2>
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230419112343/Intefaces-in-Java-1.webp" alt="Multiple Inheritance" width="670" height="247">
-
+<hr>
 <h2>⁡⁣⁢⁣Classes v/s Interface⁡</h2>
     <table>
         <tr>
@@ -65,7 +65,7 @@ Interfaces cannot contain instance fields, constructors, or method implementatio
             <td>Declared using the <code>interface</code> keyword.</td>
         </tr>
     </table>
-
+<hr>
 <h2>⁡⁣⁢⁣Advantages and Disadvantages⁡</h2>
     <table>
         <tr>
@@ -105,7 +105,7 @@ Interfaces cannot contain instance fields, constructors, or method implementatio
         </tr>
     </table>
 
-
+<hr>
 <h2>⁡⁣⁢⁣Interface v/s Classes⁡</h2>
     <table>
         <tr>
@@ -253,7 +253,7 @@ Car stopped
             </td>
         </tr>
     </table>
-
+<hr>
 <h2>⁡⁣⁢⁣Multiple Inheritance using Interface⁡</h2>
 <img src="https://static.javatpoint.com/images/core/multipleinheritance.jpg" alt="Multiple Inheritance" width="702" height="279">
 // Define an interface for all animals<br>

@@ -45,7 +45,7 @@ Java doesnot support Multiple Inheritance<br>
 Why Multiple Inheritance is not supported by java?
 
 <hr>
-Limitations of Inheritance?<br>
+<h2>⁡⁣⁢⁣Limitations of Inheritance?⁡</h2><br>
 1.Tight Coupling:<br> Inheritance creates strong dependencies between classes.<br>
 2.Fragile Base Class Problem:<br> Changes in a superclass can break subclasses.<br>
 3.Limited Scope for Reuse:<br> Inheritance only supports "is-a" relationships.<br>

@@ -15,7 +15,7 @@ the Abstract class<br>
 4.⁡⁢⁣⁣A͟b͟s͟t͟r͟a͟c͟t c͟l͟a͟s͟s c͟a͟n h͟a͟v͟e C͟o͟n͟s͟t͟r͟u͟c͟t͟o͟r͟s⁡ it also similar to that of the methods u need to instantiate them in sub class<br>
 5.⁡⁢⁣⁣A͟b͟s͟t͟r͟a͟c͟t c͟l͟a͟s͟s c͟a͟n c͟o͟n͟t͟a͟i͟n i͟n͟s͟t͟a͟n͟c͟e v͟a͟r͟i͟a͟b͟l͟e͟s⁡,whih can be used by both abstract class and the sub class<br>
 6.⁡⁢⁣⁣A͟b͟s͟t͟r͟a͟c͟t c͟l͟a͟s͟s c͟a͟n i͟m͟p͟l͟e͟m͟e͟n͟t i͟n͟t͟e͟r͟f͟a͟c͟e⁡<br>
-
+<hr>
 <h2>⁡⁣⁢⁣Abstarct Methods:⁡</h2>
 Sometimes we just need to declare the method in super class only<br>
 At that time we use Abstract keyword<br>
@@ -35,7 +35,7 @@ Since these methods would not be having method body they need to be Overrided by
 </ul>
 </ol>
 <br>
-
+<hr>
 <h2>⁡⁣⁢⁣Advantages and Disadvantages of Abstract Keyword⁡</h2>
 <table>
   <thead>
@@ -64,7 +64,7 @@ Since these methods would not be having method body they need to be Overrided by
   </tbody>
 </table>
 
-
+<hr>
 <h2>⁡⁣⁢⁣Abstract Class:⁡</h2>
 -An abstract class is declared using the abstract keyword.<br>
 -An abstract class is a class that cannot be instantiated on its own and is intended to be subclassed.<br>

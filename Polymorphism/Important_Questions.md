@@ -91,7 +91,7 @@ public class Test {
     </table>
 </body>
 </html>
-
+<hr>
 <h2>⁡⁣⁢⁣2.What Function that cannot be Overloaded by C++?⁡</h2><br>
 
 <h3>⁡⁢⁣⁣1.Main Function (`main`):⁡</h3><br>
@@ -136,7 +136,7 @@ public:<br>
 ```<br>
 <br>
 In summary, the `main` function, destructors, and certain operators have restrictions in C++ and cannot be overloaded.<br>
-
+<hr>
 <h2>⁡⁣⁢⁣3.What are all the Operartors that cannot be overloaded?⁡</h2><br>
 <!DOCTYPE html>
 <html>
@@ -223,7 +223,7 @@ In summary, the `main` function, destructors, and certain operators have restric
     </table>
 </body>
 </html>
-
+<hr>
 <h2>⁡⁣⁢⁣4.What is a Virtual Function?⁡</h2><br>
 <!DOCTYPE html>
 <html>
@@ -303,7 +303,7 @@ In summary, the `main` function, destructors, and certain operators have restric
     </table>
 </body>
 </html>
-
+<hr>
 <h2>⁡⁣⁢⁣5.What is a Virtual Class?⁡</h2><br>
 <!DOCTYPE html>
 <html>
@@ -382,7 +382,7 @@ In summary, the `main` function, destructors, and certain operators have restric
     </table>
 </body>
 </html>
-
+<hr>
 <h2>⁡⁣⁢⁣6.What is Derived Class?⁡</h2><br>
 <!DOCTYPE html>
 <html>
@@ -461,7 +461,7 @@ In summary, the `main` function, destructors, and certain operators have restric
     </table>
 </body>
 </html>
-
+<hr>
 <h2>⁡⁣⁢⁣7.What is a Inline Function?⁡</h2><br>
 <!DOCTYPE html>
 <html>
@@ -535,7 +535,7 @@ In summary, the `main` function, destructors, and certain operators have restric
     </table>
 </body>
 </html>
-
+<hr>
 <h2>⁡⁣⁢⁣8.What is an Abstract Class?⁡</h2><br>
 An abstract class is a concept in object-oriented programming (OOP) that serves as a blueprint for other classes. It cannot be instantiated itself but instead is meant to be subclassed by other classes. Abstract classes can contain abstract methods, which are declared but not implemented in the abstract class. Subclasses (concrete classes) that extend an abstract class must provide implementations for all abstract methods defined in the abstract class.<br>
 <br>
