@@ -2,7 +2,7 @@
 
 <h2>⁡⁣⁢⁣1.Can OOPS exist Without Inheritance⁡</h2><br>
 Yes, object-oriented programming (OOP) can exist without inheritance. Inheritance is just one feature of OOP where a class can inherit attributes and methods from another class. OOP can still utilize other fundamental concepts like encapsulation, polymorphism, and abstraction without inheritance. However, inheritance can often provide a convenient way to model relationships between classes and reuse code.<br>
-
+<hr>
 <h2>⁡⁣⁢⁣2.Give a Real life example of Multiple Inheritance⁡</h2><br>
 // Parent class 1<br>
 class Engine {<br>
@@ -39,7 +39,7 @@ public class Main {<br>
         myCar.charge();  // Output: Electric vehicle charging<br>
     }<br>
 }<br>
-
+<hr>
 <h2>⁡⁣⁢⁣3.What is a Sealed Modifier?⁡</h2><br>
 In programming languages like Java the "Sealed Modifiers" are used to restrict the Inheritance of the class<br>
 ex:<br>
@@ -52,7 +52,7 @@ final class FinalClass {<br>
 <br>
 // Cannot subclass FinalClass because it is final<br>
 // class SubClass extends FinalClass { } // This will result in a compilation error<br>
-
+<hr>
 <h2>⁡⁣⁢⁣4.⁡⁡⁣⁢⁣How can we call a Base Method without creating an Instance(Object)?⁡</h2><br>
 Sure! Here’s how you can call a base method in Java using both static and instance methods.<br>
 
@@ -92,7 +92,7 @@ public class Main {<br>
         sub.callBaseInstanceMethod();  // Calling the method in the subclass that calls the base class method<br>
     }<br>
 }<br>
-
+<hr>
 <h2>⁡⁣⁢⁣5.What is the diffrence between New and Override?⁡</h2><br>
 
 <h3>⁡⁢⁣⁣Method Overriding:⁡</h3><br>
@@ -109,7 +109,7 @@ public class Main {<br>
 - The superclass method is called via superclass reference, and subclass method via subclass reference.<br>
 - Example:<br>
   public static void display() { /* ... */ };<br>
-
+<hr>
   <h2>⁡⁣⁢⁣6.Why does Java doesnot support Multiple Inheritance⁡</h2><br>
   Java does not support multiple inheritance of classes to avoid the complexity and ambiguity that arise from it. Here are the key reasons simplified:<br>
 <br>
@@ -138,7 +138,7 @@ Example:<br>
   }<br>
 <br>
 By using interfaces, Java provides a way to achieve similar functionality without the complications associated with multiple inheritance of classes.<br>
-
+<hr>
 <h2>⁡⁣⁢⁣7.If class A inherits from class B,then what are all the things that the class A Inherits from class B?⁡</h2><br>
 <!DOCTYPE html>
 <html lang="en">
@@ -236,7 +236,7 @@ By using interfaces, Java provides a way to achieve similar functionality withou
 
 </body>
 </html>
-
+<hr>
 <h2>⁡⁣⁢⁣8.What is Object Slicing⁡</h2><br>
 Object Slicing in C++:<br>
 
@@ -303,7 +303,7 @@ Object slicing happens when you copy a derived class object into a base class ob
 Object slicing isn't a concern because Java objects are referenced by their actual type, even when referenced by a superclass type. This means you can assign a `Derived` object to a `Base` reference, but you can only access members defined in `Base`.<br>
 <br>
 In essence, object slicing is a concept specific to C++ due to its handling of object copying and inheritance, whereas Java's approach with references and inheritance means this concept doesn't apply in the same way.<br>
-
+<hr>
 <h2>⁡⁣⁢⁣9.How to hide Base Class Methods in Java?⁡</h2><br>
 In Java, you cannot directly "hide" base class methods in the same way you might in languages like C++ using the `private` keyword for methods in the base class. However, you can achieve similar effects using method overriding and access modifiers. Here are a few approaches:<br>
 <br>
@@ -377,7 +377,7 @@ In this example:<br>
 <br>
 <h3>Conclusion:</h3><br>
 While Java does not have a direct mechanism to "hide" methods from a superclass in the same way C++ can with `private` methods, you can achieve similar behavior through method overriding and access modifiers (`protected` or `private` for inner classes). Method overriding allows you to provide specialized implementations in subclasses, and access modifiers help control visibility and access levels. These mechanisms together enable you to effectively manage method visibility and behavior in Java class hierarchies.<br>
-
+<hr>
 <h2>⁡⁣⁢⁣10.What are Friend Class,Friend Functions and Inline Functions?⁡</h2><br>
 In Java, concepts like friend functions, friend classes, and inline functions, as defined in C++, do not have direct equivalents due to Java's different language design and features. Let's briefly explain each concept and discuss their counterparts or absence in Java:<br>
 <br>
@@ -406,7 +406,7 @@ Friend Function and Friend Class: Java does not provide direct equivalents for f
 Inline Function: Java does not have an `inline` keyword. Methods in Java are typically invoked through regular method calls, and the JVM performs optimizations like method inlining dynamically based on runtime conditions.<br>
 <br>
 In Java, the focus is more on encapsulation, access modifiers (`public`, `protected`, `private`, default), and inheritance mechanisms to control visibility and access to class members, rather than using friend functions/classes or inline functions for code optimization purposes.<br>
-
+<hr>
 <h2>⁡⁣⁢⁣11.Difference between Polymorphism and Inheritance⁡</h2><br>
     <style>
         table {
@@ -501,8 +501,8 @@ d.bark(); // Method specific to Dog
 
 </body>
 </html>
-
-<h2>⁡⁣⁢⁣Differnce between Generalisation,Aggregationand Composition in Java⁡</h2><br>
+<hr>
+<h2>⁡⁣⁢⁣12.⁡⁡⁣⁢⁣Differnce between Generalisation,Aggregationand Composition in Java⁡</h2><br>
 <!DOCTYPE html>
 <html lang="en">
 <head>
