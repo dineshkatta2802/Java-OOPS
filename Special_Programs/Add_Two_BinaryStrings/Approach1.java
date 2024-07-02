@@ -1,5 +1,7 @@
 package Special_Programs.Add_Two_BinaryStrings;
 
+import java.util.Scanner;
+
 class Binary_Strings {
     Binary_Strings(String x, String y) {
         int num1 = Integer.parseInt(x, 2);
@@ -15,8 +17,11 @@ class Binary_Strings {
 
 public class Approach1 {
     public static void main(String[] args) {
-        String x = "011011";
-        String y = "1010111";
+        Scanner a = new Scanner(System.in);
+        System.out.print("Enter the String x(Binary):");
+        String x = a.nextLine();
+        System.out.print("Enter the String y(Binary):");
+        String y = a.nextLine();
         Binary_Strings z = new Binary_Strings(x, y);
     }
 }
