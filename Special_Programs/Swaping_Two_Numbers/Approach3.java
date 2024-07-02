@@ -1,4 +1,4 @@
-package Programs_Practice.Swaping_Two_Numbers;
+package Special_Programs.Swaping_Two_Numbers;
 
 import java.util.Scanner;
 
