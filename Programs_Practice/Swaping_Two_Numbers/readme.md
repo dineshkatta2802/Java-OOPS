@@ -5,17 +5,17 @@ We have got 3 main approachs:
 <li>Using Exclusise OR Operator</li></ol>
 
 <h2>⁡⁣⁢⁣Approach 1:⁡</h2>
-        int temp;
-        temp = a;
-        a = b;
-        b = temp;
+        int temp;<br>
+        temp = a;<br>
+        a = b;<br>
+        b = temp;<br>
 
 <h2>⁡⁣⁢⁣Approach 2:⁡</h2>
-        a = a-b;
-        b = a+b;
-        a = b-a;
+        a = a-b;<br>
+        b = a+b;<br>
+        a = b-a;<br>
 
 <h2>⁡⁣⁢⁣Approach 3:⁡</h2>
-        a =a^b;
-        b =a^b;
-        a =a^b;
+        a =a^b;<br>
+        b =a^b;<br>
+        a =a^b;<br>
