@@ -1,5 +1,9 @@
 package Exception_Handling;
 //Here lets see whether there the given expression can throw the exception
+//⁡⁣⁣⁢--->Note:⁡
+//⁡⁣⁢⁣Def:⁡
+/*It is thrown when an exceptional condition 
+has occurred in an arithmetic operation. */
 public class Arithmetic_Exception {
 
     public static void main(String[] args) {

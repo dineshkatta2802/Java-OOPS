@@ -1,7 +1,11 @@
 package Exception_Handling;
 
 //Java program to demonstrate NullPointerException 
-class NullPointerException
+//⁡⁣⁣⁢--->Note:⁡
+//⁡⁣⁢⁣Def:⁡
+/*This exception is raised when referring to the 
+members of a null object. Null represents nothing */
+class NullPointer_Demo 
 { 
 	public static void main(String args[]) 
 	{ 
@@ -13,3 +17,4 @@ class NullPointerException
 		} 
 	} 
 } 
+
