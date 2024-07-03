@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 class Binary_Strings {
     Binary_Strings(String x, String y) {
-        int num1 = Integer.parseInt(x, 2);
+        int num1 = Integer.parseInt(x, 2);//binary to decimal
         System.out.println("First number (decimal): " + num1);
-        int num2 = Integer.parseInt(y, 2);
+        int num2 = Integer.parseInt(y, 2);//binary to decimal
         System.out.println("Second number (decimal): " + num2);
         int sum = num1 + num2;
         System.out.println("Sum (decimal): " + sum);
-        String result = Integer.toBinaryString(sum);
+        String result = Integer.toBinaryString(sum);//decimal to binary
         System.out.println("Sum (binary): " + result);
     }
 }
