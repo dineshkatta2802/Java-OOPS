@@ -1,12 +1,12 @@
 package Exception_Handling;
 //⁡⁣⁣⁢--->Note:⁡
 //⁡⁣⁢⁣Def:⁡
-/*It is thrown when an attempt is made to access 
+/*It is thrown when an attempt is made tśo access 
 an invalid index in a string 
 Suppose the String length is 5 but if we ask to 
 print the character at index 10 it throws
 "StringIndexOutOfBound" i.e, we cannot accesse 
-the  negative or graeter than equal to to the length 
+the  negative or graeter than equal to to the ślength 
 of string */
 public class StringIndexOutOfBound {
     public static void main(String[] args) {

@@ -164,11 +164,86 @@ catch (ExceptionType e) {<br>
 <h2>⁡⁣⁢⁣⁡⁣⁢⁣Different types of Built-in Exceptions⁡⁡⁣⁢⁣:⁡⁡⁡</h2>
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230714113547/Exceptions-in-Java-1-768.png" alt="Types of Exception" width="598" height="300">
   <hr>
-<h2>⁡⁣⁢⁣--->Checked Exceptions⁡</h2>
+<h2>⁡⁣⁢⁣<b>Checked Exceptions</b>⁡</h2>
+<h3>⁡⁣⁢⁣Class Not Found Exception:⁡</h3>
+This Exception is raised when we try to access a class whose definition is not found<br>
+<br>
+public class Class_Not_Found {<br>
+    public static void main(String[] args) {<br>
+        // Java program to demonstrate ClassNotFoundException <br>
+		try{ <br>
+			Class.forName("Class1");<br>
+		} <br>
+		catch(ClassNotFoundException e){ <br>
+			System.out.println(e); <br>
+			System.out.println("Class Not Found..."); <br>
+		} <br>
+<br>
+    }<br>
+}<br>
 
-<h2>⁡⁣⁢⁣--->Unchecked Exceptions⁡</h2>
+<h4>⁡⁢⁢⁢Output:⁡</h4>
+Class Not Found...<br>
+⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
+
+<h3>⁡⁣⁢⁣⁡⁣⁢⁣IO Exception:⁡⁡</h3>
+It is thrown when an input-output operation failed or interrupted<br>
+<br>
+import java.util.Scanner;<br>
+
+public class IOException {<br>
+    public static void main(String[] args) {<br>
+        // Java program to demonstrate IOException<br>
+<br>
+		// Create a new scanner with the specified String <br>
+		// Object <br>
+		Scanner scan = new Scanner("Hello Geek!"); <br>
+<br>
+		// Print the line <br>
+		System.out.println("" + scan.nextLine()); <br>
+<br>
+		// Check if there is an IO exception <br>
+		System.out.println("Exception Output: "<br>
+						+ scan.ioException()); <br>
+<br>
+		scan.close();<br>
+<br>
+    }<br>
+}<br>
+
+<h4>⁡⁢⁢⁢Output:⁡</h4>
+Hello Geek!<br>
+Exception Output: null<br>
+⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
+<h3>⁡⁣⁢⁣File not Found Exception⁡</h3>
+This Exception is raised when a file is not accessible or does not open.<br>
+<br>
+//Java program to demonstrate FileNotFoundException <br>
+import java.io.File; <br>
+import java.io.FileNotFoundException; <br>
+import java.io.FileReader; <br>
+<br>
+class File_Not_Found { <br>
+<br>
+	public static void main(String args[]) { <br>
+		try { <br>
+<br>
+			// Following file does not exist <br>
+			File file = new File("E://file.txt"); <br>
+<br>
+			FileReader fr = new FileReader(file); <br>
+		} catch (FileNotFoundException e) { <br>
+		System.out.println("File does not exist"); <br>
+		} <br>
+	} <br>
+} <br>
+
+<h4>⁡⁢⁢⁢Output:⁡</h4>
+File does not exist<br>
+⁡⁣⁣⁢------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------⁡
+<h2>⁡⁣⁢⁣<b>Unchecked Exceptions</b>⁡</h2>
 <h3>⁡⁣⁢⁣Arithmetic Exception:⁡⁡⁡</h3>
-It is thrown when an exceptional condition has occurred in an arithmetic operation.
+It is thrown when an exceptional condition has occurred in an arithmetic operation.<br>
 <h4>⁡⁢⁣⁣Case 1:⁡</h4>
 public class Ex1 {<br>
 <br>
@@ -218,7 +293,7 @@ public class Ex1 {<br>
 }<br>
 <h4>⁡⁢⁢⁡⁢⁢⁢Output:⁡⁡⁡</h4>⁡
 java.lang.ArithmeticException: / by zero<br>
-<hr>
+⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
 <h3>⁡⁣⁢⁣Null Pointer Exception:⁡</h3>
 This exception is raised when referring to the members of a null object. <br>
 Null represents nothing<br>
@@ -237,13 +312,12 @@ class NullPointer_Demo <br>
 } <br>
 
 <h4>⁡⁢⁢⁡⁢⁢⁢Output:⁡⁡⁡</h4>⁡
-NullPointerException..
-<hr>
+NullPointerException..<br>
+⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
 <h3>⁡⁣⁢⁣StringIndexOutOfBound Exception:⁡</h3>
-  It is thrown when an attempt is made to access an invalid index in a string<br>
-  Suppose the String length is 5 but if we ask to print the character at index 10 it throws <b>StringIndexOutOfBound</b> i.e, we cannot accesseither negative or graeter than equal to to the length of string<br>
-
-
+It is thrown when an attempt is made to access an invalid index in a string<br>
+Suppose the String length is 5 but if we ask to print the character at index 10 it throws <b>StringIndexOutOfBound</b> i.e, we cannot accesseither negative or graeter than equal to to the length of string<br>
+<br>
 public class StringIndexOutOfBound {<br>
     public static void main(String[] args) {<br>
         String str= "Hello";<br>
@@ -260,7 +334,25 @@ public class StringIndexOutOfBound {<br>
 }<br>
 
   <h4>Output:</h4>
-  Exception Caught: String index out of range: 10
+  Exception Caught: String index out of range: 10<br>
+⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
+<h3>⁡⁣⁢⁣ArrayIndexOutOfBound:⁡</h3>
+It is thrown to indicate that an array has been accessed with an illegal index. The index is either negative or greater than or equal to the size of the array.<br>
+<br>
+public class ArrayIndexOutOfBound {<br>
+    public static void main(String[] args) {<br>
+        try{<br>
+            int a[] = new int[5];<br>
+            a[6] = 9;<br>
+        }<br>
+        catch(ArrayIndexOutOfBoundsException e){<br>
+            System.out.println("The Array index is out of bound");<br>
+        }<br>
+    }<br>
+}<br>
+
+<h4>⁡⁢⁢⁢Output:⁡</h4>
+The Array index is out of bound
 <hr>
 <h2>⁡⁣⁢⁣Advantages and Disadvantages⁡</h2>
 <table>
