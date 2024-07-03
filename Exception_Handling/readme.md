@@ -241,6 +241,8 @@ class File_Not_Found { <br>
 <h4>⁡⁢⁢⁢Output:⁡</h4>
 File does not exist<br>
 ⁡⁣⁣⁢--------------------------------------------------------------------------------------------------------------------------------------------------------------
+<br>
+<h2><b>⁡⁣⁢⁣Unchecked Exceptions⁡</b></h2>
 <h3>⁡⁣⁢⁣Arithmetic Exception:⁡⁡⁡</h3>
 It is thrown when an exceptional condition has occurred in an arithmetic operation.<br>
 <h4>⁡⁢⁣⁣Case 1:⁡</h4>
