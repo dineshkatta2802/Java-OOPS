@@ -17,6 +17,16 @@ When an exception occurs within a method it creates an object it is called excep
 <h2>⁡⁣⁢⁣Difference between An Error and Exception⁡</h2>
 <h3>⁡⁢⁣⁣Error:⁡</h3>
  An Error indicates a serious problem that a reasonable application should not try to catch.
+ It is of 3 types:<br>
+ <ol>
+ <li>Compile-Time Error</li>
+ <ul><li>These are Syntactcal errors due to which the program fails to compile</li>
+ <li>Example:<br>
+  forgetting Semicolon(;)</li></ul>
+ <li>Run-Time Error</li>
+ <ul><li></li></ul>
+ <li>Logical Error</li></ol>
+ <ul><li></li></ul>
 <h3>⁡⁢⁣⁣Exception:⁡</h3>
  Exception indicates conditions that a reasonable application might try to catch.
 <hr>
