@@ -22,11 +22,18 @@ When an exception occurs within a method it creates an object it is called excep
  <li>Compile-Time Error</li>
  <ul><li>These are Syntactcal errors due to which the program fails to compile</li>
  <li>Example:<br>
-  forgetting Semicolon(;)</li></ul>
+  forgetting Semicolon(;)</li>
+  <li>Finding and correcting them are pretty easy</li></ul>
  <li>Run-Time Error</li>
- <ul><li></li></ul>
+ <ul><li>It is occured due to inefficiency of computer system to execute a particular statement.</li>
+ <li>Example:<br>
+ Insufficient space to store memory</li>
+ <li>Run-Time Errors are not detedted by Java compiler they are only detected by JVM during Run-Time</li></ul>
  <li>Logical Error</li></ol>
- <ul><li></li></ul>
+ <ul><li>They depict the flaws in logic of the program.</li>
+ <li>Example:<br>
+ The programmer might be using wrong formulae or design of the program itself is wrong</li>
+ <li>These are not detected by Java Compiler or JVM, it is the responsibility of the programer to find it solely</li></ul>
 <h3>⁡⁢⁣⁣Exception:⁡</h3>
  Exception indicates conditions that a reasonable application might try to catch.
 <hr>
