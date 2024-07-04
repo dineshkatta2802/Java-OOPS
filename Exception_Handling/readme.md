@@ -198,6 +198,29 @@ class Testthrows1{  <br>
 <ul><li>The statmenst in the finally block are executed wether there is an exception or not</li>
 <li>It ensures all the opened files are closed properly and stops the running threads</li>
 </ul>
+<li>
+<ul><b>⁡⁢⁣⁣final Block:⁡</b>
+<br>
+A final keyword can be used with classes, methods, and <li>variables.<br></li>
+<li>A final class cannot be inherited.<br></li>
+<li>A final method cannot be overridden.<br></li>
+<li>A final variable cannot be reassigned.<br></li>
+<li>finally<br></li>
+</ul>
+<br>
+<ul>
+<li>A <b>finally block</b> is always executed, regardless of whether an exception is thrown or not.<br></li>
+The finally block is executed after the try block and catch block, but before the program control returns to <li>the calling method.<br></li>
+The finally block can be used to close resources, such <li>as files and database connections.<br></li>
+<li>finalize<br></li>
+</ul>
+<br>
+<ul>
+<li>The <b>finalize()</b> method is called by the garbage collector when an object is no longer needed.<br></li>
+The finalize() method can be used to perform cleanup operations, such as releasing resources or writing <li>data to a file.<br></li>
+The finalize() method is not guaranteed to be called, so it should not be used to perform critical <li>operations.<br></li>
+</ul>
+</li>
 </ol>
 <hr>
 <h2>⁡⁣⁢⁣⁡⁣⁢⁣Different types of Built-in Exceptions⁡⁡⁣⁢⁣:⁡⁡⁡</h2>
