@@ -141,7 +141,7 @@ When there is an exception the files are not closed and the threads are terminat
 } <br>
 catch (ExceptionType e) {<br>
     // handle exception<br> 
-    }<br>
+    }<br> 
     <li>When JVM understad that there is an exception then it stores in the exception details in the exception stack and move to the 'Catch' block</li>
     <li>Here <b>'e'</b> has the exception details that refers to the exception stack.</li>
 </li>
@@ -151,9 +151,48 @@ catch (ExceptionType e) {<br>
 <ul>
 <li>The Throw Keyword is used to transfer control form try to catch</li>
 <li>This is used to manually throw an exception. It's like saying, "Something went wrong, and I'm explicitly telling you what it is."</li>
+<li>This is used explicitly</li>
+<li>public class TestThrow1 {   <br>
+    //function to check if person is eligible to vote or not   <br>
+    public static void validate(int age) {  <br>
+        if(age<18) {  <br>
+            //throw Arithmetic exception if not eligible to vote  <br>
+            throw new ArithmeticException("Person is not eligible to vote");    <br>
+        }  <br>
+        else {  <br>
+            System.out.println("Person is eligible to vote!!");  <br>
+        }  <br>
+    }  <br>
+    //main method  <br>
+    public static void main(String args[]){  <br>
+        //calling the function  <br>
+        validate(13);  <br>
+        System.out.println("rest of the code...");    <br>
+  }    <br>
+} <br>   </li>
 </ul>
 <li><b>⁡⁢⁣⁣throws Block:</b>⁡</li>
-<ul><li>This is used in the method signature to indicate that the method might throw certain exceptions, letting the caller know they need to handle or declare these exceptions.</li></ul>
+<ul><li>This is used in the method signature to indicate that the method might throw certain exceptions, letting the caller know they need to handle or declare these exceptions.</li>
+<li>When we dont use try-catch to handle the exception we can use <b>"throws"</b> keyword </li>
+<li>import java.io.IOException;  <br>
+class Testthrows1{  <br>
+  void m()throws IOException{  <br>
+    throw new IOException("device error");//checked exception  <br>
+  }  <br>
+  void n()throws IOException{  <br>
+    m();  <br>
+  }  <br>
+  void p(){  <br>
+   try{  <br>
+    n();  <br>
+   }catch(Exception e){System.out.println("exception handled");}  <br>
+  }  <br>
+  public static void main(String args[]){  <br>
+   Testthrows1 obj=new Testthrows1();  <br>
+   obj.p();  <br>
+   System.out.println("normal flow...");  <br>
+  }  <br>
+}<br>  </li></ul>
 
 <li><b>⁡⁢⁣⁣finally Block:⁡</b></li>
 <ul><li>The statmenst in the finally block are executed wether there is an exception or not</li>
@@ -355,6 +394,75 @@ public class ArrayIndexOutOfBound {<br>
 <h4>⁡⁢⁢⁢Output:⁡</h4>
 The Array index is out of bound
 <hr>
+
+<h2>⁡⁣⁢⁣Multiple Catch⁡</h2>
+ <img src="https://static.javatpoint.com/core/images/multiple-catch-block-in-java.png" alt="Multiple Catch" width="600" height="393">
+ <br>
+ public class MultipleCatchBlock1 {  <br>
+  <br>
+    public static void main(String[] args) {  <br>
+          <br>
+           try{    <br>
+                int a[]=new int[5];    <br>
+                a[5]=30/0;    <br>
+               }    <br>
+               catch(ArithmeticException e)  <br>
+                  {  <br>
+                   System.out.println("Arithmetic Exception occurs");  <br>
+                  }    <br>
+               catch(ArrayIndexOutOfBoundsException e)  <br>
+                  {  <br>
+                   System.out.println("ArrayIndexOutOfBounds Exception occurs");  <br>
+                  }    <br>
+               catch(Exception e)  <br>
+                  {  <br>
+                   System.out.println("Parent Exception occurs");  <br>
+                  }             <br>
+               System.out.println("rest of the code");    <br>
+    }  <br>
+}  <br>
+
+<hr>
+
+<h2>⁡⁣⁢⁣throw v/s throws⁡</h2>
+<table class="alt">
+<tbody><tr>
+<th>Sr. no.</th>
+<th>Basis of Differences</th>
+<th>throw</th>
+<th>throws</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>Definition</td>
+<td>Java throw keyword is used throw an exception explicitly in the code, inside the function or the block of code.</td>
+<td>Java throws keyword is used in the method signature to declare an exception which might be thrown by the function while the execution of the code. </td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Usage</td>
+<td>Type of exception Using throw keyword, we can only propagate unchecked exception i.e., the checked exception cannot be propagated using throw only.</td>
+<td>Using throws keyword, we can declare both checked and unchecked exceptions. However, the throws keyword can be used to propagate checked exceptions only.</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Syntax</td>
+<td>The throw keyword is followed by an instance of Exception to be thrown.</td>
+<td>The throws keyword is followed by class names of Exceptions to be thrown.</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Declaration</td>
+<td>throw is used within the method.</td>
+<td>throws is used with the method signature.</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>Internal implementation</td>
+<td>We are allowed to throw only one exception at a time i.e. we cannot throw multiple exceptions.</td>
+<td>We can declare multiple exceptions using throws keyword that can be thrown by the method. For example, main() throws IOException, SQLException.</td>
+</tr>
+</tbody></table>
 <h2>⁡⁣⁢⁣Advantages and Disadvantages⁡</h2>
 <table>
     <thead>
