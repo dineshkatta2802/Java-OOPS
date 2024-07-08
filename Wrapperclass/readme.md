@@ -6,7 +6,7 @@ The conversion is done using <b>"Auto-boxing and Unboxing"</b> methods.<br>
 The automatic conversion of primitive datatype to that of the corresponding object type in Java.lang pacakge is called Auto-Boxing.<br>
 Like char to Character ,byte to Bytes.<br>
 Example:<br>
-package Wrapperclass;
+
 public class Autoboxing {<br>
     public static void main(String[] args) {<br>
         //lets illustarte a simple example of Auto-Boxing<br>
@@ -31,8 +31,7 @@ It is the Opposite to that of the Auto-Boxing<br>
 The automatic conversion of Wrapper class to that of the  corresponding Primitive dastatype type in Java.lang pacakge is called Un-Boxing.<br>
 Like char to Character ,byte to Bytes.<br>
 Example:<br>
-package Wrapperclass;<br>
-<br>
+
 import java.nio.charset.CharacterCodingException;<br>
 <br>
 public class Unboxing {<br>
