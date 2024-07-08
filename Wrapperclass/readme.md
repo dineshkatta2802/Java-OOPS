@@ -56,12 +56,16 @@ public class Unboxing {<br>
 <h2>⁡⁣⁢⁣Where do we use Wrapper class⁡</h2>
 <ol><li>⁡⁢⁣⁣Collections Framework/Collection API:⁡</li>
 <ul><li>Collections in java like 'Arraylist','Haspmap'...etc doenot deal with primitive datatype so we need to conver the datatype to object.</li>
+<pre>
 <li>ArrayList<Integer> numbers = new ArrayList<>();<br>
 numbers.add(5); // Autoboxing converts int 5 to Integer object<br></li>
+</pre>
 </ul>
 <li>⁡⁢⁣⁣Change in value in Methods/Utility Methods:⁡</li>
 <ul><li>Java supports only call by value. So, if we pass a primitive value, it will not change the original value. But, if we convert the primitive value in an object, it will change the original value.</li>
+<pre>
 <li>int i = Integer.parseInt("123"); // Converts a String to an int</li></ul>
+</pre>
 <li>⁡⁢⁣⁣Serialization and Synchornization/Object Methods:⁡</li>
 <ul>
 <li>⁡⁢⁢⁢Note:⁡</li>
