@@ -33,5 +33,6 @@ public class Abstract_Keyword {
 
         v v1 = new v();
         v1.calc(10);
+        
     }
 }
