@@ -33,7 +33,7 @@ class Student extends Person {
     }
 }
 //⁡⁣⁣⁢--->Note:⁡
-//The only diffrence between the Basic inheritance or the Method Overriding 
+//The only diffrence between the Basic inheritance or the constructor 
 //is that we dont need to declare and enter each detail while calling method
 //all this taken care by constructor and we do know that the JVM call the constructor 
 //automatically so we just declare the instance variable directly while object creation
