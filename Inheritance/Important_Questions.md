@@ -4,6 +4,7 @@
 Yes, object-oriented programming (OOP) can exist without inheritance. Inheritance is just one feature of OOP where a class can inherit attributes and methods from another class. OOP can still utilize other fundamental concepts like encapsulation, polymorphism, and abstraction without inheritance. However, inheritance can often provide a convenient way to model relationships between classes and reuse code.<br>
 <hr>
 <h2>⁡⁣⁢⁣2.Give a Real life example of Multiple Inheritance⁡</h2><br>
+<pre>
 // Parent class 1<br>
 class Engine {<br>
     public void start() {<br>
@@ -39,6 +40,7 @@ public class Main {<br>
         myCar.charge();  // Output: Electric vehicle charging<br>
     }<br>
 }<br>
+</pre>
 <hr>
 <h2>⁡⁣⁢⁣3.What is a Sealed Modifier?⁡</h2><br>
 In programming languages like Java the "Sealed Modifiers" are used to restrict the Inheritance of the class<br>
@@ -46,12 +48,14 @@ ex:<br>
 Final Keyword is used in Java instead of 'Sealed'<br>
 When a class is declared final, it means that it cannot be subclassed (no other class can inherit from it). This prevents extension of the class hierarchy beyond that point.<br>
 <br><br>
+<pre>
 final class FinalClass {<br>
     // Class implementation<br>
 }<br>
 <br>
 // Cannot subclass FinalClass because it is final<br>
 // class SubClass extends FinalClass { } // This will result in a compilation error<br>
+</pre>
 <hr>
 <h2>⁡⁣⁢⁣4.⁡⁡⁣⁢⁣How can we call a Base Method without creating an Instance(Object)?⁡</h2><br>
 Sure! Here’s how you can call a base method in Java using both static and instance methods.<br>
@@ -59,6 +63,7 @@ Sure! Here’s how you can call a base method in Java using both static and inst
 <h3>⁡⁢⁣⁣Calling a static method:⁡</h3><br>
 You can call a static method of the base class directly using the class name without creating an instance.<br>
 <br>
+<pre>
 class BaseClass {<br>
     public static void staticMethod() {<br>
         System.out.println("BaseClass static method");<br>
@@ -70,10 +75,11 @@ public class Main {<br>
         BaseClass.staticMethod();  // Calling the static method directly<br>
     }<br>
 }<br>
-
+</pre>
 <h3>⁡⁢⁣⁣Calling an instance method from a subclass:⁡</h3><br>
 To call an instance method from the base class in a subclass, you use the `super` keyword within an instance method of the subclass.<br>
 <br>
+<pre>
 class BaseClass {<br>
     public void instanceMethod() {<br>
         System.out.println("BaseClass instance method");<br>
@@ -92,6 +98,7 @@ public class Main {<br>
         sub.callBaseInstanceMethod();  // Calling the method in the subclass that calls the base class method<br>
     }<br>
 }<br>
+</pre>
 <hr>
 <h2>⁡⁣⁢⁣5.What is the diffrence between New and Override?⁡</h2><br>
 
@@ -100,15 +107,19 @@ public class Main {<br>
 - Uses the `@Override` annotation.<br>
 - Allows the subclass method to be called via a superclass reference.<br>
 - Example:<br>
+<pre>
   @Override<br>
-  public void display() { /* ... */ }<br>
+  public void display() { /* ... */ }
+  </pre>
 <br>
 <h3>⁡⁢⁣⁣Method Hiding:⁡</h3><br>
 - Subclass defines a static method with the same signature as a static method in the superclass.<br>
 - Does not use the `@Override` annotation.<br>
 - The superclass method is called via superclass reference, and subclass method via subclass reference.<br>
 - Example:<br>
-  public static void display() { /* ... */ };<br>
+<pre>
+  public static void display() { /* ... */ };
+  </pre>
 <hr>
   <h2>⁡⁣⁢⁣6.Why does Java doesnot support Multiple Inheritance⁡</h2><br>
   Java does not support multiple inheritance of classes to avoid the complexity and ambiguity that arise from it. Here are the key reasons simplified:<br>
@@ -117,10 +128,12 @@ public class Main {<br>
 ⁡⁢⁣⁣Ambiguity:⁡ <br>
 If two classes have a method with the same name, and a third class inherits from both, it’s unclear which method to use. This is known as the diamond problem.<br>
 Example: <br>
+<pre>
   class A { void show() {} }<br>
   class B extends A { void show() {} }<br>
   class C extends A { void show() {} }<br>
   class D extends B, C { }  // Which show() should D inherit?<br>
+  </pre>
 <br>
 ⁡⁢⁣⁣Complexity:⁡<br>
 Code Complexity: Managing multiple inheritance can make the code more complex and harder to maintain.<br>
@@ -130,12 +143,14 @@ Example: Handling state and behavior from multiple parent classes can lead to in
 ⁡⁢⁣⁣Interface:⁡<br>
  Java allows a class to implement multiple interfaces, providing a way to achieve multiple inheritance of type without the issues of multiple inheritance of implementation.<br>
 Example:<br>
+<pre>
   interface A { void show(); }<br>
   interface B { void display(); }<br>
   class C implements A, B {<br>
       public void show() { /* ... */ }<br>
       public void display() { /* ... */ }<br>
   }<br>
+  </pre>
 <br>
 By using interfaces, Java provides a way to achieve similar functionality without the complications associated with multiple inheritance of classes.<br>
 <hr>
@@ -245,6 +260,7 @@ When you assign a derived class object to a base class object, only the base cla
 Example:<br>
 ⁡⁢⁣<h3>⁣Object Slicing in C++:</h3>⁡<br>
 <br>
+<pre>
 class Base {<br>
 public:<br>
     int baseValue;<br>
@@ -265,11 +281,13 @@ int main() {<br>
 <br>
     return 0;<br>
 }<br>
+</pre>
 <br>
  <h3>⁡⁢⁣⁣Object Slicing in Java:⁡⁡</h3><br>
 <br>
 Difference: Java does not have object slicing in the same way because of how it handles objects and inheritance.<br><br>
 Example:<br>
+<pre>
 class Base {<br>
     int baseValue;<br>
 }<br>
@@ -292,6 +310,7 @@ public class Main {<br>
         // System.out.println(b.derivedValue); // Error in Java, b doesn't have derivedValue<br>
 <br>
     }<br>
+    </pre>
 }<br>
 <br>
 <h3>⁡⁢⁣⁣Simplified Explanation:⁡</h3><br>
@@ -311,6 +330,7 @@ In Java, you cannot directly "hide" base class methods in the same way you might
 <br>
 In Java, if you have a method in a base class (superclass) that you want to "hide" in a subclass (derived class), you can use method overriding. Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.<br>
 <br>
+<pre>
 class Base {<br>
     public void display() {<br>
         System.out.println("Base class method");<br>
@@ -340,11 +360,13 @@ public class Main {<br>
 In this example:<br>
 The `display()` method in `Derived` overrides the `display()` method in `Base`.<br>
 When you call `display()` on an object of `Derived`, it executes the method from `Derived`, not from `Base`.<br>
+</pre>
 <br>
 <h3>⁡⁢⁣⁣Access Modifiers⁡</h3><br>
 <br>
 Another approach to controlling method visibility is through access modifiers (`public`, `protected`, `private`, and default access). By using `private` or `protected` access modifiers in the base class, you can restrict access to methods in subclasses:<br>
 <br>
+<pre>
 class Base {<br>
     protected void display() {<br>
         System.out.println("Base class method");<br>
@@ -370,6 +392,7 @@ public class Main {<br>
         bd.display(); // Output: "Derived class method"<br>
     }<br>
 }<br>
+</pre>
 <br>
 In this example:<br>
 - The `display()` method in `Base` is `protected`, so it is accessible within `Base` and its subclasses like `Derived`.<br>

@@ -110,6 +110,7 @@ The starting point of a C++ program; its signature cannot be changed or overload
 Here's a quick overview with examples:<br>
 <br>
 <h3>Main Function (`main`)</h3><br>
+<pre>
 int main() {<br>
     return 0;<br>
 }<br>
@@ -124,8 +125,10 @@ public:<br>
     ~Example() {}      // Destructor<br>
     //~Example(int a) {} // Error: cannot overload destructors<br>
 }<br>
+</pre>
 <br>
 <h3>⁡⁢⁣⁣Certain Operators⁡</h3><br>
+<pre>
 class Example {<br>
 public:<br>
     // void operator::() {} // Error: scope resolution operator cannot be overloaded<br>
@@ -134,6 +137,7 @@ public:<br>
     // void operator?() {}  // Error: conditional operator cannot be overloaded<br>
 };<br>
 ```<br>
+</pre>
 <br>
 In summary, the `main` function, destructors, and certain operators have restrictions in C++ and cannot be overloaded.<br>
 <hr>
@@ -555,6 +559,7 @@ An abstract class defines a common interface or structure that its subclasses mu
 <br>
  Example (Java):<br>
 <br>
+<pre>
 // Abstract class definition<br>
 abstract class Shape {<br>
     // Abstract method (no implementation)<br>
@@ -565,6 +570,7 @@ abstract class Shape {<br>
         System.out.println("Displaying shape");<br>
     }<br>
 }<br>
+
 <br>
 // Concrete subclass of Shape<br>
 class Circle extends Shape {<br>
@@ -582,6 +588,7 @@ public class Main {<br>
         c.display(); // Calls inherited method<br>
     }<br>
 }<br>
+</pre>
 <br>
  <h3>Key Points:</h3><br>
  <h4>Purpose: </h4>

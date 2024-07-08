@@ -7,23 +7,29 @@ class<br>
 <u>1.Final Varible:</u><br>
 When a variable is declared as final, its value cannot be changed once it is initialized. This makes the variable a constant.<br>
 ex:<br>
+<pre>
 final int MAX_VALUE = 100;<br>
+</pre>
 <hr>
 <u>2.Final Method:</u><br>
 When a method is declared as final, it cannot be overridden by subclasses. This is useful for preventing changes to the method's implementation in derived classes.<br>
 If you make any method as final, you cannot override it.<br>
 <br>
 ex:<br>
+<pre>
 class Parent {<br>
     public final void display() {<br>
         System.out.println("This is a final method.");<br>
     }<br>
 }<br>
+</pre>
 <hr>
 <u>3.Final Class:</u><br>
 When a class is declared as final, it cannot be subclassed. This is used to prevent inheritance and ensure the class's implementation remains unchanged.<br>
 If you make any class as final, you cannot extend it.<br>
 ex:<br>
+<pre>
 public final class UtilityClass {<br>
     // Class contents<br>
 }<br>
+</pre>

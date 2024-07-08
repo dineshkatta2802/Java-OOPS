@@ -256,12 +256,14 @@ Car stopped
 <hr>
 <h2>⁡⁣⁢⁣Multiple Inheritance using Interface⁡</h2>
 <img src="https://static.javatpoint.com/images/core/multipleinheritance.jpg" alt="Multiple Inheritance" width="702" height="279">
+<pre>
 // Define an interface for all animals<br>
 interface Animal {<br>
     void eat();  // Method to eat<br>
     void sleep();  // Method to sleep<br>
 }<br>
 <br>
+
 // Define an interface for pets<br>
 interface Pet {<br>
     void play();  // Method to play<br>
@@ -313,4 +315,5 @@ public class MultipleInheritanceExample {<br>
         dog.makeSound();<br>
     }<br>
 }<br>
+</pre>
 

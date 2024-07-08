@@ -99,6 +99,7 @@ There are 3 steps to handle an Exeption<br>
 Consider the program<br>
 <br>
 <h3>Code:</h3>
+<pre>
 public class x {<br>
     public static void main(String[] args) {<br>
         System.out.println("Opened files");<br>
@@ -109,11 +110,14 @@ public class x {<br>
         System.out.println("Closes files");<br>
     }<br>
 }<br>
+</pre>
 <h3>Output:</h3>
+<pre>
 Opened files<br>
 n=0<br>
 Exception in thread "main" java.lang.<br>ArithmeticException: / by zero at Exception_Handling.x.main(x.java:8)<br>
 <br>
+</pre>
 In this example we can see that the n value is zero and the subsequent statements in the program are not executed.<br>
 When there is an exception the files are not closed and the threads are terminated abnormally and this may lead to many other software problems.<br>
 **Clossing the Opened filesand stopping the running threadsand releasing teh used memory is called <b>"CleanedUp Operations"</b>.<br>
@@ -126,9 +130,11 @@ When there is an exception the files are not closed and the threads are terminat
 <li>It contain the statement that throws an exception</li>
 <li>Simple we can say that the try block contains a set of statements where an exception can occur.</li>
 <li>try block must be followed by catch</li>
+<pre>
 <li>try{<br>
 ----Statements---<br>
 }<br>
+</pre>
 </li>
 <li>The most important feature of the 'try' block is that it will not terminate the program even when there is an exception inside it i.e, if an exception occurs in 'try' block it move on to 'Catch' block</li>
 <li>When JVM understad that there is an exception then it stores in the exception details in the exception strack and move to the 'Catch' block</li></ul>
@@ -136,12 +142,13 @@ When there is an exception the files are not closed and the threads are terminat
 <ul>
 <li>The Catch block contains the code that handles the exception by declaring the exception within the parameter</li>
 <li>You can have multiple exceptions in Catch bllock to handle different types of exceptiions</li>
-<li>try {<br>
+<li>
+<pre>try {<br>
     // risky code<br>    
 } <br>
 catch (ExceptionType e) {<br>
     // handle exception<br> 
-    }<br> 
+    }<br> </pre>
     <li>When JVM understad that there is an exception then it stores in the exception details in the exception stack and move to the 'Catch' block</li>
     <li>Here <b>'e'</b> has the exception details that refers to the exception stack.</li>
 </li>
@@ -152,6 +159,7 @@ catch (ExceptionType e) {<br>
 <li>The Throw Keyword is used to transfer control form try to catch</li>
 <li>This is used to manually throw an exception. It's like saying, "Something went wrong, and I'm explicitly telling you what it is."</li>
 <li>This is used explicitly</li>
+<pre>
 <li>public class TestThrow1 {   <br>
     //function to check if person is eligible to vote or not   <br>
     public static void validate(int age) {  <br>
@@ -169,11 +177,13 @@ catch (ExceptionType e) {<br>
         validate(13);  <br>
         System.out.println("rest of the code...");    <br>
   }    <br>
-} <br>   </li>
+} <br>   
+</pre</li>
 </ul>
 <li><b>⁡⁢⁣⁣throws Block:</b>⁡</li>
 <ul><li>This is used in the method signature to indicate that the method might throw certain exceptions, letting the caller know they need to handle or declare these exceptions.</li>
 <li>When we dont use try-catch to handle the exception we can use <b>"throws"</b> keyword </li>
+<pre>
 <li>import java.io.IOException;  <br>
 class Testthrows1{  <br>
   void m()throws IOException{  <br>
@@ -192,7 +202,7 @@ class Testthrows1{  <br>
    obj.p();  <br>
    System.out.println("normal flow...");  <br>
   }  <br>
-}<br>  </li></ul>
+}<br>  </pre></li></ul>
 
 <li><b>⁡⁢⁣⁣finally Block:⁡</b></li>
 <ul><li>The statmenst in the finally block are executed wether there is an exception or not</li>
@@ -230,6 +240,7 @@ The finalize() method is not guaranteed to be called, so it should not be used t
 <h3>⁡⁣⁢⁣Class Not Found Exception:⁡</h3>
 This Exception is raised when we try to access a class whose definition is not found<br>
 <br>
+<pre>
 public class Class_Not_Found {<br>
     public static void main(String[] args) {<br>
         // Java program to demonstrate ClassNotFoundException <br>
@@ -243,14 +254,17 @@ public class Class_Not_Found {<br>
 <br>
     }<br>
 }<br>
-
+</pre>
 <h4>⁡⁢⁢⁢Output:⁡</h4>
+<pre>
 Class Not Found...<br>
-⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
+</pre>
+⁡⁣⁣⁢
 
 <h3>⁡⁣⁢⁣⁡⁣⁢⁣IO Exception:⁡⁡</h3>
 It is thrown when an input-output operation failed or interrupted<br>
 <br>
+<pre>
 import java.util.Scanner;<br>
 
 public class IOException {<br>
@@ -272,15 +286,16 @@ public class IOException {<br>
 <br>
     }<br>
 }<br>
-
+</pre>
 <h4>⁡⁢⁢⁢Output:⁡</h4>
 Hello Geek!<br>
 Exception Output: null<br>
-⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
+
 <h3>⁡⁣⁢⁣File not Found Exception⁡</h3>
 This Exception is raised when a file is not accessible or does not open.<br>
 <br>
 //Java program to demonstrate FileNotFoundException <br>
+<pre>
 import java.io.File; <br>
 import java.io.FileNotFoundException; <br>
 import java.io.FileReader; <br>
@@ -289,25 +304,30 @@ class File_Not_Found { <br>
 <br>
 	public static void main(String args[]) { <br>
 		try { <br>
-<br>
+
 			// Following file does not exist <br>
-			File file = new File("E://file.txt"); <br>
-<br>
+			File file = new File("E://file.txt");
+
 			FileReader fr = new FileReader(file); <br>
-		} catch (FileNotFoundException e) { <br>
+		} 
+<br>
+catch (FileNotFoundException e) { <br>
 		System.out.println("File does not exist"); <br>
 		} <br>
 	} <br>
 } <br>
-
+</pre>
 <h4>⁡⁢⁢⁢Output:⁡</h4>
+<pre>
 File does not exist<br>
-⁡⁣⁣⁢--------------------------------------------------------------------------------------------------------------------------------------------------------------<br> ⁢--------------------------------------------------------------------------------------------------------------------------------------------------------------
+</pre>
+
 <br>
 <h2><b>⁡⁣⁢⁣Unchecked Exceptions⁡</b></h2>
 <h3>⁡⁣⁢⁣Arithmetic Exception:⁡⁡⁡</h3>
 It is thrown when an exceptional condition has occurred in an arithmetic operation.<br>
 <h4>⁡⁢⁣⁣Case 1:⁡</h4>
+<pre>
 public class Ex1 {<br>
 <br>
     public static void main(String[] args) {<br>
@@ -316,11 +336,14 @@ public class Ex1 {<br>
         System.out.println("The is not termiinated");<br>
     }<br>
 }<br>
+</pre>
 <h4>⁡⁢⁢⁢Output:⁡</h4>⁡
+<pre>
 Exception in thread "main" java.lang.Error: Unresolved compilation problem:<br>
 at Exception_Handling.Ex1.main(Ex1.java:5)<br>
-
+</pre>
 <h4>⁡⁢⁣⁣Case 2:⁡⁢⁢⁡⁢⁢⁢"The code is not terminated", is printed.⁡⁡</h4>
+<pre>
 public class Ex1 {<br>
     public stativ void main(string[]args){<br>
         //Now consider the below code<br>
@@ -336,11 +359,14 @@ public class Ex1 {<br>
         System.out.println("the code is not terminated");<br>
     }<br>
 }<br>
+</pre>
 <h4>⁡⁢⁢⁢Output:⁡⁡</h4>⁡
+<pre>
 java.lang.ArithmeticException: / by zero<br>
-the code is not terminated<br>
+the code is not terminated<br></pre>
 
 <h4>⁡⁢⁣⁣Case 3:⁡⁢⁢⁢"The code is not terminated", is not printed bcoz it's in try block.⁡⁡⁡</h4>⁢
+<pre>
 public class Ex1 {<br>
     public stativ void main(string[]args){<br>
          //Now consider <br>
@@ -354,12 +380,15 @@ public class Ex1 {<br>
         }<br>
     }<br>
 }<br>
+</pre>
 <h4>⁡⁢⁢⁡⁢⁢⁢Output:⁡⁡⁡</h4>⁡
+<pre>
 java.lang.ArithmeticException: / by zero<br>
-⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
+</pre>
 <h3>⁡⁣⁢⁣Null Pointer Exception:⁡</h3>
 This exception is raised when referring to the members of a null object. <br>
 Null represents nothing<br>
+<pre>
 //Java program to demonstrate NullPointerException <br>
 class NullPointer_Demo <br>
 { <br>
@@ -373,14 +402,16 @@ class NullPointer_Demo <br>
 		} <br>
 	} <br>
 } <br>
-
-<h4>⁡⁢⁢⁡⁢⁢⁢Output:⁡⁡⁡</h4>⁡
+</pre>
+<h4>⁡⁢⁢⁡⁢⁢⁢Output:⁡⁡⁡</h4>
+<pre>
 NullPointerException..<br>
-⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
+</pre>
 <h3>⁡⁣⁢⁣StringIndexOutOfBound Exception:⁡</h3>
 It is thrown when an attempt is made to access an invalid index in a string<br>
 Suppose the String length is 5 but if we ask to print the character at index 10 it throws <b>StringIndexOutOfBound</b> i.e, we cannot accesseither negative or graeter than equal to to the length of string<br>
 <br>
+<pre>
 public class StringIndexOutOfBound {<br>
     public static void main(String[] args) {<br>
         String str= "Hello";<br>
@@ -395,13 +426,15 @@ public class StringIndexOutOfBound {<br>
         }<br>
     }<br>
 }<br>
-
+</pre>
   <h4>Output:</h4>
+  <pre>
   Exception Caught: String index out of range: 10<br>
-⁡⁣⁣⁢------------------------------------------------------------------------------------------⁡
+</pre>
 <h3>⁡⁣⁢⁣ArrayIndexOutOfBound:⁡</h3>
 It is thrown to indicate that an array has been accessed with an illegal index. The index is either negative or greater than or equal to the size of the array.<br>
 <br>
+<pre>
 public class ArrayIndexOutOfBound {<br>
     public static void main(String[] args) {<br>
         try{<br>
@@ -413,14 +446,17 @@ public class ArrayIndexOutOfBound {<br>
         }<br>
     }<br>
 }<br>
-
+</pre>
 <h4>⁡⁢⁢⁢Output:⁡</h4>
+<pre>
 The Array index is out of bound
+</pre>
 <hr>
 
 <h2>⁡⁣⁢⁣Multiple Catch⁡</h2>
  <img src="https://static.javatpoint.com/core/images/multiple-catch-block-in-java.png" alt="Multiple Catch" width="600" height="393">
  <br>
+ <pre>
  public class MultipleCatchBlock1 {  <br>
   <br>
     public static void main(String[] args) {  <br>
@@ -444,7 +480,7 @@ The Array index is out of bound
                System.out.println("rest of the code");    <br>
     }  <br>
 }  <br>
-
+</pre>
 <hr>
 
 <h2>⁡⁣⁢⁣throw v/s throws⁡</h2>

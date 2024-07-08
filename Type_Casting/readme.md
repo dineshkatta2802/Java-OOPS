@@ -41,27 +41,31 @@ int a = 10;<br>
 double b = a;  Implicit casting from int to double<br>
 
 <h4>⁡⁢⁣⁡⁣⁣⁢Types of Implicit Casting:⁡⁡</h4>
+<pre>
 byte to short, int, long, float, double<br>
 short to int, long, float, double<br>
 char to int, long, float, double<br>
 int to long, float, double<br>
 long to float, double<br>
 float to double<br>
-
+</pre>
 <h3>⁡⁢⁣⁣Narrowing or Explict Casting:⁡</h3>
 This type of casting must be explicitly specified in the code to inform the compiler of the developer’s intent.<br>
 Explicit casting can potentially lose data or cause precision issues, so it should be used with caution.<br>
 Example:<br>
+<pre>
 double x = 10.5;<br>
 int y = (int) x;  Explicit casting from double to int<br>
+</pre>
 
 <h4>⁡⁣⁣⁢Types of Explicit Casting:⁡⁡</h4>
+<pre>
 double to float, long, int, short, byte<br>
 float to long, int, short, byte<br>
 long to int, short, byte<br>
 int to short, byte<br>
 short to byte<br>
-
+</pre>
 
 
 <h2>⁡⁣⁢⁣Casting Referenced or Advanced Datatypes:⁡⁡</h2>
@@ -114,6 +118,7 @@ package Type_Casting;<br>
 We know that for Typcasting objects we need some relation betweeSn two classes<br>
 like Inheritance<br>
 //⁡⁣⁢⁣Super Class⁡<br>
+<pre>
 class Animal{<br>
     void makesound(){<br>
         System.out.println("Animals eat!");<br>
@@ -136,7 +141,7 @@ public class Widening_Object {<br>
     }<br>
 <br>
 }<br>
-
+</pre>
 <h2>⁡⁢⁣⁣Imp Note:⁡</h2>
 Assigning the sub class object "Dog" to the variable of super class<br>
 here we make the Object of Sublass and Object of super class same<br>
@@ -144,23 +149,30 @@ Now,calling subclass method with superclass Object<br>
 The method names should be same in Super and Sub class<br>
 <br>
 The above Declaration of object can also be done in the following way<br>
+<pre>
 Animal myAnimal = new Dog();<br>
 myAnimal.makesound();<br>
-
+</pre>
 
 <h2>⁡⁢⁣⁣Note:⁡</h2>
 The above Declaration of object can also be done in the following way<br>
+<pre>
 Dog Terex = new Dog();<br>
+</pre>
 Assigning the sub class object "Dog" to the variable of super class<br>
+<pre>
 Animal myAnimal = Terex;//Upcast to Animal<br>
+</pre>
 here we make the Object of Sublass and Object of super class same<br>
 Now,calling subclass method with superclass Object<br>
 <br>
 The method names should be same in Super and Sub class<br>
+<pre>
 myAnimal.makesound();<br>
-
+</pre>
 
 <h2>⁡⁣⁢⁣Specialization of Objects⁡</h2>
+<pre>
 package Type_Casting;<br>
 //We know that for Typcasting objects we need some relation between two classes<br>
 //like Inheritance<br>
@@ -194,7 +206,7 @@ public class Narrowing_Object {<br>
     }<br>
 <br>
 }
-
+</pre>
 <h2>⁡⁢⁣⁣Imp Note:⁡</h2>
 Since we know that the DownCasting is "not safe"<br>
 "Instance of" operator checks the if 'myAnimal' is actually the object of class 'Dog<br>
@@ -270,6 +282,7 @@ a method specific to the Dog class.<br>
 </html>
 
 <h2>⁡⁣⁢⁣Another Example of TypCasting⁡</h2>
+<pre>
 // Importing input output classes<br>
 import java.io.*;<br>
 <br>
@@ -322,7 +335,7 @@ class GFG <br>
 	obj.show();<br>
 	}<br>
 }<br>
-
+</pre>
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210119153952/Downcasting.jpg" alt="UpCasting and DOwncasting" width="596" height="300">
 
 <h2>Advantages and Disadvantages of TypeCasting</h2>
