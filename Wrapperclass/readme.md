@@ -31,6 +31,27 @@ It is the Opposite to that of the Auto-Boxing<br>
 The automatic conversion of Wrapper class to that of the  corresponding Primitive dastatype type in Java.lang pacakge is called Un-Boxing.<br>
 Like char to Character ,byte to Bytes.<br>
 Example:<br>
+package Wrapperclass;<br>
+<br>
+import java.nio.charset.CharacterCodingException;<br>
+<br>
+public class Unboxing {<br>
+    public static void main(String[] args) {<br>
+        //Illustatin a simple example of Un-Boxing<br>
+        Integer a = 100;<br>
+        Double b = 10.23;<br>
+        Character c = 'X';<br>
+<br>
+        int x = a;<br>
+        double y = b;<br>
+        char z = c;<br>
+<br>
+        System.out.println(x);<br>
+        System.out.println(y);<br>
+        System.out.println(z);<br>
+    }<br>
+}<br>
+
 
 <h2>⁡⁣⁢⁣Where do we use Wrapper class⁡</h2>
 <ol><li>⁡⁢⁣⁣Collections Framework/Collection API:⁡</li>
