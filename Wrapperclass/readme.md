@@ -1,6 +1,7 @@
 <h1>⁡⁣⁢⁣Wrapper class⁡</h1>
 Wrapper class is a mechanism in which you can convert objects to Primitive data types and primitive types to Objects.<br>
 The conversion is done using <b>"Auto-boxing and Unboxing"</b> methods.<br>
+All the Wrapper classes are present in Java.lang.package<br>
 
 <h2>⁡⁣⁢⁣Auto-Boxing:⁡</h2>
 The automatic conversion of primitive datatype to that of the corresponding object type in Java.lang pacakge is called Auto-Boxing.<br>
@@ -124,8 +125,8 @@ Double  y = Double.parseDouble("10.23");
 Boolean z = Boolean.parseBoolean("true");
 </pre>
 
+<h3>⁡⁢⁣⁣Example using all the instance Methods:⁡</h3>
 <pre>
-Example:
 package Wrapperclass;
 
 public class WrapperCreationExample {
@@ -166,5 +167,100 @@ System.out.println();
         System.out.println("Boolean object using parseBoolean: " + z4);
     }
 }
+</pre>
+
+<h2>⁡⁣⁢⁣Character Class⁡</h2>
+Character class provides several methods to manipulate characters<br>
+The Character is immutable methods that cannot be changed<br>
+<h3>Methods of character class:</h3>
+<ol>
+<li><h4>⁡⁢⁣⁣boolean isLetter(char ch)⁡⁢⁣⁣:⁡⁡</h4>
+ch - identifier<br>
+It returns <b>true</b> if the character is alphabet ,if not it returns <b>false</b>.<br>
+<pre>
+public class isLetter {
+    public static void main(String[] args) {
+        System.out.println(Character.isLetter('A'));
+        System.out.println(Character.isLetter('0'));
+    }
+}
+</pre>
+
+</li>
+<li><h4>⁡⁢⁣⁣boolen isLetterOrDigit(char ch)⁡⁢⁣⁣:⁡⁡</h4>
+ch - identifier<br>
+It returns <b>true</b> if the character is alphabet or digit ,if not it returns <b>false</b>.<br>
+<pre>
+<pre>
+public class isLetterorDigit {
+
+    public static void main(String[] args) {
+        System.out.println(Character.isLetterOrDigit('A'));
+        System.out.println(Character.isLetterOrDigit('0'));
+    }
+}
+</pre>
+</li>
+<li><h4>boolean isDigit(char ch)</h4>
+ch - identifier<br>
+It returns <b>true</b> if the character is digit ,if not it returns <b>false</b>.<br>
+<pre>
+
+public class isDigit {
+
+    public static void main(String[] args) {
+
+        System.out.println(Character.isDigit('A'));
+        System.out.println(Character.isDigit('0'));
+    }
+}
+</pre>
+</li>
+<li><h4>⁡⁢⁣⁣boolen isWhiteSpace(char ch):⁡</h4>
+ch - identifier<br>
+It returns <b>true</b> if the character is a White Space ,if not it returns <b>false</b>.<br>
+<pre>
+public class isWhiteSpace {
+    public static void main(String[] args) {
+        System.out.println(Character.isWhitespace('A'));
+        System.out.println(Character.isWhitespace(9));
+        System.out.println(Character.isWhitespace('9'));
+        System.out.println(Character.isWhitespace(' '));
+        System.out.println(Character.isWhitespace('\t'));
+        System.out.println(Character.isWhitespace('\n'));
+        System.out.println(Character.isWhitespace('\r'));
+        System.out.println(Character.isWhitespace('\u00A0'));
+    }
+}
+</pre>
+</li>
+<li><h4>⁡⁢⁣⁣boolean isUppercase(char ch):⁡</h4>
+ch - identifier<br>
+It returns <b>true</b> if the character is a uppercase alphabet ,if not it returns <b>false</b>.<br>
+<pre>
+public class isUppercase {
+    public static void main(String[] args) {
+        System.out.println(Character.isUpperCase('A'));
+        System.out.println(Character.isUpperCase('a'));
+    }
+}
+</pre>
+</li>
+<li><h4>⁡⁢⁣⁣boolean isLowecase(char ch):⁡</h4>
+ch - identifier<br>
+It returns <b>true</b> if the character is a Lowecase alphabet ,if not it returns <b>false</b>.<br>
+<pre>
+public class isLowercase {
+    public static void main(String[] args) {
+        System.out.println(Character.isLowerCase('A'));
+        System.out.println(Character.isLowerCase('a'));
+    }
+}
 
 </pre>
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
