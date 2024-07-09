@@ -12,7 +12,7 @@ public class Ex1 {
             int a = 45/n;
             System.out.println("a="+a);
             int b[] = new int[4];
-            int b[5] = 30;
+            b[5] = 30; // This line will throw an ArrayIndexOutOfBoundsException
         }
 
         catch(ArithmeticException e){

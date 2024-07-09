@@ -115,3 +115,11 @@ Integer x = 10;
 Double  y = 10.23; 
 Boolean z = true; 
 </pre>
+
+<h3>⁡⁢⁣⁣Parsing Strings:⁡</h3>
+Wrapper classes provide static methods to convert strings to their corresponding wrapper objects.
+<pre>
+Integer x = Integer.parseInt("10");
+Double  y = Double.parseDouble("10.23");
+Boolean z = Boolean.parseBoolean("true");
+</pre>
