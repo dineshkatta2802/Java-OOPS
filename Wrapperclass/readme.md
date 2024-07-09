@@ -69,7 +69,9 @@ numbers.add(5); // Autoboxing converts int 5 to Integer object<br></li>
 <li>⁡⁢⁣⁣Serialization and Synchornization/Object Methods:⁡</li>
 <ul><pre>
 <li>⁡⁢⁢⁢Note:⁡</li>
-<ul><li>Serialization in Java is the concept of representing an object’s state as a byte stream. The byte stream has all the information about the object. Usually used in Hibernate, JMS, JPA, and EJB, serialization in Java helps transport the code from one JVM to another and then de-serialize it there.</li></pre>
+<ul><li>Serialization in Java is the concept of representing an object’s state as a byte stream.<br>
+The byte stream has all the information about the object. <br>
+Usually used in Hibernate, JMS, JPA, and EJB, serialization in Java helps transport the code from one JVM to another and then de-serialize it there.</li></pre>
 <li>De-serialization is the exact opposite.</li>
 <li><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2016/01/serialize-deserialize-java.png" alt="Serialization and Deserialization" width="629" height="417"></li></ul>
 <li>Java synchronization works with objects in Multithreading.</li>
