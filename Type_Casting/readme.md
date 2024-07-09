@@ -110,15 +110,16 @@ It's scope is Narrowing.<br>
 Example:<br>
 If we have to say fruit is a citrus fruit the java compiler asks to use Cast Operator specifically and we become more specific and we need to do Explict Casting.<br>
 
-<h2>⁡⁢⁣⁣Note:⁡⁡</h2>
+<pre>
+⁡⁢⁣⁣Note:⁡⁡
 The method names should be same in Super and Subclass to call
-
+</pre>
 <h2>⁡⁣⁢⁣Generalization of Objects⁡</h2>
 package Type_Casting;<br>
 We know that for Typcasting objects we need some relation betweeSn two classes<br>
 like Inheritance<br>
-//⁡⁣⁢⁣Super Class⁡<br>
 <pre>
+//⁡⁣⁢⁣Super Class⁡<br>
 class Animal{<br>
     void makesound(){<br>
         System.out.println("Animals eat!");<br>

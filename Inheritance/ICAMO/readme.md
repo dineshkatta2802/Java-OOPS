@@ -7,5 +7,7 @@
 <li>A-Inheritance and Access Modifier</li>
 </ol>
 </h2>
-<h3>Note:</h3><br>
+<pre>
+Note:<br>
 Through all the different types to illustrate inheritance we use similar example for better undertanding
+</pre>

@@ -67,9 +67,9 @@ numbers.add(5); // Autoboxing converts int 5 to Integer object<br></li>
 <li>int i = Integer.parseInt("123"); // Converts a String to an int</li></ul>
 </pre>
 <li>⁡⁢⁣⁣Serialization and Synchornization/Object Methods:⁡</li>
-<ul>
+<ul><pre>
 <li>⁡⁢⁢⁢Note:⁡</li>
-<ul><li>Serialization in Java is the concept of representing an object’s state as a byte stream. The byte stream has all the information about the object. Usually used in Hibernate, JMS, JPA, and EJB, serialization in Java helps transport the code from one JVM to another and then de-serialize it there.</li>
+<ul><li>Serialization in Java is the concept of representing an object’s state as a byte stream. The byte stream has all the information about the object. Usually used in Hibernate, JMS, JPA, and EJB, serialization in Java helps transport the code from one JVM to another and then de-serialize it there.</li></pre>
 <li>De-serialization is the exact opposite.</li>
 <li><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2016/01/serialize-deserialize-java.png" alt="Serialization and Deserialization" width="629" height="417"></li></ul>
 <li>Java synchronization works with objects in Multithreading.</li>
@@ -79,3 +79,37 @@ numbers.add(5); // Autoboxing converts int 5 to Integer object<br></li>
 <h2>⁡⁢⁣⁣⁡⁣⁢⁣List of Wrapper Class⁡⁡</h2>
 The eight classes of the java.lang package are known as wrapper classes in Java. The list of eight wrapper classes are given below
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/Wrapper.png">
+
+<h2>⁡⁣⁢⁣Differenyt ways to create instance of Wrapper class⁡</h2>
+There are different ways to create instances of     wrapper classes,they are as follows:
+<ol>
+<li>Using Constructors</li>
+<li>Using ValuOfMethod</li>
+<li>Auto-Boxing</li>
+<li>Parsing Strings</li>
+</ol>
+
+<h3>⁡⁢⁣⁣Using Constructors:⁡</h3>
+<pre>
+Syntax:
+ClassnName Object = new ClassName(Argument);
+</pre>
+<pre>Example:
+Integer x = new Integer(5);</pre>
+
+<h3>⁡⁢⁣⁣⁡⁢⁣⁣Using valueOfMethds:⁡</h3>
+It is more efficient than that of the constructors.
+<pre>
+Syntax:
+ClassnName Object = ClassName.valueOf(Argument);
+</pre>
+<pre>Example:
+Integer x = Integer.valueOf(5);</pre>
+
+<h3>⁡⁢⁣⁣Auto-Boxing:⁡</h3>
+<pre>
+Example:
+Integer x = 10; 
+Double  y = 10.23; 
+Boolean z = true; 
+</pre>
