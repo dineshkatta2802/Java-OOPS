@@ -759,7 +759,11 @@ b datatype: java.lang.Boolean
 This function returns the Byte object initialized with the value provided.
 <pre>
 Syntax:
+<u>valueOf():</u>
 public static Byte valueOf(byte b)
+<br>
+<u>valueOf(String str):</u>
+public static Byte valueOf(String str)
 </pre>
 <pre>
 Examples:
@@ -810,6 +814,7 @@ public class valueOf {
 
 <br>
 Output:
+
 <u>valuOf():</u>
 Byte value: 20
 Short value: 20
