@@ -19,8 +19,6 @@ public class valueOf {
         System.out.println("Float value: " + f);
         System.out.println("Double value: " + d);
 
-        System.out.println("----------------------------------------------------------------");
-
         //valueOf(String value)
         String y = "40";
         System.out.println("Byte object form string value: " + b);
