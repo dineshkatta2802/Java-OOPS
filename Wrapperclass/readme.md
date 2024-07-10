@@ -833,16 +833,71 @@ Double value: 40.0
 </pre>
 </li>
 <hr>
-<li></li>
-<hr>
-<li></li>
-<hr>
-<li></li>
-<hr>
-<li></li>
-<hr>
-<li></li>
-<hr>
+<li>
+<h4><b>⁡⁢⁢⁢parseByte():⁡</b></h4>
+<pre>
+Syntax:
+ public static byte parseByte(String val, int radix)
+</pre>
+<pre>
+Example:
+public class parseByte {
+    public static void main(String[] args) {
+        String x = "10";
+        byte y = Byte.parseByte(x);
+        System.out.println("parseByte: " + x);
+    }
+}
+<br>
+Output:
+parseByte: 10
+</pre>
+</li>
+
+<li>
+<h4><b>⁡⁢⁢⁢decode():⁡</b></h4>
+<pre>
+Example:
+package Wrapperclass.Byte_Wrapperclass;
+
+public class decode {
+    public static void main(String[] args) {
+        try {
+            String octal = "0o36";
+            String hex = "ox1E";
+            String binary = "0b11110";
+            String decimal = "30";
+
+            Byte octalBytes = Byte.decode(octal);
+            Byte hexBytes = Byte.decode(hex);
+            Byte binaryBytes = Byte.decode(binary);
+            Byte decimalBytes = Byte.decode(decimal);
+
+            System.out.println("Octal: " + octalBytes);
+            System.out.println("Hexadecimal: " + hexBytes);
+            System.out.println("Binary: " + binaryBytes);
+            System.out.println("Decimal: " + decimalBytes);
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a valid octal, hexadecimal, binary, or decimal number.");
+        } finally {
+            System.out.println("This is the way to use parseStrings");
+        }
+
+        try {
+            String invalidString = "invalid";
+            Byte invalidByte = Byte.decode(invalidString);
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a valid octal, hexadecimal, binary, or decimal number.");
+        }
+    }
+}
+<br>
+Output:
+Invalid input. Please enter a valid octal, hexadecimal, binary, or decimal number.<br>
+This is the way to use parseStrings<br>
+Invalid input. Please enter a valid octal, hexadecimal, binary, or decimal number.
+</pre>
+</li>
 
 </ol>
 </ol>
