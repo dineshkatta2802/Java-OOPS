@@ -677,6 +677,7 @@ public class charValue {
 <li><b>⁡⁢⁣⁣Methods:⁡</b></li>
 <ol>
 <li>
+<h4><b>⁡⁢⁢⁢toString():⁡</b></h4>
 <pre>
 Syntax:
 public String toString() 
@@ -754,6 +755,7 @@ b datatype: java.lang.Boolean
 </li>
 <hr>
 <li>
+<h4><b>⁡⁢⁢⁢⁡⁢⁢⁢valueOf() & valueOf(String str):⁡⁡</b></h4>
 This function returns the Byte object initialized with the value provided.
 <pre>
 Syntax:
@@ -761,6 +763,7 @@ public static Byte valueOf(byte b)
 </pre>
 <pre>
 Examples:
+package Wrapperclass.Byte_Wrapperclass;
 
 public class valueOf {
     public static void main(String[] args) {
@@ -768,27 +771,61 @@ public class valueOf {
         Byte b = Byte.valueOf(x);
         System.out.println("Byte value: " + b);
 
+        
         //similarly we can eben convert the byte into other primitive types
+
         short s = b.shortValue();
         int i = b.intValue();
         long l = b.longValue();
         float f = b.floatValue();
         double d = b.doubleValue();
+
         System.out.println("Short value: " + s);
         System.out.println("Integer value: " + i);
         System.out.println("Long value: " + l);
         System.out.println("Float value: " + f);
         System.out.println("Double value: " + d);
+<br>
+        //valueOf(String value)
+
+        String y = "40";
+        System.out.println("Byte object form string value: " + b);
+        Byte c = Byte.valueOf(y);
+
+        //Similarly we can convert the byte object string value into other primitive types
+
+        short z = c.shortValue();
+        int p = c.intValue();
+        long q = c.longValue();
+        float r = c.floatValue();
+        double h = c.doubleValue();
+
+        System.out.println("Short value: " + z);
+        System.out.println("Integer value: " + p);
+        System.out.println("Long value: " + q);
+        System.out.println("Float value: " + r);
+        System.out.println("Double value: " + h);
+        
     }
 }
+
 <br>
 Output:
+<u>valuOf():</u>
 Byte value: 20
 Short value: 20
 Integer value: 20
 Long value: 20
 Float value: 20.0
 Double value: 20.0
+<hr>
+<u>valuOf(String str):</u>
+Byte object form string value: 20
+Short value: 40
+Integer value: 40
+Long value: 40
+Float value: 40.0
+Double value: 40.0
 </pre>
 </li>
 <hr>
