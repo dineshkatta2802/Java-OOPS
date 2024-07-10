@@ -169,12 +169,12 @@ System.out.println();
 }
 </pre>
 
-<h2>⁡⁣⁢⁣Character Class⁡</h2>
+<h2>⁡⁣⁢⁡⁣⁢⁣Important Character Class Methods ⁡⁡</h2>
 Character class provides several methods to manipulate characters<br>
 The Character is immutable methods that cannot be changed<br>
 <h3>Methods of character class:</h3>
 <ol>
-<li><h4>⁡⁢⁣⁣boolean isLetter(char ch)⁡⁢⁣⁣:⁡⁡</h4>
+<li><h4><b>⁡⁢⁣⁣boolean isLetter(char ch)⁡⁢⁣⁣:⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is alphabet ,if not it returns <b>false</b>.<br>
 <pre>
@@ -187,7 +187,7 @@ public class isLetter {
 </pre>
 
 </li>
-<li><h4>⁡⁢⁣⁣boolen isLetterOrDigit(char ch)⁡⁢⁣⁣:⁡⁡</h4>
+<li><h4><b>⁡⁢⁣⁣boolen isLetterOrDigit(char ch)⁡⁢⁣⁣:⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is alphabet or digit ,if not it returns <b>false</b>.<br>
 <pre>
@@ -201,7 +201,7 @@ public class isLetterorDigit {
 }
 </pre>
 </li>
-<li><h4>boolean isDigit(char ch)</h4>
+<li><h4><b>⁡⁢⁣⁣boolean isDigit(char ch):⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is digit ,if not it returns <b>false</b>.<br>
 <pre>
@@ -216,7 +216,7 @@ public class isDigit {
 }
 </pre>
 </li>
-<li><h4>⁡⁢⁣⁣boolen isWhiteSpace(char ch):⁡</h4>
+<li><h4><b>⁡⁢⁣⁣boolen isWhiteSpace(char ch):⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is a White Space ,if not it returns <b>false</b>.<br>
 <pre>
@@ -234,7 +234,7 @@ public class isWhiteSpace {
 }
 </pre>
 </li>
-<li><h4>⁡⁢⁣⁣boolean isUppercase(char ch):⁡</h4>
+<li><h4>⁡⁢⁣<b>⁡⁢⁣⁣boolean isUppercase(char ch):⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is a uppercase alphabet ,if not it returns <b>false</b>.<br>
 <pre>
@@ -246,7 +246,7 @@ public class isUppercase {
 }
 </pre>
 </li>
-<li><h4>⁡⁢⁣⁣boolean isLowecase(char ch):⁡</h4>
+<li><h4><b>⁡⁢⁣⁣boolean isLowecase(char ch):⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is a Lowecase alphabet ,if not it returns <b>false</b>.<br>
 <pre>
@@ -259,8 +259,396 @@ public class isLowercase {
 
 </pre>
 </li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li><h4><b>⁡⁢⁣⁣char toUppercase(charch):⁡</b></h4></li>
+ch - identifier<br>
+It converts the <b>Lowercase</b> character to the <b>Uppercase</b>.<br>
+<pre>
+public class toUppecase {
+    public static void main(String[] args) {
+        System.out.println(Character.toUpperCase('a'));
+        System.out.println(Character.toUpperCase(96));
+    }
+}
+</pre>
+<li><h4><b>⁡⁢⁣⁣⁡⁢⁣⁣char toLowercase(charch):⁡⁡</b></h4></li>
+ch - identifier<br>
+It converts the <b>Uppercase</b> character to the <b>Lowercase</b>.<br>
+<pre>
+public class toLowercase {
+    public static void main(String[] args) {
+        System.out.println(Character.toLowerCase('A'));
+        System.out.println(Character.toLowerCase(96));
+        System.out.println(Character.toLowerCase('a'));
+    }
+}
+</pre>
+<li><h4><b>char charValue():</b></h4></li>
+ This method returns the primitive char value represented by this object.
+ <pre>
+public class charValue {
+    public static void main(String[] args) {
+        Character c = new Character('z');
+        System.out.println("Character value: " + c.charValue());
+    }
+}
+ </pre>
 </ol>
+<h3>⁡⁣⁢⁣These are other Character-Wrapper class methods⁡</h3>
+<!--The below code is collapsed i.e, toggled clik on the '>' this button to know the code in the <pre> tag-->
+<!--The shortcut are as follows
+ctrl+shift+[ = Open collapse
+ctrl+shift+] = Close collapse
+-->
+<pre>
+<table>
+<thead>
+<tr>
+<th>S. No.</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td><a href="https://www.geeksforgeeks.org/java-character-charcount-with-examples/" previewlistener="true"><strong>static int charCount?(int codePoint)</strong></a></td>
+<td>This method determines the number of char values needed to represent the specified character (Unicode code point).</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><a href="https://www.geeksforgeeks.org/character-charvalue-in-java-with-examples/" previewlistener="true"><strong>char charValue?()</strong></a></td>
+<td>This method returns the value of this Character object.</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><strong>static int codePointAt?(char[] a, int index)</strong></td>
+<td>This method returns the code point at the given index of the char array.</td>
+</tr>
+<tr>
+<td>4.</td>
+<td><strong>static int codePointAt?(char[] a, int index, int limit)</strong></td>
+<td>This method returns the code point at the given index of the char array, where only array elements with an index less than the limit can be used.</td>
+</tr>
+<tr>
+<td>5.</td>
+<td><strong>static int codePointAt?(CharSequence seq, int index)</strong></td>
+<td>This method returns the code point at the given index of the CharSequence.</td>
+</tr>
+<tr>
+<td>6.</td>
+<td><strong>static int codePointBefore?(char[] a, int index)</strong></td>
+<td>This method returns the code point preceding the given index of the char array.</td>
+</tr>
+<tr>
+<td>7.</td>
+<td><strong>static int codePointBefore?(char[] a, int index, int start)</strong></td>
+<td>This method returns the code point preceding the given index of the char array, where only array elements with index greater than or equal to start can be used.</td>
+</tr>
+<tr>
+<td>8.</td>
+<td><strong>static int codePointBefore?(CharSequence seq, int index)</strong></td>
+<td>This method returns the code point preceding the given index of the CharSequence.</td>
+</tr>
+<tr>
+<td>9.</td>
+<td><strong>static int codePointCount?(char[] a, int offset, int count)</strong></td>
+<td>This method returns the number of Unicode code points in a subarray of the char array argument.</td>
+</tr>
+<tr>
+<td>10.</td>
+<td><strong>static int codePointCount?(CharSequence seq, int beginIndex, int endIndex)</strong></td>
+<td>This method returns the number of Unicode code points in the text range of the specified char sequence.</td>
+</tr>
+<tr>
+<td>11.</td>
+<td><strong>static int codePointOf?(String name)</strong></td>
+<td>This method returns the code point value of the Unicode character specified by the given Unicode character name.</td>
+</tr>
+<tr>
+<td>12.</td>
+<td><strong>static int compare?(char x, char y)</strong></td>
+<td>This method compares two char values numerically.</td>
+</tr>
+<tr>
+<td>13.</td>
+<td><strong>int compareTo?(Character anotherCharacter)</strong></td>
+<td>This method compares two Character objects numerically.</td>
+</tr>
+<tr>
+<td>14.</td>
+<td><a href="https://www.geeksforgeeks.org/character-digit-in-java-with-examples/" previewlistener="true"><strong>static int digit?(char ch, int radix)</strong></a></td>
+<td>This method returns the numeric value of the character ch in the specified radix.</td>
+</tr>
+<tr>
+<td>15.</td>
+<td><a href="https://www.geeksforgeeks.org/character-digit-in-java-with-examples/" previewlistener="true"><strong>static int digit?(int codePoint, int radix)</strong></a></td>
+<td>This method returns the numeric value of the specified character (Unicode code point) in the specified radix.</td>
+</tr>
+<tr>
+<td>16.</td>
+<td><a href="https://www.geeksforgeeks.org/character-equals-method-in-java-with-examples/" previewlistener="true"><strong>boolean equals?(Object obj)</strong></a></td>
+<td>This method compares this object against the specified object.</td>
+</tr>
+<tr>
+<td>17.</td>
+<td><strong>static char forDigit?(int digit, int radix)</strong></td>
+<td>This method determines the character representation for a specific digit in the specified radix.</td>
+</tr>
+<tr>
+<td>18.</td>
+<td><a href="https://www.geeksforgeeks.org/character-getdirectionality-method-in-java-with-examples/" previewlistener="true"><strong>static byte getDirectionality?(char ch)</strong></a></td>
+<td>This method returns the Unicode directionality property for the given character.</td>
+</tr>
+<tr>
+<td>19.</td>
+<td><a href="https://www.geeksforgeeks.org/character-getdirectionality-method-in-java-with-examples/" previewlistener="true"><strong>static byte getDirectionality?(int codePoint)</strong></a></td>
+<td>This method returns the Unicode directionality property for the given character (Unicode code point).</td>
+</tr>
+<tr>
+<td>20.</td>
+<td><strong>static String getName?(int codePoint)</strong></td>
+<td>This method returns the Unicode name of the specified character codePoint, or null if the code point is unassigned.</td>
+</tr>
+<tr>
+<td>21.</td>
+<td><strong>static int getNumericValue?(char ch)</strong></td>
+<td>This method returns the int value that the specified Unicode character represents.</td>
+</tr>
+<tr>
+<td>22.</td>
+<td><strong>static int getNumericValue?(int codePoint)</strong></td>
+<td>This method returns the int value that the specified character (Unicode code point) represents.</td>
+</tr>
+<tr>
+<td>23.</td>
+<td><a href="https://www.geeksforgeeks.org/character-equals-method-in-java-with-examples/" previewlistener="true"><strong>static int getType?(char ch)</strong></a></td>
+<td>This method returns a value indicating a character’s general category.</td>
+</tr>
+<tr>
+<td>24.</td>
+<td><a href="https://www.geeksforgeeks.org/character-equals-method-in-java-with-examples/" previewlistener="true"><strong>static int getType?(int codePoint)</strong></a></td>
+<td>This method returns a value indicating a character’s general category.</td>
+</tr>
+<tr>
+<td>25.</td>
+<td><a href="https://www.geeksforgeeks.org/character-hashcode-in-java-with-examples/" previewlistener="true"><strong>int hashCode?()</strong></a></td>
+<td>This method returns a hash code for this Character; equal to the result of invoking charValue().</td>
+</tr>
+<tr>
+<td>26.</td>
+<td><a href="https://www.geeksforgeeks.org/character-hashcode-in-java-with-examples/" previewlistener="true"><strong>static int hashCode?(char value)</strong></a></td>
+<td>This method returns a hash code for a char value; compatible with Character.hashCode().</td>
+</tr>
+<tr>
+<td>27.</td>
+<td><strong>static char highSurrogate?(int codePoint)</strong></td>
+<td>This method returns the leading surrogate (a high surrogate code unit) of the surrogate pair representing the specified supplementary character (Unicode code point) in the UTF-16 encoding.</td>
+</tr>
+<tr>
+<td>28.</td>
+<td><strong>static boolean isAlphabetic?(int codePoint)</strong></td>
+<td>This method determines if the specified character (Unicode code point) is an alphabet.</td>
+</tr>
+<tr>
+<td>29.</td>
+<td><strong>static boolean isBmpCodePoint?(int codePoint)</strong></td>
+<td>This method determines whether the specified character (Unicode code point) is in the Basic Multilingual Plane (BMP).</td>
+</tr>
+<tr>
+<td>30.</td>
+<td><strong>static boolean isDefined?(char ch)</strong></td>
+<td>This method determines if a character is defined in Unicode.</td>
+</tr>
+<tr>
+<td>31.</td>
+<td><strong>static boolean isDefined?(int codePoint)</strong></td>
+<td>This method determines if a character (Unicode code point) is defined in Unicode.</td>
+</tr>
+<tr>
+<td>32.</td>
+<td><a href="https://www.geeksforgeeks.org/character-ishighsurrogate-method-in-java-with-examples/" previewlistener="true"><strong>static boolean isHighSurrogate?(char ch)</strong></a></td>
+<td>This method determines if the given char value is a Unicode high-surrogate code unit (also known as a leading-surrogate code unit).</td>
+</tr>
+<tr>
+<td>33.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isidentifierignorable-in-java-with-examples/" previewlistener="true"><strong>static boolean isIdentifierIgnorable?(char ch)</strong></a></td>
+<td>This method determines if the specified character should be regarded as an ignorable character in a Java identifier or a Unicode identifier.</td>
+</tr>
+<tr>
+<td>34.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isidentifierignorable-in-java-with-examples/" previewlistener="true"><strong>static boolean isIdentifierIgnorable?(int codePoint)</strong></a></td>
+<td>This method determines if the specified character (Unicode code point) should be regarded as an ignorable character in a Java identifier or a Unicode identifier.</td>
+</tr>
+<tr>
+<td>35.</td>
+<td><strong>static boolean isIdeographic?(int codePoint)</strong></td>
+<td>This method determines if the specified character (Unicode code point) is a CJKV (Chinese, Japanese, Korean, and Vietnamese) ideograph, as defined by the Unicode Standard.</td>
+</tr>
+<tr>
+<td>36.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isisocontrol-method-with-examples-in-java/" previewlistener="true"><strong>static boolean isISOControl?(char ch)</strong></a></td>
+<td>This method determines if the specified character is an ISO control character.</td>
+</tr>
+<tr>
+<td>37.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isisocontrol-method-with-examples-in-java/" previewlistener="true"><strong>static boolean isISOControl?(int codePoint)</strong></a></td>
+<td>This method determines if the referenced character (Unicode code point) is an ISO control character.</td>
+</tr>
+<tr>
+<td>38.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isjavaidentifierpart-method-in-java-with-examples/" previewlistener="true"><strong>static boolean isJavaIdentifierPart?(char ch)</strong></a></td>
+<td>This method determines if the specified character may be part of a Java identifier as other than the first character.</td>
+</tr>
+<tr>
+<td>39.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isjavaidentifierpart-method-in-java-with-examples/" previewlistener="true"><strong>static boolean isJavaIdentifierPart?(int codePoint)</strong></a></td>
+<td>This method determines if the character (Unicode code point) may be part of a Java identifier as other than the first character.</td>
+</tr>
+<tr>
+<td>40.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isjavaidentifierstart-method-in-java-2/" previewlistener="true"><strong>static boolean isJavaIdentifierStart?(char ch)</strong></a></td>
+<td>This method determines if the specified character is permissible as the first character in a Java identifier.</td>
+</tr>
+<tr>
+<td>41.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isjavaidentifierstart-method-in-java/" previewlistener="true"><strong>static boolean isJavaIdentifierStart?(int codePoint)</strong></a></td>
+<td>This method determines if the character (Unicode code point) is permissible as the first character in a Java identifier.</td>
+</tr>
+<tr>
+<td>42.</td>
+<td><a href="https://www.geeksforgeeks.org/character-islowsurrogate-method-in-java-with-examples/" previewlistener="true"><strong>static boolean isLowSurrogate?(char ch)</strong></a></td>
+<td>This method determines if the given char value is a Unicode low-surrogate code unit (also known as trailing-surrogate code unit).</td>
+</tr>
+<tr>
+<td>43.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isletterordigit-in-java-with-examples/" previewlistener="true"><strong>static boolean isLetterOrDigit?(char ch)</strong></a></td>
+<td>This method determines if the specified character is a letter or digit.</td>
+</tr>
+<tr>
+<td>44.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isletterordigit-in-java-with-examples/" previewlistener="true"><strong>static boolean isLetterOrDigit?(int codePoint)</strong></a></td>
+<td>This method determines if the specified character (Unicode code point) is a letter or digit.</td>
+</tr>
+<tr>
+<td>45.</td>
+<td><a href="https://www.geeksforgeeks.org/character-ismirrored-method-in-java/" previewlistener="true"><strong>static boolean isMirrored?(char ch)</strong></a></td>
+<td>This method determines whether the character is mirrored according to the Unicode specification.</td>
+</tr>
+<tr>
+<td>46.</td>
+<td><a href="https://www.geeksforgeeks.org/character-ismirrored-method-in-java/" previewlistener="true"><strong>static boolean isMirrored?(int codePoint)</strong></a></td>
+<td>This method determines whether the specified character (Unicode code point) is mirrored according to the Unicode specification.</td>
+</tr>
+<tr>
+<td>47.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isspacecharchar-ch-method-java/" previewlistener="true"><strong>static boolean isSpaceChar?(char ch)</strong></a></td>
+<td>This method determines if the specified character is a Unicode space character.</td>
+</tr>
+<tr>
+<td>48.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isspacecharchar-ch-method-java/" previewlistener="true"><strong>static boolean isSpaceChar?(int codePoint)</strong></a></td>
+<td>This method determines if the specified character (Unicode code point) is a Unicode space character.</td>
+</tr>
+<tr>
+<td>49.</td>
+<td><a href="https://www.geeksforgeeks.org/character-issupplementarycodepoint-method-in-java/" previewlistener="true"><strong>static boolean isSupplementaryCodePoint?(int codePoint)</strong></a></td>
+<td>This method determines whether the specified character (Unicode code point) is in the supplementary character range.</td>
+</tr>
+<tr>
+<td>50.</td>
+<td><strong>static boolean isSurrogate?(char ch)</strong></td>
+<td>This method determines if the given char value is a Unicode surrogate code unit.</td>
+</tr>
+<tr>
+<td>51.</td>
+<td><strong>static boolean isSurrogatePair?(char high, char low)</strong></td>
+<td>This method determines whether the specified pair of char values is a valid Unicode surrogate pair.</td>
+</tr>
+<tr>
+<td>52.</td>
+<td><a href="https://www.geeksforgeeks.org/character-istitlecase-in-java-with-examples/" previewlistener="true"><strong>static boolean isTitleCase?(char ch)</strong></a></td>
+<td>This method determines if the specified character is a titlecase character.</td>
+</tr>
+<tr>
+<td>53.</td>
+<td><a href="https://www.geeksforgeeks.org/character-istitlecase-in-java-with-examples/" previewlistener="true"><strong>static boolean isTitleCase?(int codePoint)</strong></a></td>
+<td>This method determines if the specified character (Unicode code point) is a titlecase character.</td>
+</tr>
+<tr>
+<td>54.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isunicodeidentifierpart-method-in-java-with-examples/" previewlistener="true"><strong>static boolean isUnicodeIdentifierPart?(char ch)</strong></a></td>
+<td>This method determines if the specified character may be part of a Unicode identifier as other than the first character.</td>
+</tr>
+<tr>
+<td>55.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isunicodeidentifierpart-method-in-java-with-examples/" previewlistener="true"><strong>static boolean isUnicodeIdentifierPart?(int codePoint)</strong></a></td>
+<td>This method determines if the specified character (Unicode code point) may be part of a Unicode identifier as other than the first character.</td>
+</tr>
+<tr>
+<td>56.</td>
+<td><strong>static boolean isUnicodeIdentifierStart?(char ch)</strong></td>
+<td>This method determines if the specified character is permissible as the first character in a Unicode identifier.</td>
+</tr>
+<tr>
+<td>57.</td>
+<td><strong>static boolean isUnicodeIdentifierStart?(int codePoint)</strong></td>
+<td>This method determines if the specified character (Unicode code point) is permissible as the first character in a Unicode identifier.</td>
+</tr>
+<tr>
+<td>58.</td>
+<td><a href="https://www.geeksforgeeks.org/character-isvalidcodepoint-method-in-java-with-examples/" previewlistener="true"><strong>static boolean isValidCodePoint?(int codePoint)</strong></a></td>
+<td>This method determines whether the specified code point is a valid Unicode code point value.</td>
+</tr>
+<tr>
+<td>59.</td>
+<td><strong>static char lowSurrogate?(int codePoint)</strong></td>
+<td>This method returns the trailing surrogate (a low surrogate code unit) of the surrogate pair representing the specified supplementary character (Unicode code point) in the UTF-16 encoding.</td>
+</tr>
+<tr>
+<td>60.</td>
+<td><a href="https://www.geeksforgeeks.org/character-offsetbycodepoints-in-java-with-examples/" previewlistener="true"><strong>static int offsetByCodePoints?(char[] a, int start, int count, int index, int codePointOffset)</strong></a></td>
+<td>This method returns the index within the given char subarray that is offset from the given index by codePointOffset code points.</td>
+</tr>
+<tr>
+<td>61.</td>
+<td><a href="https://www.geeksforgeeks.org/character-offsetbycodepoints-method-in-java/" previewlistener="true"><strong>static int offsetByCodePoints?(CharSequence seq, int index, int codePointOffset)</strong></a></td>
+<td>This method returns the index within the given char sequence that is offset from the given index by codePointOffset code points.</td>
+</tr>
+<tr>
+<td>62.</td>
+<td><strong>static char reverseBytes?(char ch)</strong></td>
+<td>This method returns the value obtained by reversing the order of the bytes in the specified char value.</td>
+</tr>
+<tr>
+<td>63.</td>
+<td><strong>static char[] toChars?(int codePoint)</strong></td>
+<td>This method converts the specified character (Unicode code point) to its UTF-16 representation stored in a char array.</td>
+</tr>
+<tr>
+<td>64.</td>
+<td><strong>static int toChars?(int codePoint, char[] dst, int dstIndex)</strong></td>
+<td>This method converts the specified character (Unicode code point) to its UTF-16 representation.</td>
+</tr>
+<tr>
+<td>65.</td>
+<td><strong>static int toCodePoint?(char high, char low)</strong></td>
+<td>This method converts the specified surrogate pair to its supplementary code point value.</td>
+</tr>
+<tr>
+<td>66.</td>
+<td><strong>static char toTitleCase?(char ch)</strong></td>
+<td>This method converts the character argument to titlecase using case mapping information from the UnicodeData file.</td>
+</tr>
+<tr>
+<td>67.</td>
+<td><strong>static int toTitleCase?(int codePoint)</strong></td>
+<td>This method converts the character (Unicode code point) argument to titlecase using case mapping information from the UnicodeData file.</td>
+</tr>
+<tr>
+<td>68.</td>
+<td><a href="https://www.geeksforgeeks.org/character-valueof-in-java-with-examples/" previewlistener="true"><strong>static Character valueOf?(char c)</strong></a></td>
+<td>This method returns a Character instance representing the specified char value.</td>
+</tr>
+</tbody>
+</table>
+</pre>
