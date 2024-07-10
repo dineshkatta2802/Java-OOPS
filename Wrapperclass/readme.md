@@ -752,12 +752,56 @@ z datatype: java.lang.Double
 b datatype: java.lang.Boolean
 </pre>
 </li>
+<hr>
+<li>
+This function returns the Byte object initialized with the value provided.
+<pre>
+Syntax:
+public static Byte valueOf(byte b)
+</pre>
+<pre>
+Examples:
+
+public class valueOf {
+    public static void main(String[] args) {
+        byte x = 20;
+        Byte b = Byte.valueOf(x);
+        System.out.println("Byte value: " + b);
+
+        //similarly we can eben convert the byte into other primitive types
+        short s = b.shortValue();
+        int i = b.intValue();
+        long l = b.longValue();
+        float f = b.floatValue();
+        double d = b.doubleValue();
+        System.out.println("Short value: " + s);
+        System.out.println("Integer value: " + i);
+        System.out.println("Long value: " + l);
+        System.out.println("Float value: " + f);
+        System.out.println("Double value: " + d);
+    }
+}
+<br>
+Output:
+Byte value: 20
+Short value: 20
+Integer value: 20
+Long value: 20
+Float value: 20.0
+Double value: 20.0
+</pre>
+</li>
+<hr>
 <li></li>
+<hr>
 <li></li>
+<hr>
 <li></li>
+<hr>
 <li></li>
+<hr>
 <li></li>
-<li></li>
+<hr>
 
 </ol>
 </ol>
