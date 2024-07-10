@@ -763,7 +763,6 @@ public static Byte valueOf(byte b)
 </pre>
 <pre>
 Examples:
-package Wrapperclass.Byte_Wrapperclass;
 
 public class valueOf {
     public static void main(String[] args) {
