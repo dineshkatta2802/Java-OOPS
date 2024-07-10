@@ -1,4 +1,4 @@
-package Wrapperclass;
+package Wrapperclass.Character_Wrapperclass;
 
 public class toUppercase {
     public static void main(String[] args) {

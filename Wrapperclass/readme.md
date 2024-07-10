@@ -172,9 +172,9 @@ System.out.println();
 <h2>⁡⁣⁢⁡⁣⁢⁣Important Character Class Methods ⁡⁡</h2>
 Character class provides several methods to manipulate characters<br>
 The Character is immutable methods that cannot be changed<br>
-<h3>Methods of character class:</h3>
+<h3>⁡⁢⁣⁣Methods of character class:⁡</h3>
 <ol>
-<li><h4><b>⁡⁢⁣⁣boolean isLetter(char ch)⁡⁢⁣⁣:⁡⁡</b></h4>
+<li><h4><b>⁡⁢⁣⁣⁡⁢⁢⁢boolean isLetter(char ch):⁡⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is alphabet ,if not it returns <b>false</b>.<br>
 <pre>
@@ -187,7 +187,7 @@ public class isLetter {
 </pre>
 
 </li>
-<li><h4><b>⁡⁢⁣⁣boolen isLetterOrDigit(char ch)⁡⁢⁣⁣:⁡⁡</b></h4>
+<li><h4><b>⁡⁢⁢⁢boolen isLetterOrDigit(char ch):⁡⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is alphabet or digit ,if not it returns <b>false</b>.<br>
 <pre>
@@ -201,7 +201,7 @@ public class isLetterorDigit {
 }
 </pre>
 </li>
-<li><h4><b>⁡⁢⁣⁣boolean isDigit(char ch):⁡</b></h4>
+<li><h4><b>⁡⁢⁢⁢boolean isDigit(char ch):⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is digit ,if not it returns <b>false</b>.<br>
 <pre>
@@ -216,7 +216,7 @@ public class isDigit {
 }
 </pre>
 </li>
-<li><h4><b>⁡⁢⁣⁣boolen isWhiteSpace(char ch):⁡</b></h4>
+<li><h4><b>⁡⁢⁢⁢boolen isWhiteSpace(char ch):⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is a White Space ,if not it returns <b>false</b>.<br>
 <pre>
@@ -234,7 +234,7 @@ public class isWhiteSpace {
 }
 </pre>
 </li>
-<li><h4>⁡⁢⁣<b>⁡⁢⁣⁣boolean isUppercase(char ch):⁡⁡</b></h4>
+<li><h4>⁡⁢⁣<b>⁡⁢⁢⁢boolean isUppercase(char ch):⁡⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is a uppercase alphabet ,if not it returns <b>false</b>.<br>
 <pre>
@@ -246,7 +246,7 @@ public class isUppercase {
 }
 </pre>
 </li>
-<li><h4><b>⁡⁢⁣⁣boolean isLowecase(char ch):⁡</b></h4>
+<li><h4><b>⁡⁢⁢⁢boolean isLowecase(char ch):⁡⁡</b></h4>
 ch - identifier<br>
 It returns <b>true</b> if the character is a Lowecase alphabet ,if not it returns <b>false</b>.<br>
 <pre>
@@ -259,7 +259,7 @@ public class isLowercase {
 
 </pre>
 </li>
-<li><h4><b>⁡⁢⁣⁣char toUppercase(charch):⁡</b></h4></li>
+<li><h4><b>⁡⁢⁢⁢char toUppercase(charch):⁡⁡</b></h4></li>
 ch - identifier<br>
 It converts the <b>Lowercase</b> character to the <b>Uppercase</b>.<br>
 <pre>
@@ -270,7 +270,7 @@ public class toUppecase {
     }
 }
 </pre>
-<li><h4><b>⁡⁢⁣⁣⁡⁢⁣⁣char toLowercase(charch):⁡⁡</b></h4></li>
+<li><h4><b>⁡⁢⁣⁣⁡⁢⁣⁡⁢⁢⁢char toLowercase(charch):⁡⁡⁡</b></h4></li>
 ch - identifier<br>
 It converts the <b>Uppercase</b> character to the <b>Lowercase</b>.<br>
 <pre>
@@ -294,11 +294,6 @@ public class charValue {
  </pre>
 </ol>
 <h3>⁡⁣⁢⁣These are other Character-Wrapper class methods⁡</h3>
-<!--The below code is collapsed i.e, toggled clik on the '>' this button to know the code in the <pre> tag-->
-<!--The shortcut are as follows
-ctrl+shift+[ = Open collapse
-ctrl+shift+] = Close collapse
--->
 <pre>
 <table>
 <thead>
@@ -652,3 +647,117 @@ ctrl+shift+] = Close collapse
 </tbody>
 </table>
 </pre>
+
+<h2>⁡⁣⁢⁡⁣⁢⁣⁡⁡⁣⁢⁣ImportantByte class Methods and Constructors⁡⁡</h2>
+<ol>
+<li>⁡⁢⁣<b>⁡⁢⁣⁣Constructors:⁡⁡</b></li>
+<ul>
+<li>⁡⁢⁢<b>⁢Byte(byte b):</b>⁡</li>
+ Constructs a newly allocated Byte object that represents the specified byte value.
+<ul>
+    <li>
+        <pre>
+        Syntax:
+        Byte(byte b)
+        </pre>
+        <pre>
+        Example:
+        public class constructor1 {
+        public static void main(String[] args) {
+            byte b = 10;
+            Byte x = new Byte(b);
+            System.out.println("The Byte value is " + x);
+        }
+    }
+        </pre>
+    </li>
+
+</ul>
+</ul>
+<li><b>⁡⁢⁣⁣Methods:⁡</b></li>
+<ol>
+<li>
+<pre>
+Syntax:
+public String toString() 
+</pre>
+<pre>
+public class toString {
+    public static void main(String[] args) {
+        Byte b = new Byte((byte)10);
+        String x = b.toString();
+        System.out.println("Byte to string: " + x);
+    }
+}
+</pre>
+InOrder to check the datatype od the variable follow the below code:
+<pre>
+//In order to find the datatype of the variable there are 2 methods 
+//1.to create some functions to show the datatype 
+//2.use getclass() and getName() 
+<br>
+//method 1
+class sample {
+    void displayType(int x){
+        System.out.println("Integer ");
+    }
+    void displayType(double x){
+        System.out.println("Double ");
+    }
+    void displayType(Float x){
+        System.out.println("Float ");
+    }
+    void displayType(String x){
+        System.out.println("String ");
+    }
+    void displayType(Character x){
+        System.out.println("Character ");
+    }
+
+    void displayType(boolean x){
+        System.out.println("Boolean ");
+    }
+
+}
+public class How_To_know_datatype_of_variable {
+    public static void main(String[] args) {
+
+        sample y = new sample();
+        int x = 10;
+        double z = 10.5;
+        boolean b = true;
+        String s = "Hello";
+
+        y.displayType(s);
+        y.displayType(x);
+        y.displayType(z);
+        y.displayType(b);
+<br>
+        //method 2
+        System.out.println("x datatype: " + ((Object)x).getClass().getName());
+        System.out.println("s datatype: " +((Object)s).getClass().getName());
+        System.out.println("z datatype: " +((Object)z).getClass().getName());
+        System.out.println("b datatype: " +((Object)b).getClass().getName());
+    }
+}
+<br>
+Output:
+String 
+Integer 
+Double
+Boolean
+x datatype: java.lang.Integer
+s datatype: java.lang.String
+z datatype: java.lang.Double
+b datatype: java.lang.Boolean
+</pre>
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+</ol>
+</ol>
