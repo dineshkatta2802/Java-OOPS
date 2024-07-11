@@ -1058,7 +1058,7 @@ Check out the Common methods for more information
 </ol>
 <hr>
 <hr>
-<h2>⁡⁣⁢⁣Important Integer class meythods and constructors⁡</h2>
+<h2>⁡⁣⁢⁣Important Integer class methods and constructors⁡</h2>
 <ol>
 <li><b>⁡⁢⁣⁣Constructors:⁡</b></li>
 <ol>
@@ -1114,3 +1114,9 @@ Binary String :110010
 </ol>
 </ol>
 <h1>All the other Wrapperclass(Float,Long,Double,Boolean) constructors and methods are covered in Common _Methods folder check it out for more information.</h1>
+<h2>
+Check out the remaining above wrapperclaass as reference to know about<br>
+1.Float(float b)/Float(float s)<br>
+2.Long(long b)/Long(long s)<br>
+3.Double(double b)/Double(double s)<br>
+4.Boolean(boolean b)/Boolean(boolean s)</h2>
