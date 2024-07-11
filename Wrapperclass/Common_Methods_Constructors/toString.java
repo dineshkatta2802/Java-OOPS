@@ -1,7 +1,9 @@
-package Wrapperclass.Byte_Wrapperclass;
+package Wrapperclass.Common_Methods_Constructors;
 
 public class toString {
     public static void main(String[] args) {
+        //llly we can change the Wrapperclass for other classes
+
         Byte b = new Byte((byte)10);
         String x = b.toString();
         System.out.println("Byte to string: " + x);

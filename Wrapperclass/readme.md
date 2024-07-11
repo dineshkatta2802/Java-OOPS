@@ -6,7 +6,7 @@ All the Wrapper classes are present in Java.lang.package<br>
 <h2>⁡⁣⁢⁣Auto-Boxing:⁡</h2>
 The automatic conversion of primitive datatype to that of the corresponding object type in Java.lang pacakge is called Auto-Boxing.<br>
 Like char to Character ,byte to Bytes.<br>
-Example:<br>
+⁡⁣⁣⁢Example:⁡<br>
 <pre>
 public class Autoboxing {<br>
     public static void main(String[] args) {<br>
@@ -31,7 +31,7 @@ public class Autoboxing {<br>
 It is the Opposite to that of the Auto-Boxing<br>
 The automatic conversion of Wrapper class to that of the  corresponding Primitive dastatype type in Java.lang pacakge is called Un-Boxing.<br>
 Like char to Character ,byte to Bytes.<br>
-Example:<br>
+⁡⁣⁣⁢Example:⁡<br>
 <pre>import java.nio.charset.CharacterCodingException;<br>
 <br>
 public class Unboxing {<br>
@@ -94,24 +94,24 @@ There are different ways to create instances of     wrapper classes,they are as 
 
 <h3>⁡⁢⁣⁣Using Constructors:⁡</h3>
 <pre>
-Syntax:
+⁡⁣⁣⁢⁡⁣⁣⁢Syntax:⁡⁡
 ClassnName Object = new ClassName(Argument);
 </pre>
-<pre>Example:
+<pre>⁡⁣⁣⁢⁡⁣⁣⁢Example:⁡⁡
 Integer x = new Integer(5);</pre>
 
 <h3>⁡⁢⁣⁣⁡⁢⁣⁣Using valueOfMethds:⁡</h3>
 It is more efficient than that of the constructors.
 <pre>
-Syntax:
+⁡⁣⁣⁢Syntax:⁡
 ClassnName Object = ClassName.valueOf(Argument);
 </pre>
-<pre>Example:
+<pre>⁡⁣⁣⁢Example:⁡
 Integer x = Integer.valueOf(5);</pre>
 
 <h3>⁡⁢⁣⁣Auto-Boxing:⁡</h3>
 <pre>
-Example:
+⁡⁣⁣⁢⁡⁣⁣⁢Example:⁡⁡
 Integer x = 10; 
 Double  y = 10.23; 
 Boolean z = true; 
@@ -169,6 +169,257 @@ System.out.println();
 }
 </pre>
 
+<h2>⁡⁣⁢⁣Common Methods in all Wrapper classes⁡</h2>
+<ol>
+<li><b>⁡⁢⁣⁣compareTo():⁡</b></li>
+<ul>
+<li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+int identifier = Wrapperclassobj1.compareTo(Wrapperclassobj2);
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+public class Compareto {
+    public static void main(String[] args) {
+        //syntax:
+        //public int compareTo(WrapperClass shortObject)
+        
+
+        //Consider an example corresponding to the short object
+        //lly we can compare objects with different WrapperClass like int ,char,String etc...
+
+        Short s1 = new Short("100");
+        Short s2 = new Short("100");
+
+        int x = s1.compareTo(s2);
+        System.out.println("Comapring s1 and s2 is " + x);
+    }
+}
+</pre>
+</li>
+</ul>
+<hr>
+<li><b>⁡⁢⁣⁣equals():⁡</b></li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+boolean identifier = Wrapperclassobj1.equals(Wrapperclassobj2);
+returns true/false
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+public class equals {
+    public static void main(String[] args) {
+        //Consider an example corresponding to the short object
+        //lly we can compare objects with different WrapperClass like int ,char,String etc...
+
+        Short s1 = new Short("100");
+        Short s2 = new Short("100");
+
+        boolean x = s1.equals(s2);
+        System.out.println("Is s1 and s2 equal " + x);
+        
+    }
+}
+</pre>
+<hr>
+<li><b>⁡⁢⁣⁣hashCode():⁡</b></li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+int identifier = WrapperClassobjects.hashCode();
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+public class hashcode {
+    public static void main(String[] args) {
+        short value = 10;
+        Short x = new Short(value);
+        int y = x.hashCode();
+        System.out.println("Hashcode of short value: " + y);
+    }
+}
+</pre>
+<li><b>⁡⁢⁣⁣parseWrapperclass():⁡</b></li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+Wrapperclass identifier = WrapperClassobjects.parseWrapperclass(value);
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+public class parseWrapperclass {
+    public static void main(String[] args) {
+
+        //llly replace the wrapperclass for other classes
+        //like int ,char,byte,short etc...
+        String x = "10";
+        byte y = Byte.parseByte(x);
+        System.out.println("parseByte: " + x);
+    }
+}
+</pre>
+<hr>
+<li><b>⁡⁢⁣⁣toString():⁡</b></li>
+<pre>
+⁡⁣⁣⁢⁡⁣⁣⁢Syntax:⁡
+public String toString() 
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+//we cna change the wrapperclass for other classes and classes 
+<br>
+public class toString {
+    public static void main(String[] args) {
+        Byte b = new Byte((byte)10);
+        String x = b.toString();
+        System.out.println("Byte to string: " + x);
+    }
+}
+</pre>
+<pre>
+In order to find the datatype of the variable there are 2 methods :
+<br>
+//1.to create some functions to show the datatype 
+//2.use getclass() and getName() 
+<br>
+//method 1
+class sample {
+    void displayType(int x){
+        System.out.println("Integer ");
+    }
+    void displayType(double x){
+        System.out.println("Double ");
+    }
+    void displayType(Float x){
+        System.out.println("Float ");
+    }
+    void displayType(String x){
+        System.out.println("String ");
+    }
+    void displayType(Character x){
+        System.out.println("Character ");
+    }
+
+    void displayType(boolean x){
+        System.out.println("Boolean ");
+    }
+
+}
+public class How_To_know_datatype_of_variable {
+    public static void main(String[] args) {
+
+        sample y = new sample();
+        int x = 10;
+        double z = 10.5;
+        boolean b = true;
+        String s = "Hello";
+
+        y.displayType(s);
+        y.displayType(x);
+        y.displayType(z);
+        y.displayType(b);
+<br>
+<hr>
+        //method 2
+        System.out.println("x datatype: " + ((Object)x).getClass().getName());
+        System.out.println("s datatype: " +((Object)s).getClass().getName());
+        System.out.println("z datatype: " +((Object)z).getClass().getName());
+        System.out.println("b datatype: " +((Object)b).getClass().getName());
+    }
+}
+<br>
+⁡⁣⁣⁢Output⁡:
+String 
+Integer 
+Double
+Boolean
+x datatype: java.lang.Integer
+s datatype: java.lang.String
+z datatype: java.lang.Double
+b datatype: java.lang.Boolean
+</pre>
+</li>
+</pre>
+<hr>
+<li><b>⁡⁢⁣⁣valueOf()/valueOf(String s):⁡</b></li>
+This function returns the Wrapperclass object initialized with the value provided.
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+<u>valueOf():</u>
+public static Wrapperclass valueOf(byte b)
+<br>
+<u>valueOf(String str):</u>
+public static Wrapperclass valueOf(String str)
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+
+public class valueOf {
+    public static void main(String[] args) {
+        byte x = 20;
+        Byte b = Byte.valueOf(x);
+        System.out.println("Byte value: " + b);
+
+        
+        //similarly we can eben convert the byte into other primitive types
+
+        short s = b.shortValue();
+        int i = b.intValue();
+        long l = b.longValue();
+        float f = b.floatValue();
+        double d = b.doubleValue();
+
+        System.out.println("Short value: " + s);
+        System.out.println("Integer value: " + i);
+        System.out.println("Long value: " + l);
+        System.out.println("Float value: " + f);
+        System.out.println("Double value: " + d);
+<br>
+        //valueOf(String value)
+
+        String y = "40";
+        System.out.println("Byte object form string value: " + b);
+        Byte c = Byte.valueOf(y);
+
+        //Similarly we can convert the byte object string value into other primitive types
+
+        short z = c.shortValue();
+        int p = c.intValue();
+        long q = c.longValue();
+        float r = c.floatValue();
+        double h = c.doubleValue();
+
+        System.out.println("Short value: " + z);
+        System.out.println("Integer value: " + p);
+        System.out.println("Long value: " + q);
+        System.out.println("Float value: " + r);
+        System.out.println("Double value: " + h);
+        
+    }
+}
+
+<br>
+⁡⁣⁣⁢Output⁡:
+
+<u>valuOf():</u>
+Byte value: 20
+Short value: 20
+Integer value: 20
+Long value: 20
+Float value: 20.0
+Double value: 20.0
+<hr>
+<u>valuOf(String str):</u>
+Byte object form string value: 20
+Short value: 40
+Integer value: 40
+Long value: 40
+Float value: 40.0
+Double value: 40.0
+</pre>
+</li>
+</ol>
+<hr>
+<hr>
 <h2>⁡⁣⁢⁡⁣⁢⁣Important Character Class Methods ⁡⁡</h2>
 Character class provides several methods to manipulate characters<br>
 The Character is immutable methods that cannot be changed<br>
@@ -647,21 +898,22 @@ public class charValue {
 </tbody>
 </table>
 </pre>
-
-<h2>⁡⁣⁢⁡⁣⁢⁣⁡⁡⁣⁢⁣ImportantByte class Methods and Constructors⁡⁡</h2>
+<hr>
+<hr>
+<h2>⁡⁣⁢⁡⁣⁢⁣⁡⁡⁣⁢⁣Important Byte class Methods and Constructors⁡⁡</h2>
 <ol>
 <li>⁡⁢⁣<b>⁡⁢⁣⁣Constructors:⁡⁡</b></li>
-<ul>
+<ol>
 <li>⁡⁢⁢<b>⁢Byte(byte b):</b>⁡</li>
  Constructs a newly allocated Byte object that represents the specified byte value.
 <ul>
     <li>
         <pre>
-        Syntax:
+        ⁡⁣⁣⁢Syntax:⁡
         Byte(byte b)
         </pre>
         <pre>
-        Example:
+        ⁡⁣⁣⁢Example:⁡
         public class constructor1 {
         public static void main(String[] args) {
             byte b = 10;
@@ -673,191 +925,21 @@ public class charValue {
     </li>
 
 </ul>
-</ul>
+</ol>
+<hr>
 <li><b>⁡⁢⁣⁣Methods:⁡</b></li>
 <ol>
 <li>
 <h4><b>⁡⁢⁢⁢toString():⁡</b></h4>
-<pre>
-Syntax:
-public String toString() 
-</pre>
-<pre>
-public class toString {
-    public static void main(String[] args) {
-        Byte b = new Byte((byte)10);
-        String x = b.toString();
-        System.out.println("Byte to string: " + x);
-    }
-}
-</pre>
-InOrder to check the datatype od the variable follow the below code:
-<pre>
-//In order to find the datatype of the variable there are 2 methods 
-//1.to create some functions to show the datatype 
-//2.use getclass() and getName() 
-<br>
-//method 1
-class sample {
-    void displayType(int x){
-        System.out.println("Integer ");
-    }
-    void displayType(double x){
-        System.out.println("Double ");
-    }
-    void displayType(Float x){
-        System.out.println("Float ");
-    }
-    void displayType(String x){
-        System.out.println("String ");
-    }
-    void displayType(Character x){
-        System.out.println("Character ");
-    }
-
-    void displayType(boolean x){
-        System.out.println("Boolean ");
-    }
-
-}
-public class How_To_know_datatype_of_variable {
-    public static void main(String[] args) {
-
-        sample y = new sample();
-        int x = 10;
-        double z = 10.5;
-        boolean b = true;
-        String s = "Hello";
-
-        y.displayType(s);
-        y.displayType(x);
-        y.displayType(z);
-        y.displayType(b);
-<br>
-        //method 2
-        System.out.println("x datatype: " + ((Object)x).getClass().getName());
-        System.out.println("s datatype: " +((Object)s).getClass().getName());
-        System.out.println("z datatype: " +((Object)z).getClass().getName());
-        System.out.println("b datatype: " +((Object)b).getClass().getName());
-    }
-}
-<br>
-Output:
-String 
-Integer 
-Double
-Boolean
-x datatype: java.lang.Integer
-s datatype: java.lang.String
-z datatype: java.lang.Double
-b datatype: java.lang.Boolean
-</pre>
-</li>
+Check out the Common methods for more information
 <hr>
-<li>
-<h4><b>⁡⁢⁢⁢⁡⁢⁢⁢valueOf() & valueOf(String str):⁡⁡</b></h4>
-This function returns the Byte object initialized with the value provided.
-<pre>
-Syntax:
-<u>valueOf():</u>
-public static Byte valueOf(byte b)
-<br>
-<u>valueOf(String str):</u>
-public static Byte valueOf(String str)
-</pre>
-<pre>
-Examples:
-
-public class valueOf {
-    public static void main(String[] args) {
-        byte x = 20;
-        Byte b = Byte.valueOf(x);
-        System.out.println("Byte value: " + b);
-
-        
-        //similarly we can eben convert the byte into other primitive types
-
-        short s = b.shortValue();
-        int i = b.intValue();
-        long l = b.longValue();
-        float f = b.floatValue();
-        double d = b.doubleValue();
-
-        System.out.println("Short value: " + s);
-        System.out.println("Integer value: " + i);
-        System.out.println("Long value: " + l);
-        System.out.println("Float value: " + f);
-        System.out.println("Double value: " + d);
-<br>
-        //valueOf(String value)
-
-        String y = "40";
-        System.out.println("Byte object form string value: " + b);
-        Byte c = Byte.valueOf(y);
-
-        //Similarly we can convert the byte object string value into other primitive types
-
-        short z = c.shortValue();
-        int p = c.intValue();
-        long q = c.longValue();
-        float r = c.floatValue();
-        double h = c.doubleValue();
-
-        System.out.println("Short value: " + z);
-        System.out.println("Integer value: " + p);
-        System.out.println("Long value: " + q);
-        System.out.println("Float value: " + r);
-        System.out.println("Double value: " + h);
-        
-    }
-}
-
-<br>
-Output:
-
-<u>valuOf():</u>
-Byte value: 20
-Short value: 20
-Integer value: 20
-Long value: 20
-Float value: 20.0
-Double value: 20.0
+<li>⁡⁢⁢⁢parseByte():⁡</li>
+Check out the Common methods for more information
 <hr>
-<u>valuOf(String str):</u>
-Byte object form string value: 20
-Short value: 40
-Integer value: 40
-Long value: 40
-Float value: 40.0
-Double value: 40.0
-</pre>
-</li>
-<hr>
-<li>
-<h4><b>⁡⁢⁢⁢parseByte():⁡</b></h4>
-<pre>
-Syntax:
- public static byte parseByte(String val, int radix)
-</pre>
-<pre>
-Example:
-public class parseByte {
-    public static void main(String[] args) {
-        String x = "10";
-        byte y = Byte.parseByte(x);
-        System.out.println("parseByte: " + x);
-    }
-}
-<br>
-Output:
-parseByte: 10
-</pre>
-</li>
-
 <li>
 <h4><b>⁡⁢⁢⁢decode():⁡</b></h4>
 <pre>
-Example:
+⁡⁣⁣⁢Example:⁡
 package Wrapperclass.Byte_Wrapperclass;
 
 public class decode {
@@ -892,12 +974,143 @@ public class decode {
     }
 }
 <br>
-Output:
+⁡⁣⁣⁢Output⁡:
 Invalid input. Please enter a valid octal, hexadecimal, binary, or decimal number.<br>
 This is the way to use parseStrings<br>
 Invalid input. Please enter a valid octal, hexadecimal, binary, or decimal number.
 </pre>
 </li>
+<li>⁡⁢⁢⁢valueOf():⁡</li>
+Check out the Common methods for more information
+</ol>
+<hr>
+<hr>
+<h2>⁡⁣⁢⁣Important Short class methods and constructors⁡</h2>
+<ol>
+<li><b>⁡⁢⁣⁣Constructors:⁡</b></li>
+<ol>
+<li><b>⁡⁢⁢⁢⁡⁢⁢⁢Short(short b)/Short(string s):⁡⁡</b></li>
+<ul>
+<li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡ 
+public Short(short b)
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡ 
+public class constructor1 {
+
+    public static void main(String[] args) {
+        short x = 10;
+        Short wrapper = new Short(x);
+        System.out.println("short object: " + wrapper);
+
+        //llly short string constructor
+        Short y= new Short("10");
+        System.out.println("short object as string: " + y);
+    }
+}
+</pre>
+</li>
+</ul>
+</ol>
+<hr>
+<li><b>⁡⁢⁢⁢⁡⁢⁣⁣Methods:⁡⁡</b></li>
+<ol>
+<li><b>⁡⁢⁢⁢toString():⁡</b></li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+public String toString(short b)
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+public class toString {
+    public static void main(String[] args) {
+        Short wrapperclass = new Short((short)40);
+        String x = wrapperclass.toString();
+        System.out.println("toString " + x);
+    }
+}
+</pre>
+<hr>
+<li><b>⁡⁢⁢⁢valueOf():⁡</b></li>
+check the Byte constructor for toAString method
+<hr>
+<li><b>⁡⁢⁢⁢parseShort():⁡</b></li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+public static short parseShort(String)
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+public class parseShort {
+    public static void main(String[] args) {
+        String x = "10";
+        short y = Short.parseShort(x);
+        System.out.println("parseShort: " + x);
+    }
+}
+</pre>
+<hr>
+<li><b>⁡⁢⁢⁢compareTo():⁡</b></li>
+Check out the Common methods for more information
+</ol>
+</ol>
+<hr>
+<hr>
+<h2>⁡⁣⁢⁣Important Integer class meythods and constructors⁡</h2>
+<ol>
+<li><b>⁡⁢⁣⁣Constructors:⁡</b></li>
+<ol>
+<li><b>Integer(int b)/Integer(int s):⁡⁡</b></li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+Integer identifier = new Integer(value);
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+public class constructor1 {
+    public static void main(String[] args) {
+        int x = 10;
+        Integer wrapper = new Integer(x);
+        System.out.println("short object: " + wrapper);
+
+        //llly short string constructor
+        Integer y= new Integer("10");
+        System.out.println("short object as string: " + y);
+    }
+}
+</pre>
 
 </ol>
+<li><b>⁡⁢⁣⁣Methods:⁡</b></li>
+<ol>
+<li><b>⁡⁢⁢⁢tohexString()/toOctalString()/toBinaryString():⁡</b></li>
+<pre>
+⁡⁣⁣⁢Syntax:⁡
+String identifier = Integer.toHexString/toOctalString/toBinaryString(value);
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+public class toHex_Octal_BinaryString {
+
+    public static void main(String[] args) {
+        String hex = Integer.toHexString(50);
+        String octal = Integer.toOctalString(50);
+        String binary = Integer.toBinaryString(50);
+
+        System.out.println("Hex String :"+hex);
+        System.out.println("Octal String :"+octal);
+        System.out.println("Binary String :"+binary);
+    }
+}
+<br>
+⁡⁣⁣⁢⁡⁣⁣⁢Output:⁡⁡
+Hex String :32
+Octal String :62
+Binary String :110010
+</pre>
 </ol>
+</ol>
+</ol>
+<h1>All the other Wrapperclass(Float,Long,Double,Boolean) constructors and methods are covered in Common _Methods folder check it out for more information.</h1>
