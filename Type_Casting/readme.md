@@ -36,7 +36,7 @@ Lower<--------------------------------------------------------------->Higher<br>
 <h3>Widening or Automatic or Implict Casting:</h3>
 Java automatically handles this conversion without requiring explicit syntax<br>
 This type of casting is safe because no data is lost.<br>
-Example:<br>
+<br>
 int a = 10;<br>
 double b = a;  Implicit casting from int to double<br>
 
@@ -52,7 +52,7 @@ float to double<br>
 <h3>⁡⁢⁣⁣Narrowing or Explict Casting:⁡</h3>
 This type of casting must be explicitly specified in the code to inform the compiler of the developer’s intent.<br>
 Explicit casting can potentially lose data or cause precision issues, so it should be used with caution.<br>
-Example:<br>
+<br>
 <pre>
 double x = 10.5;<br>
 int y = (int) x;  Explicit casting from double to int<br>
@@ -101,13 +101,13 @@ So just like the Type Casting in primitive type, we have 2 types in which the Re
 It is the phenomenon in which a subclass is promoted to super class  and hence becoem generalise and safer.<br>
 It is also called Upcasting or Widening.<br>
 It's scope is Widening.<br>
-Example:<br>
+<br>
 If we say lemon a s a fruit, there will no objection and the java compiler do the Implict Casting  and doesnot ask for cast operator.<br>
 <h3>Specialization</h3>
 It is  the phenomenon in which a Super class is converted to Sub class and hence become Specific and it not safe.<br>
 It is also called Sowncasting or Narrowing.<br>
 It's scope is Narrowing.<br>
-Example:<br>
+<br>
 If we have to say fruit is a citrus fruit the java compiler asks to use Cast Operator specifically and we become more specific and we need to do Explict Casting.<br>
 
 <pre>

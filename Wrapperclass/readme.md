@@ -6,7 +6,7 @@ All the Wrapper classes are present in Java.lang.package<br>
 <h2>⁡⁣⁢⁣Auto-Boxing:⁡</h2>
 The automatic conversion of primitive datatype to that of the corresponding object type in Java.lang pacakge is called Auto-Boxing.<br>
 Like char to Character ,byte to Bytes.<br>
-⁡⁣⁣⁢Example:⁡<br>
+⁡⁣⁣⁢<b>Exmaple</b>⁡<br>
 <pre>
 public class Autoboxing {<br>
     public static void main(String[] args) {<br>
@@ -31,8 +31,9 @@ public class Autoboxing {<br>
 It is the Opposite to that of the Auto-Boxing<br>
 The automatic conversion of Wrapper class to that of the  corresponding Primitive dastatype type in Java.lang pacakge is called Un-Boxing.<br>
 Like char to Character ,byte to Bytes.<br>
+<pre>
 ⁡⁣⁣⁢Example:⁡<br>
-<pre>import java.nio.charset.CharacterCodingException;<br>
+import java.nio.charset.CharacterCodingException;<br>
 <br>
 public class Unboxing {<br>
     public static void main(String[] args) {<br>

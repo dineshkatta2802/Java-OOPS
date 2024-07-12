@@ -106,7 +106,7 @@ public class Main {<br>
 - Subclass provides a specific implementation of a non-static method from the superclass.<br>
 - Uses the `@Override` annotation.<br>
 - Allows the subclass method to be called via a superclass reference.<br>
-- Example:<br>
+- <br>
 <pre>
   @Override<br>
   public void display() { /* ... */ }
@@ -116,7 +116,7 @@ public class Main {<br>
 - Subclass defines a static method with the same signature as a static method in the superclass.<br>
 - Does not use the `@Override` annotation.<br>
 - The superclass method is called via superclass reference, and subclass method via subclass reference.<br>
-- Example:<br>
+- <br>
 <pre>
   public static void display() { /* ... */ };
   </pre>
@@ -127,7 +127,7 @@ public class Main {<br>
 <h3>⁡⁢⁣⁣Diamond Problem:⁡</h3><br>
 ⁡⁢⁣⁣Ambiguity:⁡ <br>
 If two classes have a method with the same name, and a third class inherits from both, it’s unclear which method to use. This is known as the diamond problem.<br>
-Example: <br>
+ <br>
 <pre>
   class A { void show() {} }<br>
   class B extends A { void show() {} }<br>
@@ -137,12 +137,12 @@ Example: <br>
 <br>
 ⁡⁢⁣⁣Complexity:⁡<br>
 Code Complexity: Managing multiple inheritance can make the code more complex and harder to maintain.<br>
-Example: Handling state and behavior from multiple parent classes can lead to intricate and error-prone code.<br>
+ Handling state and behavior from multiple parent classes can lead to intricate and error-prone code.<br>
 <br>
 <h3>⁡⁢⁣⁣Alternatives in Java:⁡</h3><br>
 ⁡⁢⁣⁣Interface:⁡<br>
  Java allows a class to implement multiple interfaces, providing a way to achieve multiple inheritance of type without the issues of multiple inheritance of implementation.<br>
-Example:<br>
+<br>
 <pre>
   interface A { void show(); }<br>
   interface B { void display(); }<br>
@@ -257,7 +257,7 @@ Object Slicing in C++:<br>
 
 What happens:<br>
 When you assign a derived class object to a base class object, only the base class part of the object is copied. Any additional data or behavior specific to the derived class is lost.<br>
-Example:<br>
+<br>
 ⁡⁢⁣<h3>⁣Object Slicing in C++:</h3>⁡<br>
 <br>
 <pre>
@@ -286,7 +286,7 @@ int main() {<br>
  <h3>⁡⁢⁣⁣Object Slicing in Java:⁡⁡</h3><br>
 <br>
 Difference: Java does not have object slicing in the same way because of how it handles objects and inheritance.<br><br>
-Example:<br>
+<br>
 <pre>
 class Base {<br>
     int baseValue;<br>
