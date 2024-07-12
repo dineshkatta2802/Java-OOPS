@@ -115,14 +115,115 @@ public class IteratorExample {
         list.add("Cherry");
 
         Iterator<String> iterator = list.iterator();
+
         while (iterator.hasNext()) {
             String fruit = iterator.next();
             System.out.println(fruit);
         }
     }
 }
-
 </pre>
 <li>Using <b>List Iterator</b> interface</li>
+<pre>
+⁡⁣⁣⁢Methods:⁡
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>boolean hasNext()</td>
+        <td>Returns <code>true</code> if the iteration has more elements when traversing the list in the forward direction.</td>
+        <td><code>boolean hasNext = listIterator.hasNext();</code></td>
+    </tr>
+    <tr>
+        <td>E next()</td>
+        <td>Returns the next element in the list and advances the cursor position.</td>
+        <td><code>E element = listIterator.next();</code></td>
+    </tr>
+    <tr>
+        <td>boolean hasPrevious()</td>
+        <td>Returns <code>true</code> if the iteration has more elements when traversing the list in the reverse direction.</td>
+        <td><code>boolean hasPrevious = listIterator.hasPrevious();</code></td>
+    </tr>
+    <tr>
+        <td>E previous()</td>
+        <td>Returns the previous element in the list and moves the cursor position backwards.</td>
+        <td><code>E element = listIterator.previous();</code></td>
+    </tr>
+    <tr>
+        <td>int nextIndex()</td>
+        <td>Returns the index of the element that would be returned by a subsequent call to <code>next()</code>. Returns list size if the list iterator is at the end of the list.</td>
+        <td><code>int index = listIterator.nextIndex();</code></td>
+    </tr>
+    <tr>
+        <td>int previousIndex()</td>
+        <td>Returns the index of the element that would be returned by a subsequent call to <code>previous()</code>. Returns <code>-1</code> if the list iterator is at the beginning of the list.</td>
+        <td><code>int index = listIterator.previousIndex();</code></td>
+    </tr>
+    <tr>
+        <td>void remove()</td>
+        <td>Removes the last element returned by <code>next()</code> or <code>previous()</code> from the list. This call can only be made once per call to <code>next()</code> or <code>previous()</code>.</td>
+        <td><code>listIterator.remove();</code></td>
+    </tr>
+    <tr>
+        <td>void set(E e)</td>
+        <td>Replaces the last element returned by <code>next()</code> or <code>previous()</code> with the specified element. This call can only be made once per call to <code>next()</code> or <code>previous()</code>.</td>
+        <td><code>listIterator.set(e);</code></td>
+    </tr>
+    <tr>
+        <td>void add(E e)</td>
+        <td>Inserts the specified element into the list. The element is inserted immediately before the element that would be returned by <code>next()</code>, if any, and after the element that would be returned by <code>previous()</code>, if any.</td>
+        <td><code>listIterator.add(e);</code></td>
+    </tr>
+</table>
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class ListIteratorMethods {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+        
+        ListIterator<String> listIterator = list.listIterator();
+        
+        // Using hasNext() and next()
+        while (listIterator.hasNext()) {
+            String fruit = listIterator.next();
+            System.out.println("Next Element: " + fruit);
+        }
+        
+        // Using hasPrevious() and previous()
+        while (listIterator.hasPrevious()) {
+            String fruit = listIterator.previous();
+            System.out.println("Previous Element: " + fruit);
+        }
+        
+        // Using nextIndex() and previousIndex()
+        System.out.println("Next Index: " + listIterator.nextIndex());
+        System.out.println("Previous Index: " + listIterator.previousIndex());
+        
+        // Using add()
+        listIterator.add("Date");
+        System.out.println("After adding Date: " + list);
+        
+        // Using set()
+        listIterator.previous(); // Move the cursor back to "Date"
+        listIterator.set("Dragonfruit");
+        System.out.println("After setting Dragonfruit: " + list);
+        
+        // Using remove()
+        listIterator.remove();
+        System.out.println("After removing Dragonfruit: " + list);
+    }
+}
+
+</pre>
 <li>using <b>Enumeration</b> interface</li>
 </ol>
