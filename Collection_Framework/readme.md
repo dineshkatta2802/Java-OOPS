@@ -186,7 +186,9 @@ import java.util.ListIterator;
 
 public class ListIteratorMethods {
     public static void main(String[] args) {
+
         ArrayList<String> list = new ArrayList<>();
+
         list.add("Apple");
         list.add("Banana");
         list.add("Cherry");
@@ -194,31 +196,37 @@ public class ListIteratorMethods {
         ListIterator<String> listIterator = list.listIterator();
         
         // Using hasNext() and next()
+
         while (listIterator.hasNext()) {
             String fruit = listIterator.next();
             System.out.println("Next Element: " + fruit);
         }
         
         // Using hasPrevious() and previous()
+
         while (listIterator.hasPrevious()) {
             String fruit = listIterator.previous();
             System.out.println("Previous Element: " + fruit);
         }
         
         // Using nextIndex() and previousIndex()
+
         System.out.println("Next Index: " + listIterator.nextIndex());
         System.out.println("Previous Index: " + listIterator.previousIndex());
         
         // Using add()
+
         listIterator.add("Date");
         System.out.println("After adding Date: " + list);
         
         // Using set()
+
         listIterator.previous(); // Move the cursor back to "Date"
         listIterator.set("Dragonfruit");
         System.out.println("After setting Dragonfruit: " + list);
         
         // Using remove()
+
         listIterator.remove();
         System.out.println("After removing Dragonfruit: " + list);
     }
@@ -226,4 +234,35 @@ public class ListIteratorMethods {
 
 </pre>
 <li>using <b>Enumeration</b> interface</li>
+<pre>
+⁡⁣⁣⁢Methods:⁡
+<b>boolean hasMoreElements():</b>
+It check wether the "Enumeration" has more elements or not.
+<b>elements nextElement():</b>
+It returns the next elemenst in the "Enumeration"
+</pre>
+<pre>
+⁡⁣⁣⁢Example:⁡
+import java.util.Enumeration;
+import java.util.Vector;
+
+public class EnumerationExample {
+    public static void main(String[] args) {
+        // Creating a Vector and adding elements to it
+        Vector<String> vector = new Vector<>();
+        vector.add("Apple");
+        vector.add("Banana");
+        vector.add("Cherry");
+
+        // Obtaining the Enumeration
+        Enumeration<String> enumeration = vector.elements();
+
+        // Iterating through the Vector using Enumeration
+        while (enumeration.hasMoreElements()) {
+            String fruit = enumeration.nextElement();
+            System.out.println(fruit);
+        }
+    }
+}
+</pre>
 </ol>
