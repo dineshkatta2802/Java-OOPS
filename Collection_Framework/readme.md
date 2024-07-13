@@ -78,7 +78,7 @@ public class ForEachLoopExample {
         List<String> names = new ArrayList<>();
         names.add("Dinesh");
         names.add("Divya");
-        names.add("");
+        names.add("Daxton");
         
         for (String name : names) {
             System.out.println(name);
