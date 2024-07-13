@@ -59,6 +59,7 @@ When you need a key-value pair association.<br>
 
 
 <h2>⁡⁣⁢⁣Retrieving elements from Collections⁡</h2>
+<b>In all the below examples we use the "ArrayList<>()" as the collection of List</b><br>
 There are 4 different ways to retrieve elements
 <ol>
 <li>Using <b>for-each</b> loop</li>
