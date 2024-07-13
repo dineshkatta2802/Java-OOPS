@@ -100,7 +100,8 @@ if u call the collection object we get the output as
 
 <br>
 Here the idetifier "name" can be anything just like normal loop that we use 'i' as an variable to iterate
-Output:
+⁡⁣⁣⁢Output:⁡
+
 [Dinesh, Divya, Daxton]
 [Dinesh, Divya, Daxton]
 [Dinesh, Divya, Daxton]
