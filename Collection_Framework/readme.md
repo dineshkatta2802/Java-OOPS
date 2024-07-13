@@ -78,16 +78,32 @@ import java.util.List;
 public class ForEachLoopExample {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
-        names.add("Alice");
-        names.add("Bob");
-        names.add("Charlie");
+        names.add("Dinesh");
+        names.add("Divya");
+        names.add("");
         
         for (String name : names) {
             System.out.println(name);
         }
     }
 }
+You need to call the variable in the for loop like "name" in the example above
+Then we get the output as:
+⁡⁣⁣⁢Output:⁡
+
+Dinesh
+Divya
+Daxton
+
+(or)
+if u call the collection object we get the output as
+
+<br>
 Here the idetifier "name" can be anything just like normal loop that we use 'i' as an variable to iterate
+Output:
+[Dinesh, Divya, Daxton]
+[Dinesh, Divya, Daxton]
+[Dinesh, Divya, Daxton]
 </pre>
 <hr>
 <li>Using <b>Iterator</b> interface</li>
