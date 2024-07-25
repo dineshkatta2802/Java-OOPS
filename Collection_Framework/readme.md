@@ -118,26 +118,39 @@ This returns the next element in the iterator
 This removes the last element that is returned by the iterator
 </pre>
 <pre>
-⁡⁣⁣⁢⁡Example:
+⁡⁣⁣⁢⁡⁡⁣⁣⁢⁡⁣⁣⁢Example:⁡
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-public class IteratorExample {
+<br>
+public class iterator {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        list.add("Apple");
-        list.add("Banana");
-        list.add("Cherry");
 
-        Iterator<String> iterator = list.iterator();
+        List<String> names = new ArrayList<String>();
+        names.add("Dinesh");
+        names.add("Divya");
+        names.add("Daxton");
 
-        while (iterator.hasNext()) {
-            String fruit = iterator.next();
-            System.out.println(fruit);
+        Iterator<String> i = names.iterator();
+
+        while (i.hasNext()) {
+            String x = i.next();
+            System.out.println(x);
+
+            if ("Dinesh".equals(x)) {
+                i.remove();
+                System.out.println("Dinesh is removed");
+                
+                System.out.println("Remaining elements:");
+                // This part should be modified to iterate again over the remaining elements
+                for (String name : names) {
+                    System.out.println(name);
+                }
+            }
         }
     }
 }
+
 </pre>
 <li>Using <b>List Iterator</b> interface</li>
 <pre>
