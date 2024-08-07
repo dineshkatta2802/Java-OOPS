@@ -3,7 +3,9 @@ It is a part of Linear data structure that is used to store the collection of ob
 It follows <b>FILO(First-In-Last-Out) or LIFO(Kast-In-Last-Out)</b> princple.<br>
 It provides different operations like Push ,Pop ,IsEmpty ,IsFull etc...<br>
 It is under the package of "java.util"<br>
-<img src="https://static.javatpoint.com/core/images/java-stack.png" alt="Hierarchial Inheritance" width="500" height="400">
+<img src="https://static.javatpoint.com/core/images/java-stack.png" alt="Stack" width="500" height="400">
+<br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240606180735/Stack-representation-in-Data-Structures-(1).webp" alt="Stack" width="314" height="300">
 <br>
 <img src="https://static.javatpoint.com/core/images/java-stack2.png" alt="Java Stack">
 
@@ -14,6 +16,28 @@ If stack has no elements it is called Empty stack and the value of Top is "-1".
 <img src="https://static.javatpoint.com/core/images/java-stack3.png" alt="Java Stack">
 
 <br>
+<h2>⁡⁣⁢⁣Applications of Stack⁡</h2>
+<ol>
+<li>Recursion</li>
+<li>Express evaluating and Parsing</li>
+<li>Depth-First Search</li>
+<li>Undo/Redo Operations</li>
+<li>Browser History</li>
+<li>Function Calls</li>
+</ol>
+
+<h2>⁡⁣⁢⁣Types of Stack DataStructures⁡</h2>
+<ol>
+<li>⁡⁢⁣⁣<b>⁡⁢⁣⁣Fixed Size Stack:⁡</b><br>
+As the name suggests that the size of the stack cannot be grow or shrinked dynamically<br>
+If the Stack is full and if an elements is made to add then,Overflow occurs
+</li>
+<li><b>⁡⁢⁣⁣Dynamic Size Stack:⁡</b><br>
+As the name suggests that the size of the stack can be grown or shrinked dynamically<br>
+
+</li>
+</ol>
+
 <!-- TABLE-->
 <h2>⁡⁣⁢⁣Methods in stack⁡</h2>
 
@@ -62,13 +86,13 @@ E is the type of the object
 </pre>
 <ol>
 <li>
-<h3>⁡⁢⁣⁣empty():⁡</h3>
+<h3>⁡⁢⁣⁣⁡⁢⁣⁣empty():⁡</h3>
 It tell us wether the given stack is empty or not.
 <pre>
 Syntax:
 public Boolean empty()
 </pre>
-
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240606181101/isEmpty-Operation-in-Stack-(1).webp" alt="Stack is empty" width="419" height="300">
 </li>
 
 
@@ -82,6 +106,9 @@ public E push (E items)
 -pop():
 public E pop (E items)
 </pre>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240606180844/Push-Operation-in-Stack-(1).webp" alt="Push elements into stack" width="419" height="300">
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240606180943/Pop-Operation-in-Stack-(1).webp" alt="Pop elements into stack" width="419" height="300">
 </li>
 <li>
 <h3>Example using the Push(),Pop(),empty():</h3>
