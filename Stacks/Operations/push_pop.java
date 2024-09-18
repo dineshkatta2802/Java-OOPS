@@ -1,4 +1,4 @@
-package Stacks.Methods;
+package Stacks.Operations;
 import java.util.*;
 public class push_pop {
     public static void main(String[] args) {

@@ -94,8 +94,6 @@ public Boolean empty()
 </pre>
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240606181101/isEmpty-Operation-in-Stack-(1).webp" alt="Stack is empty" width="419" height="300">
 </li>
-
-
 <li>
 <h3>⁡⁢⁣⁣Push() and Pop():⁡</h3>
 <pre>

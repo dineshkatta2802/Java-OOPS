@@ -1,4 +1,4 @@
-package Stacks.Methods;
+package Stacks.Operations;
 
 import java.util.Stack;
 

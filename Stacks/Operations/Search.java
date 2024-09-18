@@ -1,4 +1,4 @@
-package Stacks.Methods;
+package Stacks.Operations;
 import java.util.*;
 public class Search {
     public static void main(String[] args) {
