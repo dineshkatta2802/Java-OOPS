@@ -1,0 +1,4 @@
+1.Classic Data Structures (2nd Edition)Debasis Samanta, Prentice Hall India
+2.Java: The Complete ReferenceHebert Schildt, Mc Graw Hill
+3.Object-Oriented Programming with C++ and Java Debasis Samanta, Prentice Hall India
+4.Swayam-NPTEL online course entitles Programming in Java Debasis Samanta
